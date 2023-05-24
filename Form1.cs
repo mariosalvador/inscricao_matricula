@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Inscricao_e_Matricula
 {
-    public partial class Form1 : Form
+    public partial class TelaLogin : Form
     {
-        public Form1()
+        public TelaLogin()
         {
             InitializeComponent();
         }
