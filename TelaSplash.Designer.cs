@@ -89,6 +89,8 @@ namespace Inscricao_e_Matricula
             this.label1.TabIndex = 6;
             this.label1.Text = "INSCRIÇÃO & MATRÍCULA";
             // 
+            this.SuspendLayout();
+            // 
             // TelaSplash
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -97,6 +99,8 @@ namespace Inscricao_e_Matricula
             this.ClientSize = new System.Drawing.Size(798, 438);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.progressBar1);
+            this.ClientSize = new System.Drawing.Size(937, 659);
+
             this.Cursor = System.Windows.Forms.Cursors.WaitCursor;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(2);
@@ -113,10 +117,12 @@ namespace Inscricao_e_Matricula
 
         #endregion
 
+
         private System.Windows.Forms.ProgressBar progressBar1;
         private System.Windows.Forms.Timer timer1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label1;
+
     }
 }

@@ -30,6 +30,7 @@ namespace Inscricao_e_Matricula
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.label13 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
@@ -45,7 +46,6 @@ namespace Inscricao_e_Matricula
             this.panel5 = new System.Windows.Forms.Panel();
             this.label11 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
-            this.label13 = new System.Windows.Forms.Label();
             this.panel6 = new System.Windows.Forms.Panel();
             this.label6 = new System.Windows.Forms.Label();
             this.panel7 = new System.Windows.Forms.Panel();
@@ -103,6 +103,19 @@ namespace Inscricao_e_Matricula
             this.panel1.Size = new System.Drawing.Size(73, 752);
             this.panel1.TabIndex = 0;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.8F);
+            this.label13.ForeColor = System.Drawing.SystemColors.ControlLight;
+            this.label13.Location = new System.Drawing.Point(3, 677);
+            this.label13.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(70, 15);
+            this.label13.TabIndex = 11;
+            this.label13.Text = "_________";
+            this.label13.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label5
             // 
@@ -199,16 +212,16 @@ namespace Inscricao_e_Matricula
             this.panel3.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.panel3.Location = new System.Drawing.Point(118, 347);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(474, 284);
+            this.panel3.Size = new System.Drawing.Size(639, 284);
             this.panel3.TabIndex = 5;
             // 
             // label7
             // 
             this.label7.Font = new System.Drawing.Font("Consolas", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.SystemColors.ControlDark;
-            this.label7.Location = new System.Drawing.Point(0, 12);
+            this.label7.Location = new System.Drawing.Point(0, 6);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(474, 15);
+            this.label7.Size = new System.Drawing.Size(639, 21);
             this.label7.TabIndex = 8;
             this.label7.Text = "PERCENTAGEM DE ALUNOS INSCRITOS";
             this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -284,37 +297,24 @@ namespace Inscricao_e_Matricula
             this.label12.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.label12.Click += new System.EventHandler(this.label2_Click);
             // 
-            // label13
-            // 
-            this.label13.AutoSize = true;
-            this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.8F);
-            this.label13.ForeColor = System.Drawing.SystemColors.ControlLight;
-            this.label13.Location = new System.Drawing.Point(3, 677);
-            this.label13.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(70, 15);
-            this.label13.TabIndex = 11;
-            this.label13.Text = "_________";
-            this.label13.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
             // panel6
             // 
             this.panel6.BackColor = System.Drawing.Color.WhiteSmoke;
             this.panel6.Controls.Add(this.pictureBox11);
             this.panel6.Controls.Add(this.label6);
             this.panel6.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.panel6.Location = new System.Drawing.Point(715, 347);
+            this.panel6.Location = new System.Drawing.Point(802, 347);
             this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(379, 284);
+            this.panel6.Size = new System.Drawing.Size(292, 284);
             this.panel6.TabIndex = 5;
             // 
             // label6
             // 
             this.label6.Font = new System.Drawing.Font("Consolas", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.SystemColors.ControlDark;
-            this.label6.Location = new System.Drawing.Point(-1, 0);
+            this.label6.Location = new System.Drawing.Point(0, 9);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(379, 21);
+            this.label6.Size = new System.Drawing.Size(292, 21);
             this.label6.TabIndex = 8;
             this.label6.Text = "PERCENTAGEM DE INSCRITOS POR CURSO";
             this.label6.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -366,9 +366,9 @@ namespace Inscricao_e_Matricula
             // 
             this.pictureBox11.BackgroundImage = global::Inscricao_e_Matricula.Properties.Resources.IMG_20230525_WA0066;
             this.pictureBox11.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox11.Location = new System.Drawing.Point(0, 58);
+            this.pictureBox11.Location = new System.Drawing.Point(0, 63);
             this.pictureBox11.Name = "pictureBox11";
-            this.pictureBox11.Size = new System.Drawing.Size(379, 188);
+            this.pictureBox11.Size = new System.Drawing.Size(292, 188);
             this.pictureBox11.TabIndex = 9;
             this.pictureBox11.TabStop = false;
             // 
@@ -378,7 +378,7 @@ namespace Inscricao_e_Matricula
             this.pictureBox8.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.pictureBox8.Location = new System.Drawing.Point(0, 53);
             this.pictureBox8.Name = "pictureBox8";
-            this.pictureBox8.Size = new System.Drawing.Size(474, 231);
+            this.pictureBox8.Size = new System.Drawing.Size(639, 231);
             this.pictureBox8.TabIndex = 9;
             this.pictureBox8.TabStop = false;
             // 
