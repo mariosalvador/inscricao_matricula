@@ -54,13 +54,13 @@ namespace Inscricao_e_Matricula
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.8F);
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 5.8F);
             this.label1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label1.Location = new System.Drawing.Point(-3, 90);
+            this.label1.Location = new System.Drawing.Point(10, 90);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(104, 18);
+            this.label1.Size = new System.Drawing.Size(85, 13);
             this.label1.TabIndex = 1;
-            this.label1.Text = "  ___________";
+            this.label1.Text = "  ____________";
             // 
             // pictureBox1
             // 
@@ -88,11 +88,11 @@ namespace Inscricao_e_Matricula
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.8F);
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 5.8F);
             this.label2.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label2.Location = new System.Drawing.Point(-3, 847);
+            this.label2.Location = new System.Drawing.Point(10, 848);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(104, 18);
+            this.label2.Size = new System.Drawing.Size(79, 13);
             this.label2.TabIndex = 3;
             this.label2.Text = "  ___________";
             // 
