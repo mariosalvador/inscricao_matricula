@@ -10,3 +10,14 @@ C:\Users\m\OneDrive\Desktop\visual studio 2023\Windows form\Inscricao e Matricul
 C:\Users\m\OneDrive\Desktop\visual studio 2023\Windows form\Inscricao e Matricula\obj\Debug\Inscricao e Matricula.pdb
 C:\Users\m\OneDrive\Desktop\visual studio 2023\Windows form\Inscricao e Matricula\obj\Debug\Inscricao_e_Matricula.TelaSplash.resources
 C:\Users\m\OneDrive\Desktop\visual studio 2023\Windows form\Inscricao e Matricula\obj\Debug\Inscricao_e_Matricula.TelaPrincipal.resources
+C:\Users\Jesimiel\Documents\IM\bin\Debug\Inscricao e Matricula.exe.config
+C:\Users\Jesimiel\Documents\IM\obj\Debug\Inscricao e Matricula.exe
+C:\Users\Jesimiel\Documents\IM\obj\Debug\Inscricao e Matricula.pdb
+C:\Users\Jesimiel\Documents\IM\bin\Debug\Inscricao e Matricula.exe
+C:\Users\Jesimiel\Documents\IM\bin\Debug\Inscricao e Matricula.pdb
+C:\Users\Jesimiel\Documents\IM\obj\Debug\Inscricao e Matricula.csprojResolveAssemblyReference.cache
+C:\Users\Jesimiel\Documents\IM\obj\Debug\Inscricao_e_Matricula.TelaPrincipal.resources
+C:\Users\Jesimiel\Documents\IM\obj\Debug\Inscricao_e_Matricula.TelaSplash.resources
+C:\Users\Jesimiel\Documents\IM\obj\Debug\Inscricao_e_Matricula.TelaLogin.resources
+C:\Users\Jesimiel\Documents\IM\obj\Debug\Inscricao_e_Matricula.Properties.Resources.resources
+C:\Users\Jesimiel\Documents\IM\obj\Debug\Inscricao e Matricula.csproj.GenerateResource.Cache
