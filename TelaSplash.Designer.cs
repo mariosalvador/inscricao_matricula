@@ -45,8 +45,8 @@ namespace Inscricao_e_Matricula
             this.progressBar1.Location = new System.Drawing.Point(256, 385);
             this.progressBar1.Name = "progressBar1";
             this.progressBar1.Size = new System.Drawing.Size(190, 12);
+            this.progressBar1.Style = System.Windows.Forms.ProgressBarStyle.Continuous;
             this.progressBar1.TabIndex = 2;
-            this.progressBar1.UseWaitCursor = true;
             // 
             // timer1
             // 
@@ -64,6 +64,7 @@ namespace Inscricao_e_Matricula
             this.label2.Size = new System.Drawing.Size(151, 88);
             this.label2.TabIndex = 5;
             this.label2.Text = "IPIL";
+            this.label2.UseWaitCursor = true;
             this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // panel1
@@ -76,6 +77,7 @@ namespace Inscricao_e_Matricula
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(705, 302);
             this.panel1.TabIndex = 6;
+            this.panel1.UseWaitCursor = true;
             // 
             // label1
             // 
@@ -88,19 +90,16 @@ namespace Inscricao_e_Matricula
             this.label1.Size = new System.Drawing.Size(282, 31);
             this.label1.TabIndex = 6;
             this.label1.Text = "INSCRIÇÃO & MATRÍCULA";
-            // 
-            this.SuspendLayout();
+            this.label1.UseWaitCursor = true;
             // 
             // TelaSplash
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.ClientSize = new System.Drawing.Size(798, 438);
+            this.ClientSize = new System.Drawing.Size(937, 659);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.progressBar1);
-            this.ClientSize = new System.Drawing.Size(937, 659);
-
             this.Cursor = System.Windows.Forms.Cursors.WaitCursor;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(2);
