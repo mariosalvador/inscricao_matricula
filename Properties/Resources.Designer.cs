@@ -19,7 +19,7 @@ namespace Inscricao_e_Matricula.Properties {
     // class via a tool like ResGen or Visual Studio.
     // To add or remove a member, edit your .ResX file then rerun ResGen
     // with the /str option, or rebuild your VS project.
-    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "4.0.0.0")]
+    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "16.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
     internal class Resources {
@@ -63,9 +63,29 @@ namespace Inscricao_e_Matricula.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _1000_F_314620575_2XFir8yuxqCufuqns5wwkQg0U9vxBv93 {
+            get {
+                object obj = ResourceManager.GetObject("1000_F_314620575_2XFir8yuxqCufuqns5wwkQg0U9vxBv93", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap _1684060439009 {
             get {
                 object obj = ResourceManager.GetObject("1684060439009", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _2521784 {
+            get {
+                object obj = ResourceManager.GetObject("2521784", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -186,6 +206,16 @@ namespace Inscricao_e_Matricula.Properties {
         internal static System.Drawing.Bitmap Notification {
             get {
                 object obj = ResourceManager.GetObject("Notification", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Rectangle_7 {
+            get {
+                object obj = ResourceManager.GetObject("Rectangle 7", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

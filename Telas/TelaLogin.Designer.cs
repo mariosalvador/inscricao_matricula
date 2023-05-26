@@ -30,7 +30,6 @@ namespace Inscricao_e_Matricula
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.txt_Nome = new System.Windows.Forms.TextBox();
             this.txt_Senha = new System.Windows.Forms.TextBox();
@@ -39,6 +38,7 @@ namespace Inscricao_e_Matricula
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -51,16 +51,6 @@ namespace Inscricao_e_Matricula
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(569, 713);
             this.panel1.TabIndex = 0;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::Inscricao_e_Matricula.Properties.Resources._1684060439009;
-            this.pictureBox1.Location = new System.Drawing.Point(142, 222);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(266, 252);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
             // 
             // label1
             // 
@@ -148,6 +138,16 @@ namespace Inscricao_e_Matricula
             this.label4.Size = new System.Drawing.Size(71, 26);
             this.label4.TabIndex = 8;
             this.label4.Text = "Nome";
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::Inscricao_e_Matricula.Properties.Resources._1684060439009;
+            this.pictureBox1.Location = new System.Drawing.Point(3, 30);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(566, 680);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
             // 
             // TelaLogin
             // 
