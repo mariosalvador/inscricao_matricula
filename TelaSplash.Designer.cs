@@ -42,11 +42,13 @@ namespace Inscricao_e_Matricula
             // 
             this.progressBar1.BackColor = System.Drawing.Color.White;
             this.progressBar1.ForeColor = System.Drawing.Color.DarkOrange;
-            this.progressBar1.Location = new System.Drawing.Point(256, 385);
+            this.progressBar1.Location = new System.Drawing.Point(467, 267);
+            this.progressBar1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.progressBar1.Name = "progressBar1";
-            this.progressBar1.Size = new System.Drawing.Size(190, 12);
+            this.progressBar1.Size = new System.Drawing.Size(348, 10);
             this.progressBar1.Style = System.Windows.Forms.ProgressBarStyle.Continuous;
             this.progressBar1.TabIndex = 2;
+            this.progressBar1.UseWaitCursor = true;
             // 
             // timer1
             // 
@@ -59,9 +61,10 @@ namespace Inscricao_e_Matricula
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Arial Narrow", 56F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.DarkOrange;
-            this.label2.Location = new System.Drawing.Point(334, 108);
+            this.label2.Location = new System.Drawing.Point(445, 133);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(151, 88);
+            this.label2.Size = new System.Drawing.Size(187, 109);
             this.label2.TabIndex = 5;
             this.label2.Text = "IPIL";
             this.label2.UseWaitCursor = true;
@@ -72,10 +75,12 @@ namespace Inscricao_e_Matricula
             this.panel1.BackgroundImage = global::Inscricao_e_Matricula.Properties.Resources.Ellipse_21;
             this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.panel1.Controls.Add(this.label1);
+            this.panel1.Controls.Add(this.progressBar1);
             this.panel1.Controls.Add(this.label2);
-            this.panel1.Location = new System.Drawing.Point(-2, 30);
+            this.panel1.Location = new System.Drawing.Point(-3, 37);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(705, 302);
+            this.panel1.Size = new System.Drawing.Size(1018, 372);
             this.panel1.TabIndex = 6;
             this.panel1.UseWaitCursor = true;
             // 
@@ -85,24 +90,24 @@ namespace Inscricao_e_Matricula
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Arial Narrow", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.DarkOrange;
-            this.label1.Location = new System.Drawing.Point(345, 181);
+            this.label1.Location = new System.Drawing.Point(460, 223);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(282, 31);
+            this.label1.Size = new System.Drawing.Size(355, 40);
             this.label1.TabIndex = 6;
             this.label1.Text = "INSCRIÇÃO & MATRÍCULA";
             this.label1.UseWaitCursor = true;
             // 
             // TelaSplash
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.ClientSize = new System.Drawing.Size(937, 659);
+            this.ClientSize = new System.Drawing.Size(1249, 811);
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.progressBar1);
             this.Cursor = System.Windows.Forms.Cursors.WaitCursor;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(2);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "TelaSplash";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "TelaSplash";
