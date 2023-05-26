@@ -42,7 +42,7 @@ namespace Inscricao_e_Matricula
             // 
             this.progressBar1.BackColor = System.Drawing.Color.White;
             this.progressBar1.ForeColor = System.Drawing.Color.DarkOrange;
-            this.progressBar1.Location = new System.Drawing.Point(467, 267);
+            this.progressBar1.Location = new System.Drawing.Point(449, 318);
             this.progressBar1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.progressBar1.Name = "progressBar1";
             this.progressBar1.Size = new System.Drawing.Size(348, 10);
@@ -61,7 +61,7 @@ namespace Inscricao_e_Matricula
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Arial Narrow", 56F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.DarkOrange;
-            this.label2.Location = new System.Drawing.Point(445, 133);
+            this.label2.Location = new System.Drawing.Point(427, 184);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(187, 109);
@@ -80,7 +80,7 @@ namespace Inscricao_e_Matricula
             this.panel1.Location = new System.Drawing.Point(-3, 37);
             this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1018, 372);
+            this.panel1.Size = new System.Drawing.Size(1018, 554);
             this.panel1.TabIndex = 6;
             this.panel1.UseWaitCursor = true;
             // 
@@ -90,7 +90,7 @@ namespace Inscricao_e_Matricula
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Arial Narrow", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.DarkOrange;
-            this.label1.Location = new System.Drawing.Point(460, 223);
+            this.label1.Location = new System.Drawing.Point(442, 274);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(355, 40);
