@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Guna.UI.WinForms;
 
 namespace Inscricao_e_Matricula
 {
@@ -17,6 +18,7 @@ namespace Inscricao_e_Matricula
             InitializeComponent();
             
         }
+
 
         private void btn_Entra_Click(object sender, EventArgs e)
         {
@@ -30,5 +32,16 @@ namespace Inscricao_e_Matricula
         {
 
         }
+
+        private void txtsenha_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+        
     }
 }

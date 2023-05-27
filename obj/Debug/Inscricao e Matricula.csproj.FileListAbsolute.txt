@@ -34,3 +34,4 @@ C:\Users\Jesimiel\Documents\IM\inscricao_matricula\obj\Debug\Inscricao_e_Matricu
 C:\Users\Jesimiel\Documents\IM\inscricao_matricula\obj\Debug\Inscricao_e_Matricula.TelaLogin.resources
 C:\Users\Jesimiel\Documents\IM\inscricao_matricula\obj\Debug\Inscricao_e_Matricula.Properties.Resources.resources
 C:\Users\Jesimiel\Documents\IM\inscricao_matricula\obj\Debug\Inscricao e Matricula.csproj.GenerateResource.Cache
+C:\Users\Jesimiel\Documents\IM\inscricao_matricula\bin\Debug\Bunifu_UI_v1.52.dll

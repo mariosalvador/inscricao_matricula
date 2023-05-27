@@ -34,6 +34,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Bunifu_UI_v1.52">
+      <HintPath>D:\Bunifu_UI_v1.52.dll</HintPath>
+    </Reference>
     <Reference Include="Guna.UI">
       <HintPath>D:\Guna.UI.dll</HintPath>
     </Reference>
@@ -163,6 +166,18 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Rectangle 7.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ellipse 3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ellipse 4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\padlock 1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user 1.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
