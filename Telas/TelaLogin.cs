@@ -15,6 +15,7 @@ namespace Inscricao_e_Matricula
         public TelaLogin()
         {
             InitializeComponent();
+            
         }
 
         private void btn_Entra_Click(object sender, EventArgs e)
