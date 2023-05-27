@@ -1,4 +1,5 @@
 ﻿using System;
+using Guna.UI.WinForms;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -19,12 +20,13 @@ namespace Inscricao_e_Matricula
 
         private void timer1_Tick(object sender, EventArgs e)
         {
+            
             TelaLogin tela = new TelaLogin();
-            if (progressBar1.Value < 100)
+            if ( PROGRESSBAR.Value < 100)
             {
-                progressBar1.Value += 1;
+                PROGRESSBAR.Value += 1;
             }
-            else if(progressBar1.Value==100)
+            else if (PROGRESSBAR.Value == 100)
             {
                 timer1.Enabled = false;
                 this.Hide();
@@ -39,6 +41,16 @@ namespace Inscricao_e_Matricula
         }
 
         private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void progressBar1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
         {
 
         }
