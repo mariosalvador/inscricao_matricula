@@ -21,5 +21,19 @@ namespace Inscricao_e_Matricula
         {
 
         }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+            TelaInscricao telaInscricao = new TelaInscricao();
+            this.Hide();
+            telaInscricao.ShowDialog();
+        }
+
+        private void pictureBox8_Click(object sender, EventArgs e)
+        {
+            TelaInscricao telaInscricao = new TelaInscricao();
+            this.Hide();
+            telaInscricao.ShowDialog();
+        }
     }
 }

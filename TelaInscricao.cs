@@ -21,5 +21,10 @@ namespace Inscricao_e_Matricula
         {
 
         }
+
+        private void label19_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
