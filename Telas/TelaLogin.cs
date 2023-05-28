@@ -16,7 +16,7 @@ namespace Inscricao_e_Matricula
         public TelaLogin()
         {
             InitializeComponent();
-            
+
         }
 
 
@@ -25,7 +25,7 @@ namespace Inscricao_e_Matricula
             TelaPrincipal telaPrincipal = new TelaPrincipal();
             this.Hide();
             telaPrincipal.ShowDialog();
-          
+
         }
 
         private void TelaLogin_Load(object sender, EventArgs e)
@@ -42,6 +42,34 @@ namespace Inscricao_e_Matricula
         {
 
         }
+
+        private void btnentrar_Click(object sender, EventArgs e)
+        {
+
+        }
+
+
+        private void btnrestore_max_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            
+
+        }
+
+        private void btnclose_Click(object sender, EventArgs e)
+        {
+            System.Windows.Forms.Application.Exit();
+        }
+
+        private void btnmini_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Minimized;
+        }
+
         
     }
 }

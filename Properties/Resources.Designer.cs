@@ -163,6 +163,16 @@ namespace Inscricao_e_Matricula.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Ellipse_5 {
+            get {
+                object obj = ResourceManager.GetObject("Ellipse 5", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Folder {
             get {
                 object obj = ResourceManager.GetObject("Folder", resourceCulture);
@@ -206,6 +216,16 @@ namespace Inscricao_e_Matricula.Properties {
         internal static System.Drawing.Bitmap LOGO_IPIL_removebg_preview_2 {
             get {
                 object obj = ResourceManager.GetObject("LOGO_IPIL-removebg-preview 2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap LOGO_IPIL_removebg_preview_2__2_ {
+            get {
+                object obj = ResourceManager.GetObject("LOGO_IPIL-removebg-preview 2 (2)", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -286,6 +306,36 @@ namespace Inscricao_e_Matricula.Properties {
         internal static System.Drawing.Bitmap Users {
             get {
                 object obj = ResourceManager.GetObject("Users", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap window_close_icon_135015 {
+            get {
+                object obj = ResourceManager.GetObject("window_close_icon_135015", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap window_minimize_icon_138009 {
+            get {
+                object obj = ResourceManager.GetObject("window_minimize_icon_138009", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap window_restore_icon_137011 {
+            get {
+                object obj = ResourceManager.GetObject("window_restore_icon_137011", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

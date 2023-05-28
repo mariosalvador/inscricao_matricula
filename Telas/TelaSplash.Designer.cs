@@ -31,14 +31,18 @@ namespace Inscricao_e_Matricula
         {
             this.components = new System.ComponentModel.Container();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
-            this.gunaElipse1 = new Guna.UI.WinForms.GunaElipse(this.components);
+            this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.panel1 = new System.Windows.Forms.Panel();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.lbim = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.PROGRESSBAR = new Guna.UI2.WinForms.Guna2ProgressBar();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.PROGRESSBAR = new Guna.UI.WinForms.GunaProgressBar();
-            this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -48,27 +52,79 @@ namespace Inscricao_e_Matricula
             this.timer1.Interval = 30;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
-            // gunaElipse1
+            // guna2Elipse1
             // 
-            this.gunaElipse1.Radius = 35;
-            this.gunaElipse1.TargetControl = this;
+            this.guna2Elipse1.BorderRadius = 46;
+            this.guna2Elipse1.TargetControl = this;
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.Transparent;
             this.panel1.BackgroundImage = global::Inscricao_e_Matricula.Properties.Resources.Ellipse_21;
             this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.panel1.Controls.Add(this.pictureBox4);
+            this.panel1.Controls.Add(this.pictureBox3);
+            this.panel1.Controls.Add(this.lbim);
+            this.panel1.Controls.Add(this.PROGRESSBAR);
             this.panel1.Controls.Add(this.pictureBox2);
             this.panel1.Controls.Add(this.pictureBox1);
-            this.panel1.Controls.Add(this.PROGRESSBAR);
-            this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.label2);
+            this.panel1.Cursor = System.Windows.Forms.Cursors.WaitCursor;
             this.panel1.Location = new System.Drawing.Point(0, -1);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(789, 442);
             this.panel1.TabIndex = 6;
             this.panel1.UseWaitCursor = true;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
+            // 
+            // pictureBox4
+            // 
+            this.pictureBox4.BackgroundImage = global::Inscricao_e_Matricula.Properties.Resources.LOGO_IPIL_removebg_preview_2__2_;
+            this.pictureBox4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.pictureBox4.Location = new System.Drawing.Point(723, 10);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(60, 50);
+            this.pictureBox4.TabIndex = 14;
+            this.pictureBox4.TabStop = false;
+            this.pictureBox4.UseWaitCursor = true;
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.BackgroundImage = global::Inscricao_e_Matricula.Properties.Resources.Ellipse_5;
+            this.pictureBox3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pictureBox3.Location = new System.Drawing.Point(391, 159);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(18, 23);
+            this.pictureBox3.TabIndex = 13;
+            this.pictureBox3.TabStop = false;
+            this.pictureBox3.UseWaitCursor = true;
+            // 
+            // lbim
+            // 
+            this.lbim.BackColor = System.Drawing.Color.Transparent;
+            this.lbim.Font = new System.Drawing.Font("Humnst777 Blk BT", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbim.ForeColor = System.Drawing.Color.DarkOrange;
+            this.lbim.Location = new System.Drawing.Point(390, 234);
+            this.lbim.Name = "lbim";
+            this.lbim.Size = new System.Drawing.Size(348, 35);
+            this.lbim.TabIndex = 12;
+            this.lbim.Text = "INSCRIÇÃO & MATRÍCULA";
+            this.lbim.UseWaitCursor = true;
+            // 
+            // PROGRESSBAR
+            // 
+            this.PROGRESSBAR.AutoRoundedCorners = true;
+            this.PROGRESSBAR.BorderRadius = 4;
+            this.PROGRESSBAR.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.Horizontal;
+            this.PROGRESSBAR.Location = new System.Drawing.Point(393, 270);
+            this.PROGRESSBAR.Name = "PROGRESSBAR";
+            this.PROGRESSBAR.ProgressColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.PROGRESSBAR.ProgressColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.PROGRESSBAR.ShadowDecoration.Parent = this.PROGRESSBAR;
+            this.PROGRESSBAR.Size = new System.Drawing.Size(347, 10);
+            this.PROGRESSBAR.TabIndex = 11;
+            this.PROGRESSBAR.TextRenderingHint = System.Drawing.Text.TextRenderingHint.SystemDefault;
+            this.PROGRESSBAR.UseWaitCursor = true;
             // 
             // pictureBox2
             // 
@@ -88,38 +144,10 @@ namespace Inscricao_e_Matricula
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.pictureBox1.Location = new System.Drawing.Point(91, 0);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(126, 442);
+            this.pictureBox1.Size = new System.Drawing.Size(143, 442);
             this.pictureBox1.TabIndex = 8;
             this.pictureBox1.TabStop = false;
             this.pictureBox1.UseWaitCursor = true;
-            // 
-            // PROGRESSBAR
-            // 
-            this.PROGRESSBAR.BackColor = System.Drawing.Color.Transparent;
-            this.PROGRESSBAR.BorderColor = System.Drawing.Color.Black;
-            this.PROGRESSBAR.ColorStyle = Guna.UI.WinForms.ColorStyle.Transition;
-            this.PROGRESSBAR.IdleColor = System.Drawing.Color.WhiteSmoke;
-            this.PROGRESSBAR.Location = new System.Drawing.Point(390, 280);
-            this.PROGRESSBAR.Name = "PROGRESSBAR";
-            this.PROGRESSBAR.ProgressMaxColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.PROGRESSBAR.ProgressMinColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.PROGRESSBAR.Radius = 4;
-            this.PROGRESSBAR.Size = new System.Drawing.Size(319, 11);
-            this.PROGRESSBAR.TabIndex = 7;
-            this.PROGRESSBAR.UseWaitCursor = true;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Humnst777 Blk BT", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.DarkOrange;
-            this.label1.Location = new System.Drawing.Point(385, 242);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(331, 33);
-            this.label1.TabIndex = 6;
-            this.label1.Text = "INSCRIÇÃO/MATRÍCULA";
-            this.label1.UseWaitCursor = true;
             // 
             // label2
             // 
@@ -152,6 +180,8 @@ namespace Inscricao_e_Matricula
             this.Load += new System.EventHandler(this.TelaSplash_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
@@ -163,11 +193,13 @@ namespace Inscricao_e_Matricula
         private System.Windows.Forms.Timer timer1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Label label1;
-        private Guna.UI.WinForms.GunaProgressBar PROGRESSBAR;
-        private Guna.UI.WinForms.GunaElipse gunaElipse1;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private Guna.UI2.WinForms.Guna2ProgressBar PROGRESSBAR;
+        private Guna.UI2.WinForms.Guna2Elipse guna2Elipse1;
+        private System.Windows.Forms.PictureBox pictureBox3;
+        private Guna.UI2.WinForms.Guna2HtmlLabel lbim;
+        private System.Windows.Forms.PictureBox pictureBox4;
 
     }
 }

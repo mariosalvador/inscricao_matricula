@@ -49,11 +49,7 @@ namespace Inscricao_e_Matricula
             this.label12 = new System.Windows.Forms.Label();
             this.panel6 = new System.Windows.Forms.Panel();
             this.label6 = new System.Windows.Forms.Label();
-            this.gunaElipse1 = new Guna.UI.WinForms.GunaElipse(this.components);
-            this.gunaElipse2 = new Guna.UI.WinForms.GunaElipse(this.components);
-            this.gunaElipse3 = new Guna.UI.WinForms.GunaElipse(this.components);
-            this.gunaElipse4 = new Guna.UI.WinForms.GunaElipse(this.components);
-            this.gunaElipse5 = new Guna.UI.WinForms.GunaElipse(this.components);
+            this.gunaPictureBox1 = new Guna.UI.WinForms.GunaPictureBox();
             this.panel7 = new System.Windows.Forms.Panel();
             this.label14 = new System.Windows.Forms.Label();
             this.pictureBox10 = new System.Windows.Forms.PictureBox();
@@ -68,13 +64,18 @@ namespace Inscricao_e_Matricula
             this.pic_Info = new System.Windows.Forms.PictureBox();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.pic_Folder = new System.Windows.Forms.PictureBox();
-            this.gunaPictureBox1 = new Guna.UI.WinForms.GunaPictureBox();
+            this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
+            this.guna2Elipse2 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
+            this.guna2Elipse3 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
+            this.guna2Elipse4 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
+            this.guna2Elipse5 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.panel1.SuspendLayout();
             this.pnmat.SuspendLayout();
             this.panel3.SuspendLayout();
             this.pnreje.SuspendLayout();
             this.pnins.SuspendLayout();
             this.panel6.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.gunaPictureBox1)).BeginInit();
             this.panel7.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).BeginInit();
@@ -87,7 +88,6 @@ namespace Inscricao_e_Matricula
             ((System.ComponentModel.ISupportInitialize)(this.pic_Info)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pic_Folder)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gunaPictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -328,30 +328,14 @@ namespace Inscricao_e_Matricula
             this.label6.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.label6.Click += new System.EventHandler(this.label2_Click);
             // 
-            // gunaElipse1
+            // gunaPictureBox1
             // 
-            this.gunaElipse1.Radius = 13;
-            this.gunaElipse1.TargetControl = this.pnins;
-            // 
-            // gunaElipse2
-            // 
-            this.gunaElipse2.Radius = 13;
-            this.gunaElipse2.TargetControl = this.pnreje;
-            // 
-            // gunaElipse3
-            // 
-            this.gunaElipse3.Radius = 13;
-            this.gunaElipse3.TargetControl = this.pnmat;
-            // 
-            // gunaElipse4
-            // 
-            this.gunaElipse4.Radius = 13;
-            this.gunaElipse4.TargetControl = this.panel3;
-            // 
-            // gunaElipse5
-            // 
-            this.gunaElipse5.Radius = 13;
-            this.gunaElipse5.TargetControl = this.panel6;
+            this.gunaPictureBox1.BaseColor = System.Drawing.Color.White;
+            this.gunaPictureBox1.Location = new System.Drawing.Point(405, 697);
+            this.gunaPictureBox1.Name = "gunaPictureBox1";
+            this.gunaPictureBox1.Size = new System.Drawing.Size(120, 120);
+            this.gunaPictureBox1.TabIndex = 9;
+            this.gunaPictureBox1.TabStop = false;
             // 
             // panel7
             // 
@@ -497,14 +481,30 @@ namespace Inscricao_e_Matricula
             this.pic_Folder.TabIndex = 6;
             this.pic_Folder.TabStop = false;
             // 
-            // gunaPictureBox1
+            // guna2Elipse1
             // 
-            this.gunaPictureBox1.BaseColor = System.Drawing.Color.White;
-            this.gunaPictureBox1.Location = new System.Drawing.Point(405, 697);
-            this.gunaPictureBox1.Name = "gunaPictureBox1";
-            this.gunaPictureBox1.Size = new System.Drawing.Size(120, 120);
-            this.gunaPictureBox1.TabIndex = 9;
-            this.gunaPictureBox1.TabStop = false;
+            this.guna2Elipse1.BorderRadius = 35;
+            this.guna2Elipse1.TargetControl = this.pnins;
+            // 
+            // guna2Elipse2
+            // 
+            this.guna2Elipse2.BorderRadius = 35;
+            this.guna2Elipse2.TargetControl = this.pnmat;
+            // 
+            // guna2Elipse3
+            // 
+            this.guna2Elipse3.BorderRadius = 35;
+            this.guna2Elipse3.TargetControl = this.pnreje;
+            // 
+            // guna2Elipse4
+            // 
+            this.guna2Elipse4.BorderRadius = 35;
+            this.guna2Elipse4.TargetControl = this.panel3;
+            // 
+            // guna2Elipse5
+            // 
+            this.guna2Elipse5.BorderRadius = 35;
+            this.guna2Elipse5.TargetControl = this.panel6;
             // 
             // TelaPrincipal
             // 
@@ -534,6 +534,7 @@ namespace Inscricao_e_Matricula
             this.pnreje.ResumeLayout(false);
             this.pnins.ResumeLayout(false);
             this.panel6.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.gunaPictureBox1)).EndInit();
             this.panel7.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).EndInit();
@@ -546,7 +547,6 @@ namespace Inscricao_e_Matricula
             ((System.ComponentModel.ISupportInitialize)(this.pic_Info)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pic_Folder)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gunaPictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -587,11 +587,11 @@ namespace Inscricao_e_Matricula
         private System.Windows.Forms.Panel panel7;
         private System.Windows.Forms.PictureBox pic_Add;
         private System.Windows.Forms.Panel panel8;
-        private Guna.UI.WinForms.GunaElipse gunaElipse1;
-        private Guna.UI.WinForms.GunaElipse gunaElipse2;
-        private Guna.UI.WinForms.GunaElipse gunaElipse3;
-        private Guna.UI.WinForms.GunaElipse gunaElipse4;
-        private Guna.UI.WinForms.GunaElipse gunaElipse5;
         private Guna.UI.WinForms.GunaPictureBox gunaPictureBox1;
+        private Guna.UI2.WinForms.Guna2Elipse guna2Elipse1;
+        private Guna.UI2.WinForms.Guna2Elipse guna2Elipse2;
+        private Guna.UI2.WinForms.Guna2Elipse guna2Elipse3;
+        private Guna.UI2.WinForms.Guna2Elipse guna2Elipse4;
+        private Guna.UI2.WinForms.Guna2Elipse guna2Elipse5;
     }
 }

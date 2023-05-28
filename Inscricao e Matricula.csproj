@@ -34,11 +34,11 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Bunifu_UI_v1.52">
-      <HintPath>D:\Bunifu_UI_v1.52.dll</HintPath>
-    </Reference>
     <Reference Include="Guna.UI">
       <HintPath>D:\Guna.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="Guna.UI2">
+      <HintPath>D:\[FTUApps.com] - Guna UI Framework Ultimate v2.0.0.1 + Keygen\Guna.UI-Framework-Lib-master\Guna.UI2 WinForms\.net 4.0\Guna.UI2.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.VisualBasic" />
     <Reference Include="System" />
@@ -178,6 +178,21 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\user 1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ellipse 5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LOGO_IPIL-removebg-preview 2 %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\window_close_icon_135015.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\window_restore_icon_137011.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\window_minimize_icon_138009.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
