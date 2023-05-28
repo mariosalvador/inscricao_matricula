@@ -55,10 +55,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="TelaOperacao.cs">
+    <Compile Include="TelaInscricao.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="TelaOperacao.Designer.cs">
+    <Compile Include="TelaInscricao.Designer.cs">
+      <DependentUpon>TelaInscricao.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Telas\TelaOperacao.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Telas\TelaOperacao.Designer.cs">
       <DependentUpon>TelaOperacao.cs</DependentUpon>
     </Compile>
     <Compile Include="Telas\TelaPrincipal.cs">
@@ -81,7 +87,10 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="TelaOperacao.resx">
+    <EmbeddedResource Include="TelaInscricao.resx">
+      <DependentUpon>TelaInscricao.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Telas\TelaOperacao.resx">
       <DependentUpon>TelaOperacao.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Telas\TelaPrincipal.resx">

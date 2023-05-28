@@ -42,6 +42,12 @@ namespace Inscricao_e_Matricula
 
         }
 
-        
+        private void pic_Add_Click(object sender, EventArgs e)
+        {
+            TelaOperacao telaOperacao = new TelaOperacao();
+            this.Hide();
+            telaOperacao.ShowDialog();
+
+        }
     }
 }

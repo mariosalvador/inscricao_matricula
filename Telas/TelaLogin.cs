@@ -13,6 +13,8 @@ namespace Inscricao_e_Matricula
 {
     public partial class TelaLogin : Form
     {
+        public string nome = "Admin_Master";
+        public string senha = "master";
         public TelaLogin()
         {
             InitializeComponent();
@@ -45,6 +47,12 @@ namespace Inscricao_e_Matricula
 
         private void btnentrar_Click(object sender, EventArgs e)
         {
+            TelaPrincipal telaPrincipal = new TelaPrincipal();
+            if (txtnome.Text==nome && txtsenha.Text==senha)
+            {
+                this.Hide();
+                telaPrincipal.ShowDialog();
+            }
 
         }
 
