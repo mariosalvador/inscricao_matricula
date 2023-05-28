@@ -81,7 +81,6 @@ namespace Inscricao_e_Matricula
             this.label11 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.guna2TextBox9 = new Guna.UI2.WinForms.Guna2TextBox();
@@ -92,14 +91,14 @@ namespace Inscricao_e_Matricula
             this.guna2TextBox6 = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2TextBox5 = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2TextBox4 = new Guna.UI2.WinForms.Guna2TextBox();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.guna2TextBox3 = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2TextBox2 = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2TextBox1 = new Guna.UI2.WinForms.Guna2TextBox();
             this.txtnome = new Guna.UI2.WinForms.Guna2TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.guna2TextBox3 = new Guna.UI2.WinForms.Guna2TextBox();
+            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel2.SuspendLayout();
@@ -134,13 +133,14 @@ namespace Inscricao_e_Matricula
             // 
             // panel1
             // 
-            this.panel1.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
             this.panel1.BackColor = System.Drawing.Color.White;
             this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Location = new System.Drawing.Point(0, -1);
             this.panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(424, 886);
+            this.panel1.Size = new System.Drawing.Size(424, 856);
             this.panel1.TabIndex = 19;
             // 
             // pictureBox1
@@ -158,9 +158,7 @@ namespace Inscricao_e_Matricula
             // 
             // panel2
             // 
-            this.panel2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.panel2.Controls.Add(this.panel3);
             this.panel2.Controls.Add(this.label7);
             this.panel2.Controls.Add(this.guna2TextBox9);
@@ -179,9 +177,9 @@ namespace Inscricao_e_Matricula
             this.panel2.Controls.Add(this.label4);
             this.panel2.Controls.Add(this.label3);
             this.panel2.Controls.Add(this.label1);
-            this.panel2.Location = new System.Drawing.Point(424, -1);
+            this.panel2.Location = new System.Drawing.Point(428, -1);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(625, 782);
+            this.panel2.Size = new System.Drawing.Size(621, 752);
             this.panel2.TabIndex = 56;
             // 
             // panel3
@@ -234,10 +232,9 @@ namespace Inscricao_e_Matricula
             this.panel3.Controls.Add(this.label11);
             this.panel3.Controls.Add(this.label10);
             this.panel3.Controls.Add(this.label9);
-            this.panel3.Controls.Add(this.label8);
             this.panel3.Controls.Add(this.label12);
             this.panel3.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.panel3.Location = new System.Drawing.Point(17, 437);
+            this.panel3.Location = new System.Drawing.Point(13, 407);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(586, 352);
             this.panel3.TabIndex = 50;
@@ -690,19 +687,6 @@ namespace Inscricao_e_Matricula
             this.label9.TabIndex = 11;
             this.label9.Text = "7 Classe";
             // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.8F);
-            this.label8.ForeColor = System.Drawing.SystemColors.ControlLight;
-            this.label8.Location = new System.Drawing.Point(-1, 29);
-            this.label8.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(686, 15);
-            this.label8.TabIndex = 10;
-            this.label8.Text = "_________________________________________________________________________________" +
-    "________________";
-            // 
             // label12
             // 
             this.label12.Font = new System.Drawing.Font("Consolas", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -720,7 +704,7 @@ namespace Inscricao_e_Matricula
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Segoe UI", 10.75F, System.Drawing.FontStyle.Bold);
             this.label7.ForeColor = System.Drawing.Color.White;
-            this.label7.Location = new System.Drawing.Point(13, 348);
+            this.label7.Location = new System.Drawing.Point(9, 333);
             this.label7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(49, 20);
@@ -745,7 +729,7 @@ namespace Inscricao_e_Matricula
             this.guna2TextBox9.HoverState.Parent = this.guna2TextBox9;
             this.guna2TextBox9.IconLeft = global::Inscricao_e_Matricula.Properties.Resources.user_1;
             this.guna2TextBox9.IconLeftOffset = new System.Drawing.Point(5, 0);
-            this.guna2TextBox9.Location = new System.Drawing.Point(303, 374);
+            this.guna2TextBox9.Location = new System.Drawing.Point(299, 359);
             this.guna2TextBox9.Margin = new System.Windows.Forms.Padding(6);
             this.guna2TextBox9.Name = "guna2TextBox9";
             this.guna2TextBox9.PasswordChar = '\0';
@@ -763,7 +747,7 @@ namespace Inscricao_e_Matricula
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Segoe UI", 10.75F, System.Drawing.FontStyle.Bold);
             this.label6.ForeColor = System.Drawing.Color.White;
-            this.label6.Location = new System.Drawing.Point(13, 280);
+            this.label6.Location = new System.Drawing.Point(9, 265);
             this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(122, 20);
@@ -776,7 +760,7 @@ namespace Inscricao_e_Matricula
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Segoe UI", 10.75F, System.Drawing.FontStyle.Bold);
             this.label5.ForeColor = System.Drawing.Color.White;
-            this.label5.Location = new System.Drawing.Point(13, 207);
+            this.label5.Location = new System.Drawing.Point(9, 192);
             this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(60, 20);
@@ -801,7 +785,7 @@ namespace Inscricao_e_Matricula
             this.guna2TextBox8.HoverState.Parent = this.guna2TextBox8;
             this.guna2TextBox8.IconLeft = global::Inscricao_e_Matricula.Properties.Resources.user_1;
             this.guna2TextBox8.IconLeftOffset = new System.Drawing.Point(5, 0);
-            this.guna2TextBox8.Location = new System.Drawing.Point(399, 230);
+            this.guna2TextBox8.Location = new System.Drawing.Point(395, 215);
             this.guna2TextBox8.Margin = new System.Windows.Forms.Padding(6);
             this.guna2TextBox8.Name = "guna2TextBox8";
             this.guna2TextBox8.PasswordChar = '\0';
@@ -831,7 +815,7 @@ namespace Inscricao_e_Matricula
             this.guna2TextBox7.HoverState.Parent = this.guna2TextBox7;
             this.guna2TextBox7.IconLeft = global::Inscricao_e_Matricula.Properties.Resources.user_1;
             this.guna2TextBox7.IconLeftOffset = new System.Drawing.Point(5, 0);
-            this.guna2TextBox7.Location = new System.Drawing.Point(17, 374);
+            this.guna2TextBox7.Location = new System.Drawing.Point(13, 359);
             this.guna2TextBox7.Margin = new System.Windows.Forms.Padding(6);
             this.guna2TextBox7.Name = "guna2TextBox7";
             this.guna2TextBox7.PasswordChar = '\0';
@@ -861,7 +845,7 @@ namespace Inscricao_e_Matricula
             this.guna2TextBox6.HoverState.Parent = this.guna2TextBox6;
             this.guna2TextBox6.IconLeft = global::Inscricao_e_Matricula.Properties.Resources.user_1;
             this.guna2TextBox6.IconLeftOffset = new System.Drawing.Point(5, 0);
-            this.guna2TextBox6.Location = new System.Drawing.Point(17, 306);
+            this.guna2TextBox6.Location = new System.Drawing.Point(13, 291);
             this.guna2TextBox6.Margin = new System.Windows.Forms.Padding(6);
             this.guna2TextBox6.Name = "guna2TextBox6";
             this.guna2TextBox6.PasswordChar = '\0';
@@ -891,7 +875,7 @@ namespace Inscricao_e_Matricula
             this.guna2TextBox5.HoverState.Parent = this.guna2TextBox5;
             this.guna2TextBox5.IconLeft = global::Inscricao_e_Matricula.Properties.Resources.user_1;
             this.guna2TextBox5.IconLeftOffset = new System.Drawing.Point(5, 0);
-            this.guna2TextBox5.Location = new System.Drawing.Point(183, 230);
+            this.guna2TextBox5.Location = new System.Drawing.Point(179, 215);
             this.guna2TextBox5.Margin = new System.Windows.Forms.Padding(6);
             this.guna2TextBox5.Name = "guna2TextBox5";
             this.guna2TextBox5.PasswordChar = '\0';
@@ -921,7 +905,7 @@ namespace Inscricao_e_Matricula
             this.guna2TextBox4.HoverState.Parent = this.guna2TextBox4;
             this.guna2TextBox4.IconLeft = global::Inscricao_e_Matricula.Properties.Resources.user_1;
             this.guna2TextBox4.IconLeftOffset = new System.Drawing.Point(5, 0);
-            this.guna2TextBox4.Location = new System.Drawing.Point(399, 168);
+            this.guna2TextBox4.Location = new System.Drawing.Point(395, 153);
             this.guna2TextBox4.Margin = new System.Windows.Forms.Padding(6);
             this.guna2TextBox4.Name = "guna2TextBox4";
             this.guna2TextBox4.PasswordChar = '\0';
@@ -932,48 +916,6 @@ namespace Inscricao_e_Matricula
             this.guna2TextBox4.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material;
             this.guna2TextBox4.TabIndex = 41;
             this.guna2TextBox4.TextOffset = new System.Drawing.Point(10, 0);
-            // 
-            // dateTimePicker1
-            // 
-            this.dateTimePicker1.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.dateTimePicker1.Location = new System.Drawing.Point(435, 114);
-            this.dateTimePicker1.Margin = new System.Windows.Forms.Padding(2);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.ShowCheckBox = true;
-            this.dateTimePicker1.Size = new System.Drawing.Size(164, 20);
-            this.dateTimePicker1.TabIndex = 33;
-            this.dateTimePicker1.Value = new System.DateTime(2023, 5, 28, 0, 0, 0, 0);
-            // 
-            // guna2TextBox3
-            // 
-            this.guna2TextBox3.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.guna2TextBox3.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.guna2TextBox3.DefaultText = "";
-            this.guna2TextBox3.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.guna2TextBox3.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.guna2TextBox3.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox3.DisabledState.Parent = this.guna2TextBox3;
-            this.guna2TextBox3.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox3.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox3.FocusedState.Parent = this.guna2TextBox3;
-            this.guna2TextBox3.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2TextBox3.ForeColor = System.Drawing.Color.Black;
-            this.guna2TextBox3.HoverState.BorderColor = System.Drawing.Color.Silver;
-            this.guna2TextBox3.HoverState.Parent = this.guna2TextBox3;
-            this.guna2TextBox3.IconLeft = global::Inscricao_e_Matricula.Properties.Resources.user_1;
-            this.guna2TextBox3.IconLeftOffset = new System.Drawing.Point(5, 0);
-            this.guna2TextBox3.Location = new System.Drawing.Point(399, 104);
-            this.guna2TextBox3.Margin = new System.Windows.Forms.Padding(6);
-            this.guna2TextBox3.Name = "guna2TextBox3";
-            this.guna2TextBox3.PasswordChar = '\0';
-            this.guna2TextBox3.PlaceholderText = "Data de nascimento";
-            this.guna2TextBox3.ReadOnly = true;
-            this.guna2TextBox3.SelectedText = "";
-            this.guna2TextBox3.ShadowDecoration.Parent = this.guna2TextBox3;
-            this.guna2TextBox3.Size = new System.Drawing.Size(202, 37);
-            this.guna2TextBox3.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material;
-            this.guna2TextBox3.TabIndex = 40;
-            this.guna2TextBox3.TextOffset = new System.Drawing.Point(10, 0);
             // 
             // guna2TextBox2
             // 
@@ -993,7 +935,7 @@ namespace Inscricao_e_Matricula
             this.guna2TextBox2.HoverState.Parent = this.guna2TextBox2;
             this.guna2TextBox2.IconLeft = global::Inscricao_e_Matricula.Properties.Resources.user_1;
             this.guna2TextBox2.IconLeftOffset = new System.Drawing.Point(5, 0);
-            this.guna2TextBox2.Location = new System.Drawing.Point(17, 230);
+            this.guna2TextBox2.Location = new System.Drawing.Point(13, 215);
             this.guna2TextBox2.Margin = new System.Windows.Forms.Padding(6);
             this.guna2TextBox2.Name = "guna2TextBox2";
             this.guna2TextBox2.PasswordChar = '\0';
@@ -1023,7 +965,7 @@ namespace Inscricao_e_Matricula
             this.guna2TextBox1.HoverState.Parent = this.guna2TextBox1;
             this.guna2TextBox1.IconLeft = global::Inscricao_e_Matricula.Properties.Resources.user_1;
             this.guna2TextBox1.IconLeftOffset = new System.Drawing.Point(5, 0);
-            this.guna2TextBox1.Location = new System.Drawing.Point(17, 168);
+            this.guna2TextBox1.Location = new System.Drawing.Point(13, 153);
             this.guna2TextBox1.Margin = new System.Windows.Forms.Padding(6);
             this.guna2TextBox1.Name = "guna2TextBox1";
             this.guna2TextBox1.PasswordChar = '\0';
@@ -1053,7 +995,7 @@ namespace Inscricao_e_Matricula
             this.txtnome.HoverState.Parent = this.txtnome;
             this.txtnome.IconLeft = global::Inscricao_e_Matricula.Properties.Resources.user_1;
             this.txtnome.IconLeftOffset = new System.Drawing.Point(5, 0);
-            this.txtnome.Location = new System.Drawing.Point(17, 104);
+            this.txtnome.Location = new System.Drawing.Point(13, 89);
             this.txtnome.Margin = new System.Windows.Forms.Padding(6);
             this.txtnome.Name = "txtnome";
             this.txtnome.PasswordChar = '\0';
@@ -1071,7 +1013,7 @@ namespace Inscricao_e_Matricula
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Segoe UI", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(11, 83);
+            this.label4.Location = new System.Drawing.Point(7, 68);
             this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(58, 23);
@@ -1084,7 +1026,7 @@ namespace Inscricao_e_Matricula
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Segoe UI", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(13, 146);
+            this.label3.Location = new System.Drawing.Point(9, 131);
             this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(69, 23);
@@ -1097,7 +1039,7 @@ namespace Inscricao_e_Matricula
             this.label1.BackColor = System.Drawing.Color.DarkOrange;
             this.label1.Font = new System.Drawing.Font("Segoe UI", 23.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(0, 25);
+            this.label1.Location = new System.Drawing.Point(-4, 10);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(625, 42);
@@ -1105,17 +1047,58 @@ namespace Inscricao_e_Matricula
             this.label1.Text = "INSCRICÃO";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // guna2TextBox3
+            // 
+            this.guna2TextBox3.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.guna2TextBox3.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.guna2TextBox3.DefaultText = "";
+            this.guna2TextBox3.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.guna2TextBox3.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.guna2TextBox3.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.guna2TextBox3.DisabledState.Parent = this.guna2TextBox3;
+            this.guna2TextBox3.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.guna2TextBox3.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.guna2TextBox3.FocusedState.Parent = this.guna2TextBox3;
+            this.guna2TextBox3.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2TextBox3.ForeColor = System.Drawing.Color.Black;
+            this.guna2TextBox3.HoverState.BorderColor = System.Drawing.Color.Silver;
+            this.guna2TextBox3.HoverState.Parent = this.guna2TextBox3;
+            this.guna2TextBox3.IconLeft = global::Inscricao_e_Matricula.Properties.Resources.user_1;
+            this.guna2TextBox3.IconLeftOffset = new System.Drawing.Point(5, 0);
+            this.guna2TextBox3.Location = new System.Drawing.Point(395, 89);
+            this.guna2TextBox3.Margin = new System.Windows.Forms.Padding(6);
+            this.guna2TextBox3.Name = "guna2TextBox3";
+            this.guna2TextBox3.PasswordChar = '\0';
+            this.guna2TextBox3.PlaceholderText = "Data de nascimento";
+            this.guna2TextBox3.ReadOnly = true;
+            this.guna2TextBox3.SelectedText = "";
+            this.guna2TextBox3.ShadowDecoration.Parent = this.guna2TextBox3;
+            this.guna2TextBox3.Size = new System.Drawing.Size(202, 37);
+            this.guna2TextBox3.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material;
+            this.guna2TextBox3.TabIndex = 40;
+            this.guna2TextBox3.TextOffset = new System.Drawing.Point(10, 0);
+            // 
+            // dateTimePicker1
+            // 
+            this.dateTimePicker1.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.dateTimePicker1.Location = new System.Drawing.Point(431, 99);
+            this.dateTimePicker1.Margin = new System.Windows.Forms.Padding(2);
+            this.dateTimePicker1.Name = "dateTimePicker1";
+            this.dateTimePicker1.ShowCheckBox = true;
+            this.dateTimePicker1.Size = new System.Drawing.Size(164, 20);
+            this.dateTimePicker1.TabIndex = 33;
+            this.dateTimePicker1.Value = new System.DateTime(2023, 5, 28, 0, 0, 0, 0);
+            // 
             // TelaInscricao
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DarkOrange;
-            this.ClientSize = new System.Drawing.Size(1048, 780);
+            this.ClientSize = new System.Drawing.Size(1048, 750);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.btnentrar);
             this.Controls.Add(this.label2);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "TelaInscricao";
             this.Text = "TelaInscricao";
@@ -1185,7 +1168,6 @@ namespace Inscricao_e_Matricula
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label7;
         private Guna.UI2.WinForms.Guna2TextBox guna2TextBox9;
@@ -1196,13 +1178,13 @@ namespace Inscricao_e_Matricula
         private Guna.UI2.WinForms.Guna2TextBox guna2TextBox6;
         private Guna.UI2.WinForms.Guna2TextBox guna2TextBox5;
         private Guna.UI2.WinForms.Guna2TextBox guna2TextBox4;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
-        private Guna.UI2.WinForms.Guna2TextBox guna2TextBox3;
         private Guna.UI2.WinForms.Guna2TextBox guna2TextBox2;
         private Guna.UI2.WinForms.Guna2TextBox guna2TextBox1;
         private Guna.UI2.WinForms.Guna2TextBox txtnome;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label1;
+        private Guna.UI2.WinForms.Guna2TextBox guna2TextBox3;
+        private System.Windows.Forms.DateTimePicker dateTimePicker1;
     }
 }

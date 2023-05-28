@@ -49,5 +49,16 @@ namespace Inscricao_e_Matricula
             telaOperacao.ShowDialog();
 
         }
+
+        private void label23_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void guna2ProgressBar1_ValueChanged(object sender, EventArgs e)
+        {
+
+        }
+        
     }
 }

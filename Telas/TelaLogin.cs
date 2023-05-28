@@ -53,6 +53,14 @@ namespace Inscricao_e_Matricula
                 this.Hide();
                 telaPrincipal.ShowDialog();
             }
+            else if( txtnome.Text !=nome)
+            {
+                MessageBox.Show("O nome de usuário está icorreto", "Aviso");
+            }
+            else if (txtsenha.Text != senha)
+            {
+                MessageBox.Show("A senha inserida está incorreta", "Aviso");
+            }
 
         }
 
