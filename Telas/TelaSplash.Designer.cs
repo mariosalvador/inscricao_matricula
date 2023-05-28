@@ -104,7 +104,7 @@ namespace Inscricao_e_Matricula
             this.lbim.BackColor = System.Drawing.Color.Transparent;
             this.lbim.Font = new System.Drawing.Font("Humnst777 Blk BT", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbim.ForeColor = System.Drawing.Color.DarkOrange;
-            this.lbim.Location = new System.Drawing.Point(390, 234);
+            this.lbim.Location = new System.Drawing.Point(390, 238);
             this.lbim.Name = "lbim";
             this.lbim.Size = new System.Drawing.Size(348, 35);
             this.lbim.TabIndex = 12;
@@ -116,7 +116,7 @@ namespace Inscricao_e_Matricula
             this.PROGRESSBAR.AutoRoundedCorners = true;
             this.PROGRESSBAR.BorderRadius = 4;
             this.PROGRESSBAR.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.Horizontal;
-            this.PROGRESSBAR.Location = new System.Drawing.Point(393, 270);
+            this.PROGRESSBAR.Location = new System.Drawing.Point(392, 275);
             this.PROGRESSBAR.Name = "PROGRESSBAR";
             this.PROGRESSBAR.ProgressColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.PROGRESSBAR.ProgressColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));

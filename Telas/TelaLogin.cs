@@ -59,7 +59,14 @@ namespace Inscricao_e_Matricula
 
         private void btnrestore_max_Click(object sender, EventArgs e)
         {
-
+            if (this.WindowState == FormWindowState.Normal)
+            {
+                this.WindowState = FormWindowState.Maximized;
+            }
+            else
+            {
+                this.WindowState = FormWindowState.Normal;
+            }
         }
 
         private void timer1_Tick(object sender, EventArgs e)

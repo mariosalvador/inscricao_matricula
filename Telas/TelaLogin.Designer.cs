@@ -31,6 +31,7 @@ namespace Inscricao_e_Matricula
         {
             this.components = new System.ComponentModel.Container();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -38,36 +39,49 @@ namespace Inscricao_e_Matricula
             this.label5 = new System.Windows.Forms.Label();
             this.btnentrar = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.btnmini = new Guna.UI2.WinForms.Guna2Button();
             this.btnrestore_max = new Guna.UI2.WinForms.Guna2Button();
             this.btnclose = new Guna.UI2.WinForms.Guna2Button();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.txtsenha = new Guna.UI2.WinForms.Guna2TextBox();
             this.txtnome = new Guna.UI2.WinForms.Guna2TextBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
-            this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.White;
             this.panel1.Controls.Add(this.pictureBox1);
-            this.panel1.Location = new System.Drawing.Point(-1, 37);
-            this.panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.panel1.Location = new System.Drawing.Point(-1, 30);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(564, 662);
+            this.panel1.Size = new System.Drawing.Size(423, 538);
             this.panel1.TabIndex = 0;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackColor = System.Drawing.Color.White;
+            this.pictureBox1.BackgroundImage = global::Inscricao_e_Matricula.Properties.Resources._1684060439009;
+            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pictureBox1.Location = new System.Drawing.Point(2, 166);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(425, 162);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
             // 
             // label1
             // 
             this.label1.BackColor = System.Drawing.Color.DarkOrange;
             this.label1.Font = new System.Drawing.Font("Segoe UI", 23.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(564, 76);
+            this.label1.Location = new System.Drawing.Point(423, 62);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(552, 52);
+            this.label1.Size = new System.Drawing.Size(414, 42);
             this.label1.TabIndex = 1;
             this.label1.Text = "LOGIN";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -78,9 +92,10 @@ namespace Inscricao_e_Matricula
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.label2.Location = new System.Drawing.Point(720, 602);
+            this.label2.Location = new System.Drawing.Point(540, 489);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(228, 19);
+            this.label2.Size = new System.Drawing.Size(189, 13);
             this.label2.TabIndex = 6;
             this.label2.Text = "Todos os direitos reservados ao IPIL";
             // 
@@ -89,9 +104,10 @@ namespace Inscricao_e_Matricula
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Segoe UI", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(627, 268);
+            this.label3.Location = new System.Drawing.Point(470, 218);
+            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(75, 30);
+            this.label3.Size = new System.Drawing.Size(58, 23);
             this.label3.TabIndex = 7;
             this.label3.Text = "Senha";
             // 
@@ -100,9 +116,10 @@ namespace Inscricao_e_Matricula
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Segoe UI", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(625, 155);
+            this.label4.Location = new System.Drawing.Point(469, 126);
+            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(75, 30);
+            this.label4.Size = new System.Drawing.Size(58, 23);
             this.label4.TabIndex = 8;
             this.label4.Text = "Nome";
             // 
@@ -111,10 +128,9 @@ namespace Inscricao_e_Matricula
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.White;
-            this.label5.Location = new System.Drawing.Point(909, 502);
-            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label5.Location = new System.Drawing.Point(682, 408);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(123, 19);
+            this.label5.Size = new System.Drawing.Size(104, 13);
             this.label5.TabIndex = 10;
             this.label5.Text = "Esqueceu a senha?";
             // 
@@ -125,10 +141,9 @@ namespace Inscricao_e_Matricula
             this.btnentrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnentrar.Font = new System.Drawing.Font("Segoe UI", 16F, System.Drawing.FontStyle.Bold);
             this.btnentrar.ForeColor = System.Drawing.Color.DarkOrange;
-            this.btnentrar.Location = new System.Drawing.Point(632, 436);
-            this.btnentrar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnentrar.Location = new System.Drawing.Point(474, 354);
             this.btnentrar.Name = "btnentrar";
-            this.btnentrar.Size = new System.Drawing.Size(409, 63);
+            this.btnentrar.Size = new System.Drawing.Size(307, 51);
             this.btnentrar.TabIndex = 3;
             this.btnentrar.Text = "Entrar";
             this.btnentrar.UseVisualStyleBackColor = false;
@@ -141,16 +156,9 @@ namespace Inscricao_e_Matricula
             this.panel2.Controls.Add(this.btnrestore_max);
             this.panel2.Controls.Add(this.btnclose);
             this.panel2.Location = new System.Drawing.Point(-1, 0);
-            this.panel2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1117, 38);
+            this.panel2.Size = new System.Drawing.Size(838, 31);
             this.panel2.TabIndex = 1;
-            // 
-            // timer1
-            // 
-            this.timer1.Enabled = true;
-            this.timer1.Interval = 1;
-            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
             // btnmini
             // 
@@ -162,12 +170,11 @@ namespace Inscricao_e_Matricula
             this.btnmini.HoverState.FillColor = System.Drawing.Color.Orange;
             this.btnmini.HoverState.Parent = this.btnmini;
             this.btnmini.Image = global::Inscricao_e_Matricula.Properties.Resources.window_minimize_icon_138009;
-            this.btnmini.Location = new System.Drawing.Point(979, 0);
-            this.btnmini.Margin = new System.Windows.Forms.Padding(4);
+            this.btnmini.Location = new System.Drawing.Point(734, 0);
             this.btnmini.Name = "btnmini";
             this.btnmini.PressedColor = System.Drawing.Color.WhiteSmoke;
             this.btnmini.ShadowDecoration.Parent = this.btnmini;
-            this.btnmini.Size = new System.Drawing.Size(47, 38);
+            this.btnmini.Size = new System.Drawing.Size(35, 31);
             this.btnmini.TabIndex = 11;
             this.btnmini.Click += new System.EventHandler(this.btnmini_Click);
             // 
@@ -181,12 +188,11 @@ namespace Inscricao_e_Matricula
             this.btnrestore_max.HoverState.FillColor = System.Drawing.Color.Orange;
             this.btnrestore_max.HoverState.Parent = this.btnrestore_max;
             this.btnrestore_max.Image = global::Inscricao_e_Matricula.Properties.Resources.window_restore_icon_137011;
-            this.btnrestore_max.Location = new System.Drawing.Point(1025, 0);
-            this.btnrestore_max.Margin = new System.Windows.Forms.Padding(4);
+            this.btnrestore_max.Location = new System.Drawing.Point(769, 0);
             this.btnrestore_max.Name = "btnrestore_max";
             this.btnrestore_max.PressedColor = System.Drawing.Color.WhiteSmoke;
             this.btnrestore_max.ShadowDecoration.Parent = this.btnrestore_max;
-            this.btnrestore_max.Size = new System.Drawing.Size(47, 38);
+            this.btnrestore_max.Size = new System.Drawing.Size(35, 31);
             this.btnrestore_max.TabIndex = 11;
             this.btnrestore_max.Click += new System.EventHandler(this.btnrestore_max_Click);
             // 
@@ -200,14 +206,19 @@ namespace Inscricao_e_Matricula
             this.btnclose.HoverState.FillColor = System.Drawing.Color.Orange;
             this.btnclose.HoverState.Parent = this.btnclose;
             this.btnclose.Image = global::Inscricao_e_Matricula.Properties.Resources.window_close_icon_135015;
-            this.btnclose.Location = new System.Drawing.Point(1072, 0);
-            this.btnclose.Margin = new System.Windows.Forms.Padding(4);
+            this.btnclose.Location = new System.Drawing.Point(804, 0);
             this.btnclose.Name = "btnclose";
             this.btnclose.PressedColor = System.Drawing.Color.WhiteSmoke;
             this.btnclose.ShadowDecoration.Parent = this.btnclose;
-            this.btnclose.Size = new System.Drawing.Size(47, 38);
+            this.btnclose.Size = new System.Drawing.Size(35, 31);
             this.btnclose.TabIndex = 11;
             this.btnclose.Click += new System.EventHandler(this.btnclose_Click);
+            // 
+            // timer1
+            // 
+            this.timer1.Enabled = true;
+            this.timer1.Interval = 1;
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
             // txtsenha
             // 
@@ -225,14 +236,14 @@ namespace Inscricao_e_Matricula
             this.txtsenha.HoverState.Parent = this.txtsenha;
             this.txtsenha.IconLeft = global::Inscricao_e_Matricula.Properties.Resources.padlock_1;
             this.txtsenha.IconLeftOffset = new System.Drawing.Point(5, 0);
-            this.txtsenha.Location = new System.Drawing.Point(632, 294);
-            this.txtsenha.Margin = new System.Windows.Forms.Padding(5);
+            this.txtsenha.Location = new System.Drawing.Point(474, 239);
+            this.txtsenha.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtsenha.Name = "txtsenha";
             this.txtsenha.PasswordChar = '*';
             this.txtsenha.PlaceholderText = "Informe a sua senha";
             this.txtsenha.SelectedText = "";
             this.txtsenha.ShadowDecoration.Parent = this.txtsenha;
-            this.txtsenha.Size = new System.Drawing.Size(409, 63);
+            this.txtsenha.Size = new System.Drawing.Size(307, 51);
             this.txtsenha.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material;
             this.txtsenha.TabIndex = 2;
             this.txtsenha.TextOffset = new System.Drawing.Point(10, 0);
@@ -254,37 +265,24 @@ namespace Inscricao_e_Matricula
             this.txtnome.HoverState.Parent = this.txtnome;
             this.txtnome.IconLeft = global::Inscricao_e_Matricula.Properties.Resources.user_1;
             this.txtnome.IconLeftOffset = new System.Drawing.Point(5, 0);
-            this.txtnome.Location = new System.Drawing.Point(632, 181);
-            this.txtnome.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
+            this.txtnome.Location = new System.Drawing.Point(474, 147);
+            this.txtnome.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.txtnome.Name = "txtnome";
             this.txtnome.PasswordChar = '\0';
             this.txtnome.PlaceholderText = "Informe o seu nome";
             this.txtnome.SelectedText = "";
             this.txtnome.ShadowDecoration.Parent = this.txtnome;
-            this.txtnome.Size = new System.Drawing.Size(409, 63);
+            this.txtnome.Size = new System.Drawing.Size(307, 51);
             this.txtnome.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material;
             this.txtnome.TabIndex = 1;
             this.txtnome.TextOffset = new System.Drawing.Point(10, 0);
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackColor = System.Drawing.Color.White;
-            this.pictureBox1.BackgroundImage = global::Inscricao_e_Matricula.Properties.Resources._1684060439009;
-            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox1.Location = new System.Drawing.Point(3, 204);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(567, 199);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
-            // 
             // TelaLogin
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DarkOrange;
-            this.ClientSize = new System.Drawing.Size(1117, 670);
+            this.ClientSize = new System.Drawing.Size(838, 544);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.txtsenha);
             this.Controls.Add(this.txtnome);
@@ -297,13 +295,13 @@ namespace Inscricao_e_Matricula
             this.Controls.Add(this.panel1);
             this.ForeColor = System.Drawing.Color.Maroon;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "TelaLogin";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Load += new System.EventHandler(this.TelaLogin_Load);
             this.panel1.ResumeLayout(false);
-            this.panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.panel2.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
