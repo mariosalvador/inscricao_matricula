@@ -55,11 +55,11 @@ namespace Inscricao_e_Matricula
             }
             else if( txtnome.Text !=nome)
             {
-                MessageBox.Show("O nome de usuário está icorreto", "Aviso");
+                MessageBox.Show("O nome de usuário está incorreto", "Aviso !!!");
             }
             else if (txtsenha.Text != senha)
             {
-                MessageBox.Show("A senha inserida está incorreta", "Aviso");
+                MessageBox.Show("A senha inserida está incorreta", "Aviso!!!");
             }
 
         }

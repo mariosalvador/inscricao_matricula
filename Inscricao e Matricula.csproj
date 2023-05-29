@@ -226,5 +226,32 @@
   <ItemGroup>
     <None Include="Resources\Entidade.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Home %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Users1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Home %281%291.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Home %281%292.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Help1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Chevron Up.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user group.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\50493.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\50874.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

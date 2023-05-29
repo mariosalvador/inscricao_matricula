@@ -48,5 +48,15 @@ namespace Inscricao_e_Matricula
             this.Hide();
             telaOperacao.Show();
         }
+
+        private void label9_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel3_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

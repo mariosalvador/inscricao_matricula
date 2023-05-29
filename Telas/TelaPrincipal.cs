@@ -63,6 +63,7 @@ namespace Inscricao_e_Matricula
         private void lb_Entidade_Click(object sender, EventArgs e)
         {
             TelaLogin telaLogin = new TelaLogin();
+            lb_Entidade.Text = " ";
             lb_Entidade.Text = telaLogin.nome;
         }
 
@@ -71,6 +72,11 @@ namespace Inscricao_e_Matricula
             TelaInformacao telaInformacao = new TelaInformacao();
             this.Hide();
             telaInformacao.Show();
+        }
+
+        private void chart1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

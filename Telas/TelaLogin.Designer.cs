@@ -196,6 +196,7 @@ namespace Inscricao_e_Matricula
             this.txtsenha.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtsenha.BorderRadius = 10;
             this.txtsenha.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtsenha.DefaultText = "";
             this.txtsenha.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
@@ -227,6 +228,8 @@ namespace Inscricao_e_Matricula
             this.txtnome.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtnome.AutoRoundedCorners = true;
+            this.txtnome.BorderRadius = 10;
             this.txtnome.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtnome.DefaultText = "";
             this.txtnome.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
