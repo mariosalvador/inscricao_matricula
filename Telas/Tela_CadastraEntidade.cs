@@ -16,5 +16,17 @@ namespace Inscricao_e_Matricula
         {
             InitializeComponent();
         }
+
+        private void btn_Voltar_Click(object sender, EventArgs e)
+        {
+            TelaOperacao telaOperacao = new TelaOperacao();
+            this.Hide();
+            telaOperacao.Show();
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

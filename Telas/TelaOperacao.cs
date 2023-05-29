@@ -62,5 +62,12 @@ namespace Inscricao_e_Matricula
             this.Hide();
             telaPrincipal.Show();
         }
+
+        private void pictureBox5_Click(object sender, EventArgs e)
+        {
+            TelaInformacao telaInformacao = new TelaInformacao();
+            this.Hide();
+            telaInformacao.Show();
+        }
     }
 }

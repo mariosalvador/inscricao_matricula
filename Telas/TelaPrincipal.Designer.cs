@@ -30,27 +30,37 @@ namespace Inscricao_e_Matricula
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend2 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.panel8 = new System.Windows.Forms.Panel();
+            this.pic_Add = new System.Windows.Forms.PictureBox();
             this.label13 = new System.Windows.Forms.Label();
+            this.pic_definicao = new System.Windows.Forms.PictureBox();
+            this.pic_Home = new System.Windows.Forms.PictureBox();
+            this.pic_Info = new System.Windows.Forms.PictureBox();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.label5 = new System.Windows.Forms.Label();
+            this.pic_Folder = new System.Windows.Forms.PictureBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.pnmat = new System.Windows.Forms.Panel();
             this.label8 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+            this.pictureBox7 = new System.Windows.Forms.PictureBox();
             this.panel3 = new System.Windows.Forms.Panel();
             this.chart1 = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.label7 = new System.Windows.Forms.Label();
             this.pnreje = new System.Windows.Forms.Panel();
             this.label9 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
+            this.pictureBox9 = new System.Windows.Forms.PictureBox();
             this.pnins = new System.Windows.Forms.Panel();
             this.label11 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
+            this.pictureBox10 = new System.Windows.Forms.PictureBox();
             this.panel6 = new System.Windows.Forms.Panel();
             this.guna2ProgressBar5 = new Guna.UI2.WinForms.Guna2ProgressBar();
             this.guna2ProgressBar4 = new Guna.UI2.WinForms.Guna2ProgressBar();
@@ -74,38 +84,26 @@ namespace Inscricao_e_Matricula
             this.guna2Elipse3 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.guna2Elipse4 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.guna2Elipse5 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
-            this.gunaPictureBox1 = new Guna.UI.WinForms.GunaPictureBox();
+            this.lb_Entidade = new System.Windows.Forms.Label();
             this.panel7 = new System.Windows.Forms.Panel();
             this.label14 = new System.Windows.Forms.Label();
-            this.pictureBox10 = new System.Windows.Forms.PictureBox();
-            this.pictureBox9 = new System.Windows.Forms.PictureBox();
-            this.pictureBox7 = new System.Windows.Forms.PictureBox();
-            this.panel8 = new System.Windows.Forms.Panel();
-            this.pic_Add = new System.Windows.Forms.PictureBox();
-            this.pic_definicao = new System.Windows.Forms.PictureBox();
-            this.pic_Home = new System.Windows.Forms.PictureBox();
-            this.pic_Info = new System.Windows.Forms.PictureBox();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.pic_Folder = new System.Windows.Forms.PictureBox();
-            this.lb_Entidade = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
-            this.pnmat.SuspendLayout();
-            this.panel3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.chart1)).BeginInit();
-            this.pnreje.SuspendLayout();
-            this.pnins.SuspendLayout();
-            this.panel6.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.gunaPictureBox1)).BeginInit();
-            this.panel7.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pic_Add)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pic_definicao)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pic_Home)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pic_Info)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pic_Folder)).BeginInit();
+            this.pnmat.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
+            this.panel3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.chart1)).BeginInit();
+            this.pnreje.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
+            this.pnins.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
+            this.panel6.SuspendLayout();
+            this.panel7.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -130,6 +128,28 @@ namespace Inscricao_e_Matricula
             this.panel1.TabIndex = 0;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
+            // panel8
+            // 
+            this.panel8.BackgroundImage = global::Inscricao_e_Matricula.Properties.Resources.LOGO_IPIL_removebg_preview_2;
+            this.panel8.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.panel8.Location = new System.Drawing.Point(0, 11);
+            this.panel8.Margin = new System.Windows.Forms.Padding(4);
+            this.panel8.Name = "panel8";
+            this.panel8.Size = new System.Drawing.Size(99, 60);
+            this.panel8.TabIndex = 9;
+            // 
+            // pic_Add
+            // 
+            this.pic_Add.BackgroundImage = global::Inscricao_e_Matricula.Properties.Resources.Users;
+            this.pic_Add.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pic_Add.Location = new System.Drawing.Point(0, 405);
+            this.pic_Add.Margin = new System.Windows.Forms.Padding(4);
+            this.pic_Add.Name = "pic_Add";
+            this.pic_Add.Size = new System.Drawing.Size(99, 59);
+            this.pic_Add.TabIndex = 9;
+            this.pic_Add.TabStop = false;
+            this.pic_Add.Click += new System.EventHandler(this.pic_Add_Click);
+            // 
             // label13
             // 
             this.label13.AutoSize = true;
@@ -142,6 +162,52 @@ namespace Inscricao_e_Matricula
             this.label13.Text = "_________";
             this.label13.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // pic_definicao
+            // 
+            this.pic_definicao.BackgroundImage = global::Inscricao_e_Matricula.Properties.Resources.Settings;
+            this.pic_definicao.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pic_definicao.Location = new System.Drawing.Point(0, 774);
+            this.pic_definicao.Margin = new System.Windows.Forms.Padding(4);
+            this.pic_definicao.Name = "pic_definicao";
+            this.pic_definicao.Size = new System.Drawing.Size(99, 59);
+            this.pic_definicao.TabIndex = 10;
+            this.pic_definicao.TabStop = false;
+            this.pic_definicao.Click += new System.EventHandler(this.pictureBox6_Click);
+            // 
+            // pic_Home
+            // 
+            this.pic_Home.BackgroundImage = global::Inscricao_e_Matricula.Properties.Resources.Home;
+            this.pic_Home.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pic_Home.Location = new System.Drawing.Point(0, 175);
+            this.pic_Home.Margin = new System.Windows.Forms.Padding(4);
+            this.pic_Home.Name = "pic_Home";
+            this.pic_Home.Size = new System.Drawing.Size(99, 59);
+            this.pic_Home.TabIndex = 5;
+            this.pic_Home.TabStop = false;
+            // 
+            // pic_Info
+            // 
+            this.pic_Info.BackgroundImage = global::Inscricao_e_Matricula.Properties.Resources.Help;
+            this.pic_Info.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pic_Info.Location = new System.Drawing.Point(0, 858);
+            this.pic_Info.Margin = new System.Windows.Forms.Padding(4);
+            this.pic_Info.Name = "pic_Info";
+            this.pic_Info.Size = new System.Drawing.Size(99, 59);
+            this.pic_Info.TabIndex = 9;
+            this.pic_Info.TabStop = false;
+            this.pic_Info.Click += new System.EventHandler(this.pic_Info_Click);
+            // 
+            // pictureBox4
+            // 
+            this.pictureBox4.BackgroundImage = global::Inscricao_e_Matricula.Properties.Resources.Users;
+            this.pictureBox4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pictureBox4.Location = new System.Drawing.Point(0, 331);
+            this.pictureBox4.Margin = new System.Windows.Forms.Padding(4);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(99, 59);
+            this.pictureBox4.TabIndex = 7;
+            this.pictureBox4.TabStop = false;
+            // 
             // label5
             // 
             this.label5.AutoSize = true;
@@ -153,6 +219,17 @@ namespace Inscricao_e_Matricula
             this.label5.TabIndex = 1;
             this.label5.Text = "____________";
             this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // pic_Folder
+            // 
+            this.pic_Folder.BackgroundImage = global::Inscricao_e_Matricula.Properties.Resources.Folder;
+            this.pic_Folder.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pic_Folder.Location = new System.Drawing.Point(0, 254);
+            this.pic_Folder.Margin = new System.Windows.Forms.Padding(4);
+            this.pic_Folder.Name = "pic_Folder";
+            this.pic_Folder.Size = new System.Drawing.Size(99, 59);
+            this.pic_Folder.TabIndex = 6;
+            this.pic_Folder.TabStop = false;
             // 
             // label3
             // 
@@ -198,7 +275,7 @@ namespace Inscricao_e_Matricula
             this.pnmat.Controls.Add(this.pictureBox7);
             this.pnmat.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.pnmat.Location = new System.Drawing.Point(620, 139);
-            this.pnmat.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pnmat.Margin = new System.Windows.Forms.Padding(4);
             this.pnmat.Name = "pnmat";
             this.pnmat.Size = new System.Drawing.Size(389, 220);
             this.pnmat.TabIndex = 5;
@@ -228,6 +305,17 @@ namespace Inscricao_e_Matricula
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
+            // pictureBox7
+            // 
+            this.pictureBox7.BackgroundImage = global::Inscricao_e_Matricula.Properties.Resources.User_Male;
+            this.pictureBox7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pictureBox7.Location = new System.Drawing.Point(0, 14);
+            this.pictureBox7.Margin = new System.Windows.Forms.Padding(4);
+            this.pictureBox7.Name = "pictureBox7";
+            this.pictureBox7.Size = new System.Drawing.Size(389, 60);
+            this.pictureBox7.TabIndex = 7;
+            this.pictureBox7.TabStop = false;
+            // 
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.WhiteSmoke;
@@ -235,7 +323,7 @@ namespace Inscricao_e_Matricula
             this.panel3.Controls.Add(this.label7);
             this.panel3.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.panel3.Location = new System.Drawing.Point(157, 427);
-            this.panel3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel3.Margin = new System.Windows.Forms.Padding(4);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(852, 350);
             this.panel3.TabIndex = 5;
@@ -244,18 +332,18 @@ namespace Inscricao_e_Matricula
             // 
             this.chart1.BackColor = System.Drawing.Color.Transparent;
             this.chart1.BorderSkin.PageColor = System.Drawing.Color.Transparent;
-            chartArea2.Name = "ChartArea1";
-            this.chart1.ChartAreas.Add(chartArea2);
-            legend2.Name = "Legend1";
-            this.chart1.Legends.Add(legend2);
+            chartArea1.Name = "ChartArea1";
+            this.chart1.ChartAreas.Add(chartArea1);
+            legend1.Name = "Legend1";
+            this.chart1.Legends.Add(legend1);
             this.chart1.Location = new System.Drawing.Point(0, 113);
-            this.chart1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.chart1.Margin = new System.Windows.Forms.Padding(4);
             this.chart1.Name = "chart1";
             this.chart1.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.EarthTones;
-            series2.ChartArea = "ChartArea1";
-            series2.Legend = "Legend1";
-            series2.Name = "Series1";
-            this.chart1.Series.Add(series2);
+            series1.ChartArea = "ChartArea1";
+            series1.Legend = "Legend1";
+            series1.Name = "Series1";
+            this.chart1.Series.Add(series1);
             this.chart1.Size = new System.Drawing.Size(852, 236);
             this.chart1.TabIndex = 9;
             this.chart1.Text = "chart1";
@@ -281,7 +369,7 @@ namespace Inscricao_e_Matricula
             this.pnreje.Controls.Add(this.pictureBox9);
             this.pnreje.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.pnreje.Location = new System.Drawing.Point(1069, 139);
-            this.pnreje.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pnreje.Margin = new System.Windows.Forms.Padding(4);
             this.pnreje.Name = "pnreje";
             this.pnreje.Size = new System.Drawing.Size(389, 220);
             this.pnreje.TabIndex = 5;
@@ -311,6 +399,17 @@ namespace Inscricao_e_Matricula
             this.label10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.label10.Click += new System.EventHandler(this.label2_Click);
             // 
+            // pictureBox9
+            // 
+            this.pictureBox9.BackgroundImage = global::Inscricao_e_Matricula.Properties.Resources.User_Male;
+            this.pictureBox9.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pictureBox9.Location = new System.Drawing.Point(0, 14);
+            this.pictureBox9.Margin = new System.Windows.Forms.Padding(4);
+            this.pictureBox9.Name = "pictureBox9";
+            this.pictureBox9.Size = new System.Drawing.Size(389, 60);
+            this.pictureBox9.TabIndex = 7;
+            this.pictureBox9.TabStop = false;
+            // 
             // pnins
             // 
             this.pnins.BackColor = System.Drawing.Color.WhiteSmoke;
@@ -319,7 +418,7 @@ namespace Inscricao_e_Matricula
             this.pnins.Controls.Add(this.pictureBox10);
             this.pnins.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.pnins.Location = new System.Drawing.Point(157, 139);
-            this.pnins.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pnins.Margin = new System.Windows.Forms.Padding(4);
             this.pnins.Name = "pnins";
             this.pnins.Size = new System.Drawing.Size(389, 220);
             this.pnins.TabIndex = 5;
@@ -349,6 +448,17 @@ namespace Inscricao_e_Matricula
             this.label12.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.label12.Click += new System.EventHandler(this.label2_Click);
             // 
+            // pictureBox10
+            // 
+            this.pictureBox10.BackgroundImage = global::Inscricao_e_Matricula.Properties.Resources.User_Male;
+            this.pictureBox10.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pictureBox10.Location = new System.Drawing.Point(0, 14);
+            this.pictureBox10.Margin = new System.Windows.Forms.Padding(4);
+            this.pictureBox10.Name = "pictureBox10";
+            this.pictureBox10.Size = new System.Drawing.Size(389, 60);
+            this.pictureBox10.TabIndex = 7;
+            this.pictureBox10.TabStop = false;
+            // 
             // panel6
             // 
             this.panel6.BackColor = System.Drawing.Color.WhiteSmoke;
@@ -371,7 +481,7 @@ namespace Inscricao_e_Matricula
             this.panel6.Controls.Add(this.label6);
             this.panel6.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.panel6.Location = new System.Drawing.Point(1069, 427);
-            this.panel6.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel6.Margin = new System.Windows.Forms.Padding(4);
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(389, 350);
             this.panel6.TabIndex = 5;
@@ -382,7 +492,7 @@ namespace Inscricao_e_Matricula
             this.guna2ProgressBar5.BorderRadius = 5;
             this.guna2ProgressBar5.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.Horizontal;
             this.guna2ProgressBar5.Location = new System.Drawing.Point(159, 212);
-            this.guna2ProgressBar5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.guna2ProgressBar5.Margin = new System.Windows.Forms.Padding(4);
             this.guna2ProgressBar5.Name = "guna2ProgressBar5";
             this.guna2ProgressBar5.ShadowDecoration.Parent = this.guna2ProgressBar5;
             this.guna2ProgressBar5.Size = new System.Drawing.Size(227, 12);
@@ -396,7 +506,7 @@ namespace Inscricao_e_Matricula
             this.guna2ProgressBar4.BorderRadius = 5;
             this.guna2ProgressBar4.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.Horizontal;
             this.guna2ProgressBar4.Location = new System.Drawing.Point(159, 126);
-            this.guna2ProgressBar4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.guna2ProgressBar4.Margin = new System.Windows.Forms.Padding(4);
             this.guna2ProgressBar4.Name = "guna2ProgressBar4";
             this.guna2ProgressBar4.ShadowDecoration.Parent = this.guna2ProgressBar4;
             this.guna2ProgressBar4.Size = new System.Drawing.Size(227, 12);
@@ -410,7 +520,7 @@ namespace Inscricao_e_Matricula
             this.guna2ProgressBar3.BorderRadius = 5;
             this.guna2ProgressBar3.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.Horizontal;
             this.guna2ProgressBar3.Location = new System.Drawing.Point(159, 261);
-            this.guna2ProgressBar3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.guna2ProgressBar3.Margin = new System.Windows.Forms.Padding(4);
             this.guna2ProgressBar3.Name = "guna2ProgressBar3";
             this.guna2ProgressBar3.ShadowDecoration.Parent = this.guna2ProgressBar3;
             this.guna2ProgressBar3.Size = new System.Drawing.Size(227, 12);
@@ -424,7 +534,7 @@ namespace Inscricao_e_Matricula
             this.guna2ProgressBar2.BorderRadius = 5;
             this.guna2ProgressBar2.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.Horizontal;
             this.guna2ProgressBar2.Location = new System.Drawing.Point(159, 171);
-            this.guna2ProgressBar2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.guna2ProgressBar2.Margin = new System.Windows.Forms.Padding(4);
             this.guna2ProgressBar2.Name = "guna2ProgressBar2";
             this.guna2ProgressBar2.ShadowDecoration.Parent = this.guna2ProgressBar2;
             this.guna2ProgressBar2.Size = new System.Drawing.Size(227, 12);
@@ -438,7 +548,7 @@ namespace Inscricao_e_Matricula
             this.guna2ProgressBar1.BorderRadius = 5;
             this.guna2ProgressBar1.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.Horizontal;
             this.guna2ProgressBar1.Location = new System.Drawing.Point(159, 89);
-            this.guna2ProgressBar1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.guna2ProgressBar1.Margin = new System.Windows.Forms.Padding(4);
             this.guna2ProgressBar1.Name = "guna2ProgressBar1";
             this.guna2ProgressBar1.ShadowDecoration.Parent = this.guna2ProgressBar1;
             this.guna2ProgressBar1.Size = new System.Drawing.Size(227, 12);
@@ -592,22 +702,23 @@ namespace Inscricao_e_Matricula
             this.guna2Elipse5.BorderRadius = 35;
             this.guna2Elipse5.TargetControl = this.panel6;
             // 
-            // gunaPictureBox1
+            // lb_Entidade
             // 
-            this.gunaPictureBox1.BaseColor = System.Drawing.Color.White;
-            this.gunaPictureBox1.Location = new System.Drawing.Point(540, 858);
-            this.gunaPictureBox1.Margin = new System.Windows.Forms.Padding(4);
-            this.gunaPictureBox1.Name = "gunaPictureBox1";
-            this.gunaPictureBox1.Size = new System.Drawing.Size(160, 148);
-            this.gunaPictureBox1.TabIndex = 9;
-            this.gunaPictureBox1.TabStop = false;
+            this.lb_Entidade.AutoSize = true;
+            this.lb_Entidade.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.8F);
+            this.lb_Entidade.Location = new System.Drawing.Point(1334, 47);
+            this.lb_Entidade.Name = "lb_Entidade";
+            this.lb_Entidade.Size = new System.Drawing.Size(121, 31);
+            this.lb_Entidade.TabIndex = 10;
+            this.lb_Entidade.Text = "Entidade";
+            this.lb_Entidade.Click += new System.EventHandler(this.lb_Entidade_Click);
             // 
             // panel7
             // 
             this.panel7.BackgroundImage = global::Inscricao_e_Matricula.Properties.Resources.Notification;
             this.panel7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.panel7.Controls.Add(this.label14);
-            this.panel7.Location = new System.Drawing.Point(1103, 44);
+            this.panel7.Location = new System.Drawing.Point(1238, 44);
             this.panel7.Margin = new System.Windows.Forms.Padding(4);
             this.panel7.Name = "panel7";
             this.panel7.Size = new System.Drawing.Size(43, 34);
@@ -628,136 +739,13 @@ namespace Inscricao_e_Matricula
             this.label14.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.label14.Click += new System.EventHandler(this.label14_Click);
             // 
-            // pictureBox10
-            // 
-            this.pictureBox10.BackgroundImage = global::Inscricao_e_Matricula.Properties.Resources.User_Male;
-            this.pictureBox10.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox10.Location = new System.Drawing.Point(0, 14);
-            this.pictureBox10.Margin = new System.Windows.Forms.Padding(4);
-            this.pictureBox10.Name = "pictureBox10";
-            this.pictureBox10.Size = new System.Drawing.Size(389, 60);
-            this.pictureBox10.TabIndex = 7;
-            this.pictureBox10.TabStop = false;
-            // 
-            // pictureBox9
-            // 
-            this.pictureBox9.BackgroundImage = global::Inscricao_e_Matricula.Properties.Resources.User_Male;
-            this.pictureBox9.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox9.Location = new System.Drawing.Point(0, 14);
-            this.pictureBox9.Margin = new System.Windows.Forms.Padding(4);
-            this.pictureBox9.Name = "pictureBox9";
-            this.pictureBox9.Size = new System.Drawing.Size(389, 60);
-            this.pictureBox9.TabIndex = 7;
-            this.pictureBox9.TabStop = false;
-            // 
-            // pictureBox7
-            // 
-            this.pictureBox7.BackgroundImage = global::Inscricao_e_Matricula.Properties.Resources.User_Male;
-            this.pictureBox7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox7.Location = new System.Drawing.Point(0, 14);
-            this.pictureBox7.Margin = new System.Windows.Forms.Padding(4);
-            this.pictureBox7.Name = "pictureBox7";
-            this.pictureBox7.Size = new System.Drawing.Size(389, 60);
-            this.pictureBox7.TabIndex = 7;
-            this.pictureBox7.TabStop = false;
-            // 
-            // panel8
-            // 
-            this.panel8.BackgroundImage = global::Inscricao_e_Matricula.Properties.Resources.LOGO_IPIL_removebg_preview_2;
-            this.panel8.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.panel8.Location = new System.Drawing.Point(0, 11);
-            this.panel8.Margin = new System.Windows.Forms.Padding(4);
-            this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(99, 60);
-            this.panel8.TabIndex = 9;
-            // 
-            // pic_Add
-            // 
-            this.pic_Add.BackgroundImage = global::Inscricao_e_Matricula.Properties.Resources.Users;
-            this.pic_Add.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pic_Add.Location = new System.Drawing.Point(0, 405);
-            this.pic_Add.Margin = new System.Windows.Forms.Padding(4);
-            this.pic_Add.Name = "pic_Add";
-            this.pic_Add.Size = new System.Drawing.Size(99, 59);
-            this.pic_Add.TabIndex = 9;
-            this.pic_Add.TabStop = false;
-            this.pic_Add.Click += new System.EventHandler(this.pic_Add_Click);
-            // 
-            // pic_definicao
-            // 
-            this.pic_definicao.BackgroundImage = global::Inscricao_e_Matricula.Properties.Resources.Settings;
-            this.pic_definicao.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pic_definicao.Location = new System.Drawing.Point(0, 774);
-            this.pic_definicao.Margin = new System.Windows.Forms.Padding(4);
-            this.pic_definicao.Name = "pic_definicao";
-            this.pic_definicao.Size = new System.Drawing.Size(99, 59);
-            this.pic_definicao.TabIndex = 10;
-            this.pic_definicao.TabStop = false;
-            this.pic_definicao.Click += new System.EventHandler(this.pictureBox6_Click);
-            // 
-            // pic_Home
-            // 
-            this.pic_Home.BackgroundImage = global::Inscricao_e_Matricula.Properties.Resources.Home;
-            this.pic_Home.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pic_Home.Location = new System.Drawing.Point(0, 175);
-            this.pic_Home.Margin = new System.Windows.Forms.Padding(4);
-            this.pic_Home.Name = "pic_Home";
-            this.pic_Home.Size = new System.Drawing.Size(99, 59);
-            this.pic_Home.TabIndex = 5;
-            this.pic_Home.TabStop = false;
-            // 
-            // pic_Info
-            // 
-            this.pic_Info.BackgroundImage = global::Inscricao_e_Matricula.Properties.Resources.Help;
-            this.pic_Info.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pic_Info.Location = new System.Drawing.Point(0, 858);
-            this.pic_Info.Margin = new System.Windows.Forms.Padding(4);
-            this.pic_Info.Name = "pic_Info";
-            this.pic_Info.Size = new System.Drawing.Size(99, 59);
-            this.pic_Info.TabIndex = 9;
-            this.pic_Info.TabStop = false;
-            // 
-            // pictureBox4
-            // 
-            this.pictureBox4.BackgroundImage = global::Inscricao_e_Matricula.Properties.Resources.Users;
-            this.pictureBox4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox4.Location = new System.Drawing.Point(0, 331);
-            this.pictureBox4.Margin = new System.Windows.Forms.Padding(4);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(99, 59);
-            this.pictureBox4.TabIndex = 7;
-            this.pictureBox4.TabStop = false;
-            // 
-            // pic_Folder
-            // 
-            this.pic_Folder.BackgroundImage = global::Inscricao_e_Matricula.Properties.Resources.Folder;
-            this.pic_Folder.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pic_Folder.Location = new System.Drawing.Point(0, 254);
-            this.pic_Folder.Margin = new System.Windows.Forms.Padding(4);
-            this.pic_Folder.Name = "pic_Folder";
-            this.pic_Folder.Size = new System.Drawing.Size(99, 59);
-            this.pic_Folder.TabIndex = 6;
-            this.pic_Folder.TabStop = false;
-            // 
-            // lb_Entidade
-            // 
-            this.lb_Entidade.AutoSize = true;
-            this.lb_Entidade.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.8F);
-            this.lb_Entidade.Location = new System.Drawing.Point(1265, 47);
-            this.lb_Entidade.Name = "lb_Entidade";
-            this.lb_Entidade.Size = new System.Drawing.Size(121, 31);
-            this.lb_Entidade.TabIndex = 10;
-            this.lb_Entidade.Text = "Entidade";
-            this.lb_Entidade.Click += new System.EventHandler(this.lb_Entidade_Click);
-            // 
             // TelaPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1520, 788);
+            this.ClientSize = new System.Drawing.Size(1520, 919);
             this.Controls.Add(this.lb_Entidade);
-            this.Controls.Add(this.gunaPictureBox1);
             this.Controls.Add(this.panel7);
             this.Controls.Add(this.pnins);
             this.Controls.Add(this.panel6);
@@ -774,24 +762,23 @@ namespace Inscricao_e_Matricula
             this.Load += new System.EventHandler(this.TelaPrincipal_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            this.pnmat.ResumeLayout(false);
-            this.panel3.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.chart1)).EndInit();
-            this.pnreje.ResumeLayout(false);
-            this.pnins.ResumeLayout(false);
-            this.panel6.ResumeLayout(false);
-            this.panel6.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.gunaPictureBox1)).EndInit();
-            this.panel7.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pic_Add)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pic_definicao)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pic_Home)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pic_Info)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pic_Folder)).EndInit();
+            this.pnmat.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
+            this.panel3.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.chart1)).EndInit();
+            this.pnreje.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
+            this.pnins.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
+            this.panel6.ResumeLayout(false);
+            this.panel6.PerformLayout();
+            this.panel7.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -830,7 +817,6 @@ namespace Inscricao_e_Matricula
         private System.Windows.Forms.Panel panel7;
         private System.Windows.Forms.PictureBox pic_Add;
         private System.Windows.Forms.Panel panel8;
-        private Guna.UI.WinForms.GunaPictureBox gunaPictureBox1;
         private Guna.UI2.WinForms.Guna2Elipse guna2Elipse1;
         private Guna.UI2.WinForms.Guna2Elipse guna2Elipse2;
         private Guna.UI2.WinForms.Guna2Elipse guna2Elipse3;

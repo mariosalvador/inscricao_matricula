@@ -57,6 +57,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Telas\TelaInformacao.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Telas\TelaInformacao.Designer.cs">
+      <DependentUpon>TelaInformacao.cs</DependentUpon>
+    </Compile>
     <Compile Include="Telas\TelaInscricao.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -89,12 +95,15 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Tela_CadastraEntidade.cs">
+    <Compile Include="Telas\Tela_CadastraEntidade.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Tela_CadastraEntidade.Designer.cs">
+    <Compile Include="Telas\Tela_CadastraEntidade.Designer.cs">
       <DependentUpon>Tela_CadastraEntidade.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Telas\TelaInformacao.resx">
+      <DependentUpon>TelaInformacao.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Telas\TelaInscricao.resx">
       <DependentUpon>TelaInscricao.cs</DependentUpon>
     </EmbeddedResource>
@@ -120,7 +129,7 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <EmbeddedResource Include="Tela_CadastraEntidade.resx">
+    <EmbeddedResource Include="Telas\Tela_CadastraEntidade.resx">
       <DependentUpon>Tela_CadastraEntidade.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">

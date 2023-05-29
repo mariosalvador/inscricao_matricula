@@ -65,5 +65,12 @@ namespace Inscricao_e_Matricula
             TelaLogin telaLogin = new TelaLogin();
             lb_Entidade.Text = telaLogin.nome;
         }
+
+        private void pic_Info_Click(object sender, EventArgs e)
+        {
+            TelaInformacao telaInformacao = new TelaInformacao();
+            this.Hide();
+            telaInformacao.Show();
+        }
     }
 }
