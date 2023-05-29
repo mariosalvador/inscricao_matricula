@@ -57,10 +57,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="TelaInscricao.cs">
+    <Compile Include="Telas\TelaInscricao.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="TelaInscricao.Designer.cs">
+    <Compile Include="Telas\TelaInscricao.Designer.cs">
       <DependentUpon>TelaInscricao.cs</DependentUpon>
     </Compile>
     <Compile Include="Telas\TelaOperacao.cs">
@@ -89,7 +89,13 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="TelaInscricao.resx">
+    <Compile Include="Tela_CadastraEntidade.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tela_CadastraEntidade.Designer.cs">
+      <DependentUpon>Tela_CadastraEntidade.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Telas\TelaInscricao.resx">
       <DependentUpon>TelaInscricao.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Telas\TelaOperacao.resx">
@@ -114,6 +120,9 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="Tela_CadastraEntidade.resx">
+      <DependentUpon>Tela_CadastraEntidade.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

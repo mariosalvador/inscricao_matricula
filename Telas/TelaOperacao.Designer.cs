@@ -56,6 +56,7 @@ namespace Inscricao_e_Matricula
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.lb_Entidade = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel5.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -165,6 +166,7 @@ namespace Inscricao_e_Matricula
             this.label12.TabIndex = 8;
             this.label12.Text = "Add. Entidade";
             this.label12.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label12.Click += new System.EventHandler(this.label12_Click);
             // 
             // label4
             // 
@@ -316,6 +318,7 @@ namespace Inscricao_e_Matricula
             this.pictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox9.TabIndex = 9;
             this.pictureBox9.TabStop = false;
+            this.pictureBox9.Click += new System.EventHandler(this.pictureBox9_Click);
             // 
             // pictureBox7
             // 
@@ -350,6 +353,7 @@ namespace Inscricao_e_Matricula
             this.pictureBox2.Size = new System.Drawing.Size(99, 59);
             this.pictureBox2.TabIndex = 5;
             this.pictureBox2.TabStop = false;
+            this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
             // 
             // pictureBox5
             // 
@@ -399,11 +403,23 @@ namespace Inscricao_e_Matricula
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
+            // lb_Entidade
+            // 
+            this.lb_Entidade.AutoSize = true;
+            this.lb_Entidade.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.8F);
+            this.lb_Entidade.Location = new System.Drawing.Point(1295, 35);
+            this.lb_Entidade.Name = "lb_Entidade";
+            this.lb_Entidade.Size = new System.Drawing.Size(121, 31);
+            this.lb_Entidade.TabIndex = 11;
+            this.lb_Entidade.Text = "Entidade";
+            this.lb_Entidade.Click += new System.EventHandler(this.lb_Entidade_Click);
+            // 
             // TelaOperacao
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1521, 927);
+            this.Controls.Add(this.lb_Entidade);
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.panel6);
             this.Controls.Add(this.panel7);
@@ -466,5 +482,6 @@ namespace Inscricao_e_Matricula
         private System.Windows.Forms.PictureBox pictureBox7;
         private System.Windows.Forms.PictureBox pictureBox9;
         private System.Windows.Forms.PictureBox pictureBox8;
+        private System.Windows.Forms.Label lb_Entidade;
     }
 }
