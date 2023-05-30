@@ -1,5 +1,5 @@
 ﻿using System;
-using Guna.UI.WinForms;
+using Guna.UI2.WinForms;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;

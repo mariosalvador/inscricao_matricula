@@ -81,7 +81,7 @@ namespace Inscricao_e_Matricula
             // 
             this.pictureBox4.BackgroundImage = global::Inscricao_e_Matricula.Properties.Resources.LOGO_IPIL_removebg_preview_2__2_;
             this.pictureBox4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.pictureBox4.Location = new System.Drawing.Point(740, 6);
+            this.pictureBox4.Location = new System.Drawing.Point(734, 13);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(46, 41);
             this.pictureBox4.TabIndex = 14;
@@ -92,7 +92,7 @@ namespace Inscricao_e_Matricula
             // 
             this.pictureBox3.BackgroundImage = global::Inscricao_e_Matricula.Properties.Resources.Ellipse_5;
             this.pictureBox3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox3.Location = new System.Drawing.Point(388, 151);
+            this.pictureBox3.Location = new System.Drawing.Point(388, 150);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(18, 23);
             this.pictureBox3.TabIndex = 13;

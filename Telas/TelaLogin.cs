@@ -59,45 +59,7 @@ namespace Inscricao_e_Matricula
         {
 
         }
-
-        private void btnentrar_Click(object sender, EventArgs e)
-        {
-            TelaPrincipal telaPrincipal = new TelaPrincipal();
-            if (txtnome.Text==nome && txtsenha.Text==senha)
-            {
-                this.Hide();
-                telaPrincipal.ShowDialog();
-            }
-            else if (txtnome.Text == "")
-            {
-                btr= MessageBox.Show("Preencha o campo do nome...", "Atenção", MessageBoxButtons.OKCancel, MessageBoxIcon.Information);
-                reposta(1);
-            }
-            else if (txtsenha.Text == "")
-            {
-                btr = MessageBox.Show("Preencha o campo do da senha...", "Atenção", MessageBoxButtons.OKCancel, MessageBoxIcon.Information);
-                reposta(2);
-            }
-            else if( txtnome.Text !=nome)
-            {
-                btr = MessageBox.Show("O nome de usuário está incorreto", "Atenção", MessageBoxButtons.OKCancel, MessageBoxIcon.Information);
-                reposta(1);
-            }
-            else if (txtsenha.Text != senha)
-            {
-                btr = MessageBox.Show("A senha inserida está incorreta", "Atenção", MessageBoxButtons.OKCancel, MessageBoxIcon.Information);
-                reposta(2);
-            }
-            else if (txtnome.Text != nome && txtsenha.Text != senha)
-            {
-                btr = MessageBox.Show("O nome de Usuário e a senha estão incorretos", "Atenção", MessageBoxButtons.OKCancel, MessageBoxIcon.Information);
-                reposta(1);
-            }
            
-
-        }
-
-
         private void btnrestore_max_Click(object sender, EventArgs e)
         {
             if (this.WindowState == FormWindowState.Normal)
@@ -132,6 +94,44 @@ namespace Inscricao_e_Matricula
             this.Hide();
             telaOperacao.Show();
         }
+
+        private void btnentrar_Click(object sender, EventArgs e)
+        {
+             TelaPrincipal telaPrincipal = new TelaPrincipal();
+            if (txtnome.Text==nome && txtsenha.Text==senha)
+            {
+                this.Hide();
+                telaPrincipal.ShowDialog();
+            }
+            else if (txtnome.Text == "")
+            {
+                btr= MessageBox.Show("Preencha o campo do nome...", "Atenção", MessageBoxButtons.OKCancel, MessageBoxIcon.Information);
+                reposta(1);
+            }
+            else if (txtsenha.Text == "")
+            {
+                btr = MessageBox.Show("Preencha o campo do da senha...", "Atenção", MessageBoxButtons.OKCancel, MessageBoxIcon.Information);
+                reposta(2);
+            }
+            else if( txtnome.Text !=nome)
+            {
+                btr = MessageBox.Show("O nome de usuário está incorreto", "Atenção", MessageBoxButtons.OKCancel, MessageBoxIcon.Information);
+                reposta(1);
+            }
+            else if (txtsenha.Text != senha)
+            {
+                btr = MessageBox.Show("A senha inserida está incorreta", "Atenção", MessageBoxButtons.OKCancel, MessageBoxIcon.Information);
+                reposta(2);
+            }
+            else if (txtnome.Text != nome && txtsenha.Text != senha)
+            {
+                btr = MessageBox.Show("O nome de Usuário e a senha estão incorretos", "Atenção", MessageBoxButtons.OKCancel, MessageBoxIcon.Information);
+                reposta(1);
+            }
+           
+        }
+
+        
 
         
     }

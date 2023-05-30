@@ -31,6 +31,7 @@ namespace Inscricao_e_Matricula
         {
             this.components = new System.ComponentModel.Container();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -41,7 +42,6 @@ namespace Inscricao_e_Matricula
             this.txtnome = new Guna.UI2.WinForms.Guna2TextBox();
             this.txtsenha = new Guna.UI2.WinForms.Guna2TextBox();
             this.btnclose = new Guna.UI2.WinForms.Guna2Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -58,6 +58,19 @@ namespace Inscricao_e_Matricula
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(423, 568);
             this.panel1.TabIndex = 0;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackColor = System.Drawing.Color.White;
+            this.pictureBox1.BackgroundImage = global::Inscricao_e_Matricula.Properties.Resources._1684060439009;
+            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pictureBox1.Location = new System.Drawing.Point(0, 200);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(425, 138);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
             // 
             // label1
             // 
@@ -157,16 +170,17 @@ namespace Inscricao_e_Matricula
             this.btnentrar.ImageSize = new System.Drawing.Size(20, 20);
             this.btnentrar.Location = new System.Drawing.Point(472, 354);
             this.btnentrar.Name = "btnentrar";
-            this.btnentrar.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
+            this.btnentrar.OnHoverBaseColor = System.Drawing.Color.WhiteSmoke;
             this.btnentrar.OnHoverBorderColor = System.Drawing.Color.Black;
-            this.btnentrar.OnHoverForeColor = System.Drawing.Color.White;
+            this.btnentrar.OnHoverForeColor = System.Drawing.Color.DarkOrange;
             this.btnentrar.OnHoverImage = null;
-            this.btnentrar.OnPressedColor = System.Drawing.Color.Black;
+            this.btnentrar.OnPressedColor = System.Drawing.Color.White;
             this.btnentrar.Radius = 15;
             this.btnentrar.Size = new System.Drawing.Size(308, 51);
-            this.btnentrar.TabIndex = 1;
+            this.btnentrar.TabIndex = 3;
             this.btnentrar.Text = "ENTRAR";
             this.btnentrar.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.btnentrar.Click += new System.EventHandler(this.btnentrar_Click);
             // 
             // txtnome
             // 
@@ -191,7 +205,7 @@ namespace Inscricao_e_Matricula
             this.txtnome.SelectedText = "";
             this.txtnome.ShadowDecoration.Parent = this.txtnome;
             this.txtnome.Size = new System.Drawing.Size(308, 51);
-            this.txtnome.TabIndex = 12;
+            this.txtnome.TabIndex = 1;
             this.txtnome.TextOffset = new System.Drawing.Point(10, 0);
             // 
             // txtsenha
@@ -217,7 +231,7 @@ namespace Inscricao_e_Matricula
             this.txtsenha.SelectedText = "";
             this.txtsenha.ShadowDecoration.Parent = this.txtsenha;
             this.txtsenha.Size = new System.Drawing.Size(308, 51);
-            this.txtsenha.TabIndex = 1;
+            this.txtsenha.TabIndex = 2;
             this.txtsenha.TextOffset = new System.Drawing.Point(10, 0);
             // 
             // btnclose
@@ -239,19 +253,6 @@ namespace Inscricao_e_Matricula
             this.btnclose.Size = new System.Drawing.Size(35, 31);
             this.btnclose.TabIndex = 11;
             this.btnclose.Click += new System.EventHandler(this.btnclose_Click);
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackColor = System.Drawing.Color.White;
-            this.pictureBox1.BackgroundImage = global::Inscricao_e_Matricula.Properties.Resources._1684060439009;
-            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox1.Location = new System.Drawing.Point(0, 200);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(425, 138);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
             // 
             // TelaLogin
             // 
