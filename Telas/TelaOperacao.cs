@@ -17,11 +17,6 @@ namespace Inscricao_e_Matricula
             InitializeComponent();
         }
 
-        private void pictureBox7_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void label2_Click(object sender, EventArgs e)
         {
             TelaInscricao telaInscricao = new TelaInscricao();
@@ -50,13 +45,7 @@ namespace Inscricao_e_Matricula
             tela_CadastraEntidade.Show();
         }
 
-        private void lb_Entidade_Click(object sender, EventArgs e)
-        {
-            TelaLogin telaLogin = new TelaLogin();
-            lb_Entidade.Text = telaLogin.nome;
-        }
-
-        private void pictureBox2_Click(object sender, EventArgs e)
+        private void pictureBox1_Click(object sender, EventArgs e)
         {
             TelaPrincipal telaPrincipal = new TelaPrincipal();
             this.Hide();
@@ -69,5 +58,13 @@ namespace Inscricao_e_Matricula
             this.Hide();
             telaInformacao.Show();
         }
+
+        private void TelaOperacao_Load(object sender, EventArgs e)
+        {
+            TelaLogin telaLogin = new TelaLogin();
+            lb_Entidade.Text = telaLogin.nome;
+            pic_Add.BackColor = Color.Chocolate;
+        }
+
     }
 }

@@ -1,4 +1,5 @@
 ﻿using System;
+using Guna.UI2.WinForms;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -17,16 +18,35 @@ namespace Inscricao_e_Matricula
             InitializeComponent();
         }
 
-        private void btn_Voltar_Click(object sender, EventArgs e)
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void guna2TextBox2_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnentrar_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btncancelar_Click(object sender, EventArgs e)
         {
             TelaOperacao telaOperacao = new TelaOperacao();
             this.Hide();
             telaOperacao.Show();
         }
 
-        private void panel1_Paint(object sender, PaintEventArgs e)
-        {
+        
 
-        }
+       
     }
 }

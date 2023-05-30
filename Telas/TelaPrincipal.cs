@@ -19,7 +19,9 @@ namespace Inscricao_e_Matricula
 
         private void TelaPrincipal_Load(object sender, EventArgs e)
         {
-
+            TelaLogin telaLogin = new TelaLogin();
+            lb_Entidade.Text = telaLogin.nome;
+            pictureBox1.BackColor = Color.Chocolate;
         }
 
         private void label2_Click(object sender, EventArgs e)
@@ -62,9 +64,7 @@ namespace Inscricao_e_Matricula
 
         private void lb_Entidade_Click(object sender, EventArgs e)
         {
-            TelaLogin telaLogin = new TelaLogin();
-            lb_Entidade.Text = " ";
-            lb_Entidade.Text = telaLogin.nome;
+            
         }
 
         private void pic_Info_Click(object sender, EventArgs e)
@@ -75,6 +75,21 @@ namespace Inscricao_e_Matricula
         }
 
         private void chart1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pic_Folder_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label8_Click(object sender, EventArgs e)
         {
 
         }
