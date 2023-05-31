@@ -64,7 +64,7 @@ namespace Inscricao_e_Matricula
 
         private void lb_Entidade_Click(object sender, EventArgs e)
         {
-            
+           
         }
 
         private void pic_Info_Click(object sender, EventArgs e)
