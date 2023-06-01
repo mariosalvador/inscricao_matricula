@@ -18,14 +18,9 @@ namespace Inscricao_e_Matricula
         public int vagasDisponiveis { get; private set; }
         public int totalMatriculado { get; set; }
         
-        
-
-       
-     
-
     }
 
-    // Class para os Metodos da tela de Inscricao
+    // Class para os Metodos da tela de Inscricao,
 
     public class Class_TelaInscricao
     {
@@ -46,5 +41,6 @@ namespace Inscricao_e_Matricula
         public double Ing7, Ing8, Ing9, Ing_media;
         public double Fis7, Fis8, Fis9, Fis_media;
 
+        public int totalInscrito = 0;
     }
 }

@@ -55,3 +55,20 @@ C:\Users\m\OneDrive\Desktop\visual studio 2023\Windows form\Inscricao e Matricul
 C:\Users\m\OneDrive\Desktop\visual studio 2023\Windows form\Inscricao e Matricula\inscricao_matricula\obj\Debug\Inscricao_e_Matricula.Tela_CadastraEntidade.resources
 C:\Users\Jesimiel\Documents\IM\inscricao_matricula\obj\Debug\Inscricao_e_Matricula.TelaInformacao.resources
 C:\Users\Jesimiel\Documents\IM\inscricao_matricula\obj\Debug\Inscricao_e_Matricula.Tela_CadastraEntidade.resources
+C:\Users\m\OneDrive\Desktop\visual studio 2023\Windows form\IM\inscricao_matricula\bin\Debug\Inscricao e Matricula.exe.config
+C:\Users\m\OneDrive\Desktop\visual studio 2023\Windows form\IM\inscricao_matricula\bin\Debug\Inscricao e Matricula.exe
+C:\Users\m\OneDrive\Desktop\visual studio 2023\Windows form\IM\inscricao_matricula\bin\Debug\Inscricao e Matricula.pdb
+C:\Users\m\OneDrive\Desktop\visual studio 2023\Windows form\IM\inscricao_matricula\obj\Debug\Inscricao e Matricula.csproj.AssemblyReference.cache
+C:\Users\m\OneDrive\Desktop\visual studio 2023\Windows form\IM\inscricao_matricula\obj\Debug\Inscricao_e_Matricula.TelaInformacao.resources
+C:\Users\m\OneDrive\Desktop\visual studio 2023\Windows form\IM\inscricao_matricula\obj\Debug\Inscricao_e_Matricula.TelaInscricao.resources
+C:\Users\m\OneDrive\Desktop\visual studio 2023\Windows form\IM\inscricao_matricula\obj\Debug\Inscricao_e_Matricula.TelaOperacao.resources
+C:\Users\m\OneDrive\Desktop\visual studio 2023\Windows form\IM\inscricao_matricula\obj\Debug\Inscricao_e_Matricula.TelaPrincipal.resources
+C:\Users\m\OneDrive\Desktop\visual studio 2023\Windows form\IM\inscricao_matricula\obj\Debug\Inscricao_e_Matricula.TelaSplash.resources
+C:\Users\m\OneDrive\Desktop\visual studio 2023\Windows form\IM\inscricao_matricula\obj\Debug\Inscricao_e_Matricula.TelaLogin.resources
+C:\Users\m\OneDrive\Desktop\visual studio 2023\Windows form\IM\inscricao_matricula\obj\Debug\Inscricao_e_Matricula.Properties.Resources.resources
+C:\Users\m\OneDrive\Desktop\visual studio 2023\Windows form\IM\inscricao_matricula\obj\Debug\Inscricao_e_Matricula.Tela_CadastraEntidade.resources
+C:\Users\m\OneDrive\Desktop\visual studio 2023\Windows form\IM\inscricao_matricula\obj\Debug\Inscricao e Matricula.csproj.GenerateResource.cache
+C:\Users\m\OneDrive\Desktop\visual studio 2023\Windows form\IM\inscricao_matricula\obj\Debug\Inscricao e Matricula.csproj.CoreCompileInputs.cache
+C:\Users\m\OneDrive\Desktop\visual studio 2023\Windows form\IM\inscricao_matricula\obj\Debug\Inscricao e Matricula.csproj.CopyComplete
+C:\Users\m\OneDrive\Desktop\visual studio 2023\Windows form\IM\inscricao_matricula\obj\Debug\Inscricao e Matricula.exe
+C:\Users\m\OneDrive\Desktop\visual studio 2023\Windows form\IM\inscricao_matricula\obj\Debug\Inscricao e Matricula.pdb

@@ -285,7 +285,7 @@ namespace Inscricao_e_Matricula
             "Femenino",
             "Masculino"});
             this.txt_Genero.ItemsAppearance.Parent = this.txt_Genero;
-            this.txt_Genero.Location = new System.Drawing.Point(10, 385);
+            this.txt_Genero.Location = new System.Drawing.Point(12, 375);
             this.txt_Genero.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txt_Genero.Name = "txt_Genero";
             this.txt_Genero.ShadowDecoration.Parent = this.txt_Genero;
@@ -725,7 +725,7 @@ namespace Inscricao_e_Matricula
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Segoe UI", 10.75F, System.Drawing.FontStyle.Bold);
             this.label5.ForeColor = System.Drawing.Color.White;
-            this.label5.Location = new System.Drawing.Point(9, 357);
+            this.label5.Location = new System.Drawing.Point(9, 349);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(74, 25);
             this.label5.TabIndex = 46;
@@ -987,9 +987,9 @@ namespace Inscricao_e_Matricula
             this.label1.BackColor = System.Drawing.Color.DarkOrange;
             this.label1.Font = new System.Drawing.Font("Segoe UI", 23.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(-15, 72);
+            this.label1.Location = new System.Drawing.Point(0, 72);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(833, 52);
+            this.label1.Size = new System.Drawing.Size(805, 52);
             this.label1.TabIndex = 35;
             this.label1.Text = "INSCRICÃO";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;

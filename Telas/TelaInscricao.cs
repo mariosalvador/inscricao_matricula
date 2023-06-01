@@ -12,6 +12,7 @@ namespace Inscricao_e_Matricula
 {
     public partial class TelaInscricao : Form
     {
+        Class_TelaInscricao _TelaInscricao = new Class_TelaInscricao();
         public TelaInscricao()
         {
             InitializeComponent();
@@ -117,35 +118,51 @@ namespace Inscricao_e_Matricula
                     txt_AreaFormacao.Focus();
                 }
             }
-            if (txt_AreaFormacao.Text !="" && txt_Curso.Text !="" && txt_Localidade.Text!="" && txt_Nacionalidade.Text!="" && txt_Genero.Text !="" && txt_Tel.Text !="" && txt_Bi.Text !="" && txtnome.Text !="")
+
+            try
             {
-                Class_TelaInscricao _TelaInscricao = new Class_TelaInscricao();
+                if (txt_AreaFormacao.Text != "" && txt_Curso.Text != "" && txt_Localidade.Text != "" && txt_Nacionalidade.Text != "" && txt_Genero.Text != "" && txt_Tel.Text != "" && txt_Bi.Text != "" && txtnome.Text != "")
+                {
+                    _TelaInscricao.Insc_Nome = txtnome.Text;
+                    _TelaInscricao.Insc_nuneroBI = txt_Bi.Text;
+                    _TelaInscricao.Insc_numTelefone = Convert.ToInt32(txt_Tel.Text);
+                    _TelaInscricao.Insc_Genero = txt_Genero.Text;
+                    _TelaInscricao.Insc_Nacionalidade = txt_Nacionalidade.Text;
+                    _TelaInscricao.Insc_Localidade = txt_Localidade.Text;
+                    _TelaInscricao.Insc_Curso = txt_Curso.Text;
+                    _TelaInscricao.Insc_AreaFormacao = txt_AreaFormacao.Text;
+                    
+                    //Obtencao das notas digitadas
+                    _TelaInscricao.Lp7 = Convert.ToDouble(txt_LP7.Text);
+                    _TelaInscricao.Lp8 = Convert.ToDouble(txt_LP8.Text);
+                    _TelaInscricao.Lp9 = Convert.ToDouble(txt_LP9.Text);
+                    _TelaInscricao.Lp_media = Convert.ToDouble( txt_LPmedia.Text);
 
-                _TelaInscricao.Insc_Nome = txtnome.Text;
-                _TelaInscricao.Insc_nuneroBI=txt_Bi.Text;
-                _TelaInscricao.Insc_numTelefone = Convert.ToInt32(txt_Tel.Text);
-                _TelaInscricao.Insc_Genero = txt_Genero.Text;
-                _TelaInscricao.Insc_Nacionalidade = txt_Nacionalidade.Text;
-                _TelaInscricao.Insc_Localidade = txt_Localidade.Text;
-                _TelaInscricao.Insc_Curso = txt_Curso.Text;
-                _TelaInscricao.Insc_AreaFormacao = txt_AreaFormacao.Text;
+                    _TelaInscricao.Qui7 = Convert.ToDouble(txt_Qui7.Text);
+                    _TelaInscricao.Qui8 = Convert.ToDouble(txt_Qui8.Text);
+                    _TelaInscricao.Qui9 = Convert.ToDouble(txt_Qui9.Text);
+                    _TelaInscricao.Qui_media = Convert.ToDouble(txt_Quimedia.Text);
 
-                //Obtencao das notas digitadas
-                _TelaInscricao.Lp7 = Convert.ToDouble(txt_LP7);
-                _TelaInscricao.Lp8 = Convert.ToDouble(txt_LP8);
-                _TelaInscricao.Lp9 = Convert.ToDouble(txt_LP9);
-                _TelaInscricao.Lp_media = (_TelaInscricao.Lp7+_TelaInscricao.Lp8+_TelaInscricao.Lp9);
+                    _TelaInscricao.mat7 = Convert.ToDouble(txt_Mat7.Text);
+                    _TelaInscricao.mat8 = Convert.ToDouble(txt_Mat8.Text);
+                    _TelaInscricao.mat9 = Convert.ToDouble(txt_Mat9.Text);
+                    _TelaInscricao.mat_media = Convert.ToDouble(txt_Matmedia.Text);
 
-                _TelaInscricao.Lp7 = Convert.ToDouble(txt_LP7);
-                _TelaInscricao.Lp8 = Convert.ToDouble(txt_LP8);
-                _TelaInscricao.Lp9 = Convert.ToDouble(txt_LP9);
-                _TelaInscricao.Lp_media = (_TelaInscricao.Lp7 + _TelaInscricao.Lp8 + _TelaInscricao.Lp9);
+                    _TelaInscricao.Ing7 = Convert.ToDouble(txt_Ing7.Text);
+                    _TelaInscricao.Ing8 = Convert.ToDouble(txt_Ing8.Text);
+                    _TelaInscricao.Ing9 = Convert.ToDouble(txt_Ing9.Text);
+                    _TelaInscricao.Ing_media = Convert.ToDouble(txt_Ingmedia.Text);
 
+                    _TelaInscricao.Fis7 = Convert.ToDouble(txt_Fis7.Text);
+                    _TelaInscricao.Fis8 = Convert.ToDouble(txt_Fis8.Text);
+                    _TelaInscricao.Fis9 = Convert.ToDouble(txt_Fis9.Text);
+                    _TelaInscricao.Fis_media = Convert.ToDouble(txt_Fismedia.Text);
 
-
-
-
-
+                    _TelaInscricao.totalInscrito += 1;
+                }
+            } catch (Exception erro)
+            {
+                MessageBox.Show("ERRO: {0}",erro.Message);
             }
         }
 
