@@ -38,7 +38,7 @@ namespace Inscricao_e_Matricula
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
-            this.btnentrar = new Guna.UI.WinForms.GunaButton();
+            this.btnentrar = new Guna.UI2.WinForms.Guna2Button();
             this.txtnome = new Guna.UI2.WinForms.Guna2TextBox();
             this.txtsenha = new Guna.UI2.WinForms.Guna2TextBox();
             this.btnclose = new Guna.UI2.WinForms.Guna2Button();
@@ -64,7 +64,7 @@ namespace Inscricao_e_Matricula
             this.pictureBox1.BackColor = System.Drawing.Color.White;
             this.pictureBox1.BackgroundImage = global::Inscricao_e_Matricula.Properties.Resources._1684060439009;
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox1.Location = new System.Drawing.Point(0, 200);
+            this.pictureBox1.Location = new System.Drawing.Point(0, 205);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(425, 138);
@@ -157,29 +157,20 @@ namespace Inscricao_e_Matricula
             // 
             // btnentrar
             // 
-            this.btnentrar.AnimationHoverSpeed = 0.07F;
-            this.btnentrar.AnimationSpeed = 0.03F;
             this.btnentrar.BackColor = System.Drawing.Color.Transparent;
-            this.btnentrar.BaseColor = System.Drawing.Color.White;
-            this.btnentrar.BorderColor = System.Drawing.Color.Black;
-            this.btnentrar.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.btnentrar.FocusedColor = System.Drawing.Color.Empty;
+            this.btnentrar.BorderRadius = 15;
+            this.btnentrar.CheckedState.Parent = this.btnentrar;
+            this.btnentrar.CustomImages.Parent = this.btnentrar;
+            this.btnentrar.FillColor = System.Drawing.Color.White;
             this.btnentrar.Font = new System.Drawing.Font("Segoe UI", 16F, System.Drawing.FontStyle.Bold);
             this.btnentrar.ForeColor = System.Drawing.Color.DarkOrange;
-            this.btnentrar.Image = null;
-            this.btnentrar.ImageSize = new System.Drawing.Size(20, 20);
+            this.btnentrar.HoverState.Parent = this.btnentrar;
             this.btnentrar.Location = new System.Drawing.Point(472, 354);
             this.btnentrar.Name = "btnentrar";
-            this.btnentrar.OnHoverBaseColor = System.Drawing.Color.WhiteSmoke;
-            this.btnentrar.OnHoverBorderColor = System.Drawing.Color.Black;
-            this.btnentrar.OnHoverForeColor = System.Drawing.Color.DarkOrange;
-            this.btnentrar.OnHoverImage = null;
-            this.btnentrar.OnPressedColor = System.Drawing.Color.White;
-            this.btnentrar.Radius = 15;
+            this.btnentrar.ShadowDecoration.Parent = this.btnentrar;
             this.btnentrar.Size = new System.Drawing.Size(308, 51);
             this.btnentrar.TabIndex = 3;
             this.btnentrar.Text = "ENTRAR";
-            this.btnentrar.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.btnentrar.Click += new System.EventHandler(this.btnentrar_Click);
             // 
             // txtnome
@@ -226,7 +217,7 @@ namespace Inscricao_e_Matricula
             this.txtsenha.IconLeftOffset = new System.Drawing.Point(5, 0);
             this.txtsenha.Location = new System.Drawing.Point(472, 244);
             this.txtsenha.Name = "txtsenha";
-            this.txtsenha.PasswordChar = '\0';
+            this.txtsenha.PasswordChar = '*';
             this.txtsenha.PlaceholderText = "Informe sua senha";
             this.txtsenha.SelectedText = "";
             this.txtsenha.ShadowDecoration.Parent = this.txtsenha;
@@ -246,7 +237,7 @@ namespace Inscricao_e_Matricula
             this.btnclose.HoverState.FillColor = System.Drawing.Color.Orange;
             this.btnclose.HoverState.Parent = this.btnclose;
             this.btnclose.Image = global::Inscricao_e_Matricula.Properties.Resources.window_close_icon_135015;
-            this.btnclose.Location = new System.Drawing.Point(803, 0);
+            this.btnclose.Location = new System.Drawing.Point(802, 1);
             this.btnclose.Name = "btnclose";
             this.btnclose.PressedColor = System.Drawing.Color.WhiteSmoke;
             this.btnclose.ShadowDecoration.Parent = this.btnclose;
@@ -295,7 +286,7 @@ namespace Inscricao_e_Matricula
         private Guna.UI2.WinForms.Guna2Button btnclose;
         private System.Windows.Forms.Timer timer1;
         private Guna.UI2.WinForms.Guna2TextBox txtsenha;
-        private Guna.UI.WinForms.GunaButton btnentrar;
+        private Guna.UI2.WinForms.Guna2Button btnentrar;
         private Guna.UI2.WinForms.Guna2TextBox txtnome;
     }
 }

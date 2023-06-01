@@ -26,7 +26,6 @@ C:\Users\Jesimiel\Documents\IM\inscricao_matricula\obj\Debug\Inscricao e Matricu
 C:\Users\Jesimiel\Documents\IM\inscricao_matricula\obj\Debug\Inscricao e Matricula.pdb
 C:\Users\Jesimiel\Documents\IM\inscricao_matricula\bin\Debug\Inscricao e Matricula.exe
 C:\Users\Jesimiel\Documents\IM\inscricao_matricula\bin\Debug\Inscricao e Matricula.pdb
-C:\Users\Jesimiel\Documents\IM\inscricao_matricula\bin\Debug\Guna.UI.dll
 C:\Users\Jesimiel\Documents\IM\inscricao_matricula\obj\Debug\Inscricao e Matricula.csprojResolveAssemblyReference.cache
 C:\Users\Jesimiel\Documents\IM\inscricao_matricula\obj\Debug\Inscricao_e_Matricula.TelaOperacao.resources
 C:\Users\Jesimiel\Documents\IM\inscricao_matricula\obj\Debug\Inscricao_e_Matricula.TelaPrincipal.resources
