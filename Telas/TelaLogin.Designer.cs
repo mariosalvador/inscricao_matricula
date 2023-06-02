@@ -42,6 +42,7 @@ namespace Inscricao_e_Matricula
             this.txtnome = new Guna.UI2.WinForms.Guna2TextBox();
             this.txtsenha = new Guna.UI2.WinForms.Guna2TextBox();
             this.btnclose = new Guna.UI2.WinForms.Guna2Button();
+            this.checkpass = new Guna.UI.WinForms.GunaCheckBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -169,7 +170,7 @@ namespace Inscricao_e_Matricula
             this.btnentrar.Name = "btnentrar";
             this.btnentrar.ShadowDecoration.Parent = this.btnentrar;
             this.btnentrar.Size = new System.Drawing.Size(308, 51);
-            this.btnentrar.TabIndex = 3;
+            this.btnentrar.TabIndex = 4;
             this.btnentrar.Text = "ENTRAR";
             this.btnentrar.Click += new System.EventHandler(this.btnentrar_Click);
             // 
@@ -245,12 +246,27 @@ namespace Inscricao_e_Matricula
             this.btnclose.TabIndex = 11;
             this.btnclose.Click += new System.EventHandler(this.btnclose_Click);
             // 
+            // checkpass
+            // 
+            this.checkpass.BaseColor = System.Drawing.Color.Gainsboro;
+            this.checkpass.CheckedOffColor = System.Drawing.Color.Transparent;
+            this.checkpass.CheckedOnColor = System.Drawing.Color.White;
+            this.checkpass.FillColor = System.Drawing.Color.DarkOrange;
+            this.checkpass.ForeColor = System.Drawing.Color.Black;
+            this.checkpass.Location = new System.Drawing.Point(657, 295);
+            this.checkpass.Name = "checkpass";
+            this.checkpass.Radius = 3;
+            this.checkpass.Size = new System.Drawing.Size(122, 20);
+            this.checkpass.TabIndex = 3;
+            this.checkpass.Text = "Ver palavra-passe";
+            // 
             // TelaLogin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DarkOrange;
             this.ClientSize = new System.Drawing.Size(838, 544);
+            this.Controls.Add(this.checkpass);
             this.Controls.Add(this.txtnome);
             this.Controls.Add(this.btnentrar);
             this.Controls.Add(this.txtsenha);
@@ -288,6 +304,7 @@ namespace Inscricao_e_Matricula
         private Guna.UI2.WinForms.Guna2TextBox txtsenha;
         private Guna.UI2.WinForms.Guna2Button btnentrar;
         private Guna.UI2.WinForms.Guna2TextBox txtnome;
+        private Guna.UI.WinForms.GunaCheckBox checkpass;
     }
 }
 

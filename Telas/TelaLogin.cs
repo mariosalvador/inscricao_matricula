@@ -19,7 +19,6 @@ namespace Inscricao_e_Matricula
         public TelaLogin()
         {
             InitializeComponent();
-
         }
         public void reposta(int resp)
         {
@@ -48,6 +47,7 @@ namespace Inscricao_e_Matricula
         private void TelaLogin_Load(object sender, EventArgs e)
         {
             txtnome.Focus();
+            
         }
 
         private void txtsenha_TextChanged(object sender, EventArgs e)
