@@ -225,6 +225,7 @@ namespace Inscricao_e_Matricula
             this.txtsenha.Size = new System.Drawing.Size(308, 51);
             this.txtsenha.TabIndex = 2;
             this.txtsenha.TextOffset = new System.Drawing.Point(10, 0);
+            this.txtsenha.TextChanged += new System.EventHandler(this.txtsenha_TextChanged_1);
             // 
             // btnclose
             // 
@@ -259,6 +260,7 @@ namespace Inscricao_e_Matricula
             this.checkpass.Size = new System.Drawing.Size(122, 20);
             this.checkpass.TabIndex = 3;
             this.checkpass.Text = "Ver palavra-passe";
+            this.checkpass.CheckedChanged += new System.EventHandler(this.checkpass_CheckedChanged);
             // 
             // TelaLogin
             // 

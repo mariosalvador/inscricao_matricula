@@ -85,7 +85,6 @@ namespace Inscricao_e_Matricula
             this.pictureBox4.Size = new System.Drawing.Size(46, 41);
             this.pictureBox4.TabIndex = 14;
             this.pictureBox4.TabStop = false;
-            this.pictureBox4.UseWaitCursor = true;
             // 
             // pictureBox3
             // 
@@ -96,7 +95,6 @@ namespace Inscricao_e_Matricula
             this.pictureBox3.Size = new System.Drawing.Size(18, 23);
             this.pictureBox3.TabIndex = 13;
             this.pictureBox3.TabStop = false;
-            this.pictureBox3.UseWaitCursor = true;
             // 
             // lbim
             // 
@@ -108,7 +106,6 @@ namespace Inscricao_e_Matricula
             this.lbim.Size = new System.Drawing.Size(346, 33);
             this.lbim.TabIndex = 12;
             this.lbim.Text = "INSCRIÇÃO & MATRÍCULA";
-            this.lbim.UseWaitCursor = true;
             // 
             // PROGRESSBAR
             // 
@@ -123,7 +120,6 @@ namespace Inscricao_e_Matricula
             this.PROGRESSBAR.Size = new System.Drawing.Size(347, 10);
             this.PROGRESSBAR.TabIndex = 11;
             this.PROGRESSBAR.TextRenderingHint = System.Drawing.Text.TextRenderingHint.SystemDefault;
-            this.PROGRESSBAR.UseWaitCursor = true;
             // 
             // pictureBox2
             // 
@@ -145,7 +141,6 @@ namespace Inscricao_e_Matricula
             this.pictureBox1.Size = new System.Drawing.Size(143, 442);
             this.pictureBox1.TabIndex = 8;
             this.pictureBox1.TabStop = false;
-            this.pictureBox1.UseWaitCursor = true;
             // 
             // label2
             // 
@@ -158,7 +153,6 @@ namespace Inscricao_e_Matricula
             this.label2.Size = new System.Drawing.Size(171, 85);
             this.label2.TabIndex = 5;
             this.label2.Text = "IPIL";
-            this.label2.UseWaitCursor = true;
             this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // TelaSplash
@@ -168,13 +162,12 @@ namespace Inscricao_e_Matricula
             this.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.ClientSize = new System.Drawing.Size(789, 442);
             this.Controls.Add(this.panel1);
-            this.Cursor = System.Windows.Forms.Cursors.WaitCursor;
+            this.Cursor = System.Windows.Forms.Cursors.Default;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "TelaSplash";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "TelaSplash";
-            this.UseWaitCursor = true;
             this.Load += new System.EventHandler(this.TelaSplash_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();

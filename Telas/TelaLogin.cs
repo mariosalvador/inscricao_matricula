@@ -19,7 +19,11 @@ namespace Inscricao_e_Matricula
         public TelaLogin()
         {
             InitializeComponent();
+            
         }
+        
+            
+       
         public void reposta(int resp)
         {
             if (btr == DialogResult.OK && resp ==1)
@@ -47,7 +51,6 @@ namespace Inscricao_e_Matricula
         private void TelaLogin_Load(object sender, EventArgs e)
         {
             txtnome.Focus();
-            
         }
 
         private void txtsenha_TextChanged(object sender, EventArgs e)
@@ -131,8 +134,25 @@ namespace Inscricao_e_Matricula
            
         }
 
-        
+        private void txtsenha_TextChanged_1(object sender, EventArgs e)
+        {
+            
+        }
 
+        private void checkpass_CheckedChanged(object sender, EventArgs e)
+        {
+            if (checkpass.Checked == true)
+            {
+                txtsenha.PasswordChar = '\u0000';
+            }
+            else
+            {
+                txtsenha.PasswordChar = '*';
+            }
+        }
+
+        
+     
         
     }
 }
