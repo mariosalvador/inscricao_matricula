@@ -24,6 +24,9 @@ namespace Inscricao_e_Matricula
             TelaLogin telaLogin = new TelaLogin();
             lb_Entidade.Text = telaLogin.nome;
             pictureBox1.BackColor = Color.Chocolate;
+
+            Class_TelaInscricao _TelaInscricao = new Class_TelaInscricao();
+            lb_TotaInscrito.Text =Convert.ToString( _TelaInscricao.totalInscrito);
         }
 
         private void label2_Click(object sender, EventArgs e)
@@ -66,7 +69,7 @@ namespace Inscricao_e_Matricula
 
         private void lb_Entidade_Click(object sender, EventArgs e)
         {
-            
+           
         }
 
         private void pic_Info_Click(object sender, EventArgs e)

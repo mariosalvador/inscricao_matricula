@@ -12,6 +12,7 @@ namespace Inscricao_e_Matricula
 {
     public partial class TelaInscricao : Form
     {
+        Class_TelaInscricao _TelaInscricao = new Class_TelaInscricao();
         public TelaInscricao()
         {
             InitializeComponent();
@@ -55,6 +56,162 @@ namespace Inscricao_e_Matricula
         }
 
         private void panel3_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btn_Validar_Click(object sender, EventArgs e)
+        {
+            if (txtnome.Text == "")
+            {
+                MessageBox.Show(" Campo de Nome Vazio!!!");
+                MessageBox.Show("Preencha o Campo de nome");
+                txtnome.Focus();
+            }
+            else
+            {
+                if (txt_Bi.Text == "")
+                {
+                    MessageBox.Show(" Campo Vazio Detetado!!!");
+                    MessageBox.Show("Preencha o campo de BI");
+                    txt_Bi.Focus();
+                }
+                if (txt_Tel.Text == "")
+                {
+                    MessageBox.Show(" Campo Vazio Detetado!!!");
+                    MessageBox.Show("Preencha o campo de Telefone");
+                    txt_Tel.Focus();
+                }
+                if (txt_Genero.Text == "")
+                {
+                    MessageBox.Show(" Campo Vazio Detetado!!!");
+                    MessageBox.Show(" Preencha o campo de Genero");
+                    txt_Genero.Focus();
+                }
+                if (txt_Nacionalidade.Text == "")
+                {
+                    MessageBox.Show(" Campo Vazio Detetado!!!");
+                    MessageBox.Show(" Preencha o campo de Nacionalidade");
+                    txt_Nacionalidade.Focus();
+                }
+                if (txt_Localidade.Text == "")
+                {
+                    MessageBox.Show(" Campo Vazio Detetado!!!");
+                    MessageBox.Show(" Preencha o campo de Localidade");
+                    txt_Localidade.Focus();
+                }
+                if (txt_Curso.Text == "")
+                {
+                    MessageBox.Show(" Campo Vazio Detetado!!!");
+                    MessageBox.Show(" Preencha o campo de Curso");
+                    txt_Curso.Focus();
+                }
+                if (txt_AreaFormacao.Text == "")
+                {
+                    MessageBox.Show(" Campo Vazio Detetado!!!");
+                    MessageBox.Show(" Preencha o campo de Area de Formação");
+                    txt_AreaFormacao.Focus();
+                }
+            }
+
+            try
+            {
+                if (txt_AreaFormacao.Text != "" && txt_Curso.Text != "" && txt_Localidade.Text != "" && txt_Nacionalidade.Text != "" && txt_Genero.Text != "" && txt_Tel.Text != "" && txt_Bi.Text != "" && txtnome.Text != "")
+                {
+                    _TelaInscricao.Insc_Nome = txtnome.Text;
+                    _TelaInscricao.Insc_nuneroBI = txt_Bi.Text;
+                    _TelaInscricao.Insc_numTelefone = Convert.ToInt32(txt_Tel.Text);
+                    _TelaInscricao.Insc_Genero = txt_Genero.Text;
+                    _TelaInscricao.Insc_Nacionalidade = txt_Nacionalidade.Text;
+                    _TelaInscricao.Insc_Localidade = txt_Localidade.Text;
+                    _TelaInscricao.Insc_Curso = txt_Curso.Text;
+                    _TelaInscricao.Insc_AreaFormacao = txt_AreaFormacao.Text;
+                    
+                    //Obtencao das notas digitadas
+                    _TelaInscricao.Lp7 = Convert.ToDouble(txt_LP7.Text);
+                    _TelaInscricao.Lp8 = Convert.ToDouble(txt_LP8.Text);
+                    _TelaInscricao.Lp9 = Convert.ToDouble(txt_LP9.Text);
+                    _TelaInscricao.Lp_media = Convert.ToDouble( txt_LPmedia.Text);
+
+                    _TelaInscricao.Qui7 = Convert.ToDouble(txt_Qui7.Text);
+                    _TelaInscricao.Qui8 = Convert.ToDouble(txt_Qui8.Text);
+                    _TelaInscricao.Qui9 = Convert.ToDouble(txt_Qui9.Text);
+                    _TelaInscricao.Qui_media = Convert.ToDouble(txt_Quimedia.Text);
+
+                    _TelaInscricao.mat7 = Convert.ToDouble(txt_Mat7.Text);
+                    _TelaInscricao.mat8 = Convert.ToDouble(txt_Mat8.Text);
+                    _TelaInscricao.mat9 = Convert.ToDouble(txt_Mat9.Text);
+                    _TelaInscricao.mat_media = Convert.ToDouble(txt_Matmedia.Text);
+
+                    _TelaInscricao.Ing7 = Convert.ToDouble(txt_Ing7.Text);
+                    _TelaInscricao.Ing8 = Convert.ToDouble(txt_Ing8.Text);
+                    _TelaInscricao.Ing9 = Convert.ToDouble(txt_Ing9.Text);
+                    _TelaInscricao.Ing_media = Convert.ToDouble(txt_Ingmedia.Text);
+
+                    _TelaInscricao.Fis7 = Convert.ToDouble(txt_Fis7.Text);
+                    _TelaInscricao.Fis8 = Convert.ToDouble(txt_Fis8.Text);
+                    _TelaInscricao.Fis9 = Convert.ToDouble(txt_Fis9.Text);
+                    _TelaInscricao.Fis_media = Convert.ToDouble(txt_Fismedia.Text);
+
+                    _TelaInscricao.totalInscrito += 1;
+                }
+            } catch (Exception erro)
+            {
+                MessageBox.Show("ERRO: {0}",erro.Message);
+            }
+        }
+
+        private void panel2_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void txt_Localidade_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txt_Genero_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txt_Nacionalidade_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txt_Tel_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void guna2TextBox3_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txt_Bi_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtnome_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dateTimePicker1_ValueChanged_1(object sender, EventArgs e)
         {
 
         }
