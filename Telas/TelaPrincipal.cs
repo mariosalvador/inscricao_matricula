@@ -146,6 +146,11 @@ namespace Inscricao_e_Matricula
             tl.ShowDialog();
         }
 
+        private void btnhome_MouseHover(object sender, EventArgs e)
+        {
+
+        }
+
        
     }
 }
