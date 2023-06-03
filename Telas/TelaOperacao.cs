@@ -47,16 +47,14 @@ namespace Inscricao_e_Matricula
 
         private void pictureBox1_Click(object sender, EventArgs e)
         {
-            TelaPrincipal telaPrincipal = new TelaPrincipal();
-            this.Hide();
-            telaPrincipal.Show();
+            
         }
 
         private void TelaOperacao_Load(object sender, EventArgs e)
         {
             TelaLogin telaLogin = new TelaLogin();
             lb_Entidade.Text = telaLogin.nome;
-            pic_Add.BackColor = Color.Chocolate;
+            btnadd.BackColor = Color.Orange;
         }
 
         private void btnclose_Click(object sender, EventArgs e)
@@ -79,6 +77,13 @@ namespace Inscricao_e_Matricula
         private void guna2Button2_Click(object sender, EventArgs e)
         {
             this.WindowState = FormWindowState.Minimized;
+        }
+
+        private void btnhome_Click(object sender, EventArgs e)
+        {
+            TelaPrincipal telaPrincipal = new TelaPrincipal();
+            this.Hide();
+            telaPrincipal.Show();
         }
 
     }

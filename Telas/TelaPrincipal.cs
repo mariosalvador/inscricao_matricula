@@ -22,10 +22,9 @@ namespace Inscricao_e_Matricula
 
         private void TelaPrincipal_Load(object sender, EventArgs e)
         {
+            btnhome.FillColor = Color.Orange;
             TelaLogin telaLogin = new TelaLogin();
             lb_Entidade.Text = telaLogin.nome;
-            pictureBox1.BackColor = Color.Chocolate;
-
             Class_TelaInscricao _TelaInscricao = new Class_TelaInscricao();
             lb_TotaInscrito.Text =Convert.ToString( _TelaInscricao.totalInscrito);
         }
@@ -129,5 +128,24 @@ namespace Inscricao_e_Matricula
         {
             this.WindowState = FormWindowState.Minimized;
         }
+
+        private void btnhome_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pic_Home_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void guna2Button3_Click(object sender, EventArgs e)
+        {
+            TelaOperacao tl = new TelaOperacao();
+            this.Hide();
+            tl.ShowDialog();
+        }
+
+       
     }
 }
