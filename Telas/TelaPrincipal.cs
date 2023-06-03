@@ -17,6 +17,7 @@ namespace Inscricao_e_Matricula
         public TelaPrincipal()
         {
             InitializeComponent();
+            this.SetStyle(ControlStyles.ResizeRedraw, true);
         }
 
         private void TelaPrincipal_Load(object sender, EventArgs e)
@@ -74,9 +75,7 @@ namespace Inscricao_e_Matricula
 
         private void pic_Info_Click(object sender, EventArgs e)
         {
-            TelaInformacao telaInformacao = new TelaInformacao();
-            this.Hide();
-            telaInformacao.Show();
+ 
         }
 
         private void chart1_Click(object sender, EventArgs e)
@@ -97,6 +96,38 @@ namespace Inscricao_e_Matricula
         private void label8_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void label25_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel8_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void guna2Button1_Click(object sender, EventArgs e)
+        {
+            if (this.WindowState == FormWindowState.Normal)
+            {
+                this.WindowState = FormWindowState.Maximized;
+            }
+            else
+            {
+                this.WindowState = FormWindowState.Normal;
+            }
+        }
+
+        private void btnclose_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void guna2Button2_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Minimized;
         }
     }
 }

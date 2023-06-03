@@ -229,8 +229,6 @@ namespace Inscricao_e_Matricula
             // 
             // btnclose
             // 
-            this.btnclose.AutoRoundedCorners = true;
-            this.btnclose.BorderRadius = 14;
             this.btnclose.CheckedState.Parent = this.btnclose;
             this.btnclose.CustomImages.Parent = this.btnclose;
             this.btnclose.FillColor = System.Drawing.Color.Transparent;
@@ -241,7 +239,7 @@ namespace Inscricao_e_Matricula
             this.btnclose.Image = global::Inscricao_e_Matricula.Properties.Resources.window_close_icon_135015;
             this.btnclose.Location = new System.Drawing.Point(802, 1);
             this.btnclose.Name = "btnclose";
-            this.btnclose.PressedColor = System.Drawing.Color.WhiteSmoke;
+            this.btnclose.PressedColor = System.Drawing.Color.DarkOrange;
             this.btnclose.ShadowDecoration.Parent = this.btnclose;
             this.btnclose.Size = new System.Drawing.Size(35, 31);
             this.btnclose.TabIndex = 11;

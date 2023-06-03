@@ -52,18 +52,33 @@ namespace Inscricao_e_Matricula
             telaPrincipal.Show();
         }
 
-        private void pictureBox5_Click(object sender, EventArgs e)
-        {
-            TelaInformacao telaInformacao = new TelaInformacao();
-            this.Hide();
-            telaInformacao.Show();
-        }
-
         private void TelaOperacao_Load(object sender, EventArgs e)
         {
             TelaLogin telaLogin = new TelaLogin();
             lb_Entidade.Text = telaLogin.nome;
             pic_Add.BackColor = Color.Chocolate;
+        }
+
+        private void btnclose_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void guna2Button1_Click(object sender, EventArgs e)
+        {
+            if (this.WindowState == FormWindowState.Normal)
+            {
+                this.WindowState = FormWindowState.Maximized;
+            }
+            else
+            {
+                this.WindowState = FormWindowState.Normal;
+            }
+        }
+
+        private void guna2Button2_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Minimized;
         }
 
     }
