@@ -16,7 +16,7 @@ namespace Inscricao_e_Matricula
         {
             //Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Telas.TelaProcesso());
+            Application.Run(new TelaSplash());
         }
     }
 }

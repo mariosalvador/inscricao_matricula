@@ -149,10 +149,7 @@ namespace Inscricao_e_Matricula
             {
                 txtsenha.PasswordChar = '*';
             }
-        }
-
-        
-     
+        }  
         
     }
 }

@@ -184,7 +184,7 @@ namespace Inscricao_e_Matricula
             this.txtnome.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtnome.DisabledState.Parent = this.txtnome;
             this.txtnome.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtnome.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtnome.FocusedState.BorderColor = System.Drawing.Color.Transparent;
             this.txtnome.FocusedState.Parent = this.txtnome;
             this.txtnome.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtnome.HoverState.Parent = this.txtnome;
@@ -210,7 +210,7 @@ namespace Inscricao_e_Matricula
             this.txtsenha.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtsenha.DisabledState.Parent = this.txtsenha;
             this.txtsenha.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtsenha.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtsenha.FocusedState.BorderColor = System.Drawing.Color.Transparent;
             this.txtsenha.FocusedState.Parent = this.txtsenha;
             this.txtsenha.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtsenha.HoverState.Parent = this.txtsenha;
@@ -254,7 +254,7 @@ namespace Inscricao_e_Matricula
             this.checkpass.CheckedOnColor = System.Drawing.Color.White;
             this.checkpass.FillColor = System.Drawing.Color.DarkOrange;
             this.checkpass.ForeColor = System.Drawing.Color.Black;
-            this.checkpass.Location = new System.Drawing.Point(657, 295);
+            this.checkpass.Location = new System.Drawing.Point(657, 296);
             this.checkpass.Name = "checkpass";
             this.checkpass.Radius = 3;
             this.checkpass.Size = new System.Drawing.Size(122, 20);
