@@ -30,9 +30,9 @@ namespace Inscricao_e_Matricula
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend2 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.panel1 = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel8 = new System.Windows.Forms.Panel();
@@ -122,7 +122,7 @@ namespace Inscricao_e_Matricula
             this.panel1.Controls.Add(this.label3);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Location = new System.Drawing.Point(-1, 0);
-            this.panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(73, 752);
             this.panel1.TabIndex = 0;
@@ -331,17 +331,17 @@ namespace Inscricao_e_Matricula
             this.chart1.BackColor = System.Drawing.Color.Transparent;
             this.chart1.BorderSkin.BorderWidth = 5;
             this.chart1.BorderSkin.PageColor = System.Drawing.Color.Transparent;
-            chartArea2.Name = "ChartArea1";
-            this.chart1.ChartAreas.Add(chartArea2);
-            legend2.Name = "Legend1";
-            this.chart1.Legends.Add(legend2);
+            chartArea1.Name = "ChartArea1";
+            this.chart1.ChartAreas.Add(chartArea1);
+            legend1.Name = "Legend1";
+            this.chart1.Legends.Add(legend1);
             this.chart1.Location = new System.Drawing.Point(0, 41);
             this.chart1.Name = "chart1";
             this.chart1.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.EarthTones;
-            series2.ChartArea = "ChartArea1";
-            series2.Legend = "Legend1";
-            series2.Name = "Series1";
-            this.chart1.Series.Add(series2);
+            series1.ChartArea = "ChartArea1";
+            series1.Legend = "Legend1";
+            series1.Name = "Series1";
+            this.chart1.Series.Add(series1);
             this.chart1.Size = new System.Drawing.Size(639, 243);
             this.chart1.TabIndex = 9;
             this.chart1.Text = "chart1";
@@ -701,7 +701,7 @@ namespace Inscricao_e_Matricula
             this.lb_Entidade.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.lb_Entidade.AutoSize = true;
             this.lb_Entidade.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.8F);
-            this.lb_Entidade.Location = new System.Drawing.Point(965, 38);
+            this.lb_Entidade.Location = new System.Drawing.Point(936, 38);
             this.lb_Entidade.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lb_Entidade.Name = "lb_Entidade";
             this.lb_Entidade.Size = new System.Drawing.Size(98, 26);
@@ -715,7 +715,7 @@ namespace Inscricao_e_Matricula
             this.panel7.BackgroundImage = global::Inscricao_e_Matricula.Properties.Resources.Notification;
             this.panel7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.panel7.Controls.Add(this.label14);
-            this.panel7.Location = new System.Drawing.Point(904, 36);
+            this.panel7.Location = new System.Drawing.Point(875, 36);
             this.panel7.Name = "panel7";
             this.panel7.Size = new System.Drawing.Size(32, 28);
             this.panel7.TabIndex = 8;
@@ -739,7 +739,7 @@ namespace Inscricao_e_Matricula
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1040, 640);
+            this.ClientSize = new System.Drawing.Size(1144, 640);
             this.Controls.Add(this.lb_Entidade);
             this.Controls.Add(this.panel7);
             this.Controls.Add(this.pnins);
@@ -750,7 +750,7 @@ namespace Inscricao_e_Matricula
             this.Controls.Add(this.label4);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "TelaPrincipal";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "TelaPrincipal";

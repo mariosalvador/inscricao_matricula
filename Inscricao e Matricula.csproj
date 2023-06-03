@@ -23,6 +23,7 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>true</UseVSHostingProcess>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -82,6 +83,12 @@
     <Compile Include="Telas\TelaPrincipal.Designer.cs">
       <DependentUpon>TelaPrincipal.cs</DependentUpon>
     </Compile>
+    <Compile Include="Telas\TelaProcesso.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Telas\TelaProcesso.Designer.cs">
+      <DependentUpon>TelaProcesso.cs</DependentUpon>
+    </Compile>
     <Compile Include="Telas\TelaSplash.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -113,6 +120,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Telas\TelaPrincipal.resx">
       <DependentUpon>TelaPrincipal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Telas\TelaProcesso.resx">
+      <DependentUpon>TelaProcesso.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Telas\TelaSplash.resx">
       <DependentUpon>TelaSplash.cs</DependentUpon>

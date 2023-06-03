@@ -71,3 +71,4 @@ C:\Users\m\OneDrive\Desktop\visual studio 2023\Windows form\IM\inscricao_matricu
 C:\Users\m\OneDrive\Desktop\visual studio 2023\Windows form\IM\inscricao_matricula\obj\Debug\Inscricao e Matricula.csproj.CopyComplete
 C:\Users\m\OneDrive\Desktop\visual studio 2023\Windows form\IM\inscricao_matricula\obj\Debug\Inscricao e Matricula.exe
 C:\Users\m\OneDrive\Desktop\visual studio 2023\Windows form\IM\inscricao_matricula\obj\Debug\Inscricao e Matricula.pdb
+C:\Users\Jesimiel\Documents\IM\inscricao_matricula\obj\Debug\Inscricao_e_Matricula.Telas.TelaProcesso.resources
