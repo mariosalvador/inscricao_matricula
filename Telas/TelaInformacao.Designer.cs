@@ -30,8 +30,14 @@ namespace Inscricao_e_Matricula
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.pictureBox7 = new System.Windows.Forms.PictureBox();
+            this.panel8 = new System.Windows.Forms.Panel();
+            this.pic_Add = new System.Windows.Forms.PictureBox();
             this.label13 = new System.Windows.Forms.Label();
+            this.pic_definicao = new System.Windows.Forms.PictureBox();
+            this.pic_Home = new System.Windows.Forms.PictureBox();
             this.label5 = new System.Windows.Forms.Label();
+            this.pic_Folder = new System.Windows.Forms.PictureBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
@@ -51,31 +57,25 @@ namespace Inscricao_e_Matricula
             this.label23 = new System.Windows.Forms.Label();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label14 = new System.Windows.Forms.Label();
-            this.pictureBox7 = new System.Windows.Forms.PictureBox();
-            this.panel8 = new System.Windows.Forms.Panel();
-            this.pic_Add = new System.Windows.Forms.PictureBox();
-            this.pic_definicao = new System.Windows.Forms.PictureBox();
-            this.pic_Home = new System.Windows.Forms.PictureBox();
-            this.pic_Folder = new System.Windows.Forms.PictureBox();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pic_Add)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pic_definicao)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pic_Home)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pic_Folder)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -98,6 +98,42 @@ namespace Inscricao_e_Matricula
             this.panel1.Size = new System.Drawing.Size(97, 926);
             this.panel1.TabIndex = 1;
             // 
+            // pictureBox7
+            // 
+            this.pictureBox7.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox7.BackgroundImage = global::Inscricao_e_Matricula.Properties.Resources.Rectangle_7;
+            this.pictureBox7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pictureBox7.Image = global::Inscricao_e_Matricula.Properties.Resources.Help1;
+            this.pictureBox7.Location = new System.Drawing.Point(-2, 786);
+            this.pictureBox7.Margin = new System.Windows.Forms.Padding(4);
+            this.pictureBox7.Name = "pictureBox7";
+            this.pictureBox7.Size = new System.Drawing.Size(99, 59);
+            this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pictureBox7.TabIndex = 13;
+            this.pictureBox7.TabStop = false;
+            // 
+            // panel8
+            // 
+            this.panel8.BackgroundImage = global::Inscricao_e_Matricula.Properties.Resources.LOGO_IPIL_removebg_preview_2;
+            this.panel8.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.panel8.Location = new System.Drawing.Point(0, 11);
+            this.panel8.Margin = new System.Windows.Forms.Padding(4);
+            this.panel8.Name = "panel8";
+            this.panel8.Size = new System.Drawing.Size(99, 60);
+            this.panel8.TabIndex = 9;
+            // 
+            // pic_Add
+            // 
+            this.pic_Add.BackgroundImage = global::Inscricao_e_Matricula.Properties.Resources.Users;
+            this.pic_Add.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pic_Add.Location = new System.Drawing.Point(0, 331);
+            this.pic_Add.Margin = new System.Windows.Forms.Padding(4);
+            this.pic_Add.Name = "pic_Add";
+            this.pic_Add.Size = new System.Drawing.Size(99, 59);
+            this.pic_Add.TabIndex = 9;
+            this.pic_Add.TabStop = false;
+            this.pic_Add.Click += new System.EventHandler(this.pic_Add_Click);
+            // 
             // label13
             // 
             this.label13.AutoSize = true;
@@ -110,6 +146,29 @@ namespace Inscricao_e_Matricula
             this.label13.Text = "_________";
             this.label13.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // pic_definicao
+            // 
+            this.pic_definicao.BackgroundImage = global::Inscricao_e_Matricula.Properties.Resources.Settings;
+            this.pic_definicao.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pic_definicao.Location = new System.Drawing.Point(-2, 697);
+            this.pic_definicao.Margin = new System.Windows.Forms.Padding(4);
+            this.pic_definicao.Name = "pic_definicao";
+            this.pic_definicao.Size = new System.Drawing.Size(99, 59);
+            this.pic_definicao.TabIndex = 10;
+            this.pic_definicao.TabStop = false;
+            // 
+            // pic_Home
+            // 
+            this.pic_Home.BackgroundImage = global::Inscricao_e_Matricula.Properties.Resources.Home;
+            this.pic_Home.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pic_Home.Location = new System.Drawing.Point(0, 175);
+            this.pic_Home.Margin = new System.Windows.Forms.Padding(4);
+            this.pic_Home.Name = "pic_Home";
+            this.pic_Home.Size = new System.Drawing.Size(99, 59);
+            this.pic_Home.TabIndex = 5;
+            this.pic_Home.TabStop = false;
+            this.pic_Home.Click += new System.EventHandler(this.pic_Home_Click);
+            // 
             // label5
             // 
             this.label5.AutoSize = true;
@@ -121,6 +180,17 @@ namespace Inscricao_e_Matricula
             this.label5.TabIndex = 1;
             this.label5.Text = "____________";
             this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // pic_Folder
+            // 
+            this.pic_Folder.BackgroundImage = global::Inscricao_e_Matricula.Properties.Resources.Folder;
+            this.pic_Folder.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pic_Folder.Location = new System.Drawing.Point(0, 254);
+            this.pic_Folder.Margin = new System.Windows.Forms.Padding(4);
+            this.pic_Folder.Name = "pic_Folder";
+            this.pic_Folder.Size = new System.Drawing.Size(99, 59);
+            this.pic_Folder.TabIndex = 6;
+            this.pic_Folder.TabStop = false;
             // 
             // label3
             // 
@@ -324,27 +394,17 @@ namespace Inscricao_e_Matricula
             // pictureBox5
             // 
             this.pictureBox5.Image = global::Inscricao_e_Matricula.Properties.Resources.Chevron_Up;
-            this.pictureBox5.Location = new System.Drawing.Point(870, 465);
+            this.pictureBox5.Location = new System.Drawing.Point(870, 458);
             this.pictureBox5.Name = "pictureBox5";
             this.pictureBox5.Size = new System.Drawing.Size(38, 39);
             this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.pictureBox5.TabIndex = 44;
             this.pictureBox5.TabStop = false;
             // 
-            // pictureBox4
-            // 
-            this.pictureBox4.Image = global::Inscricao_e_Matricula.Properties.Resources.Chevron_Up;
-            this.pictureBox4.Location = new System.Drawing.Point(870, 550);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(38, 39);
-            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.pictureBox4.TabIndex = 43;
-            this.pictureBox4.TabStop = false;
-            // 
             // pictureBox3
             // 
             this.pictureBox3.Image = global::Inscricao_e_Matricula.Properties.Resources.Chevron_Up;
-            this.pictureBox3.Location = new System.Drawing.Point(870, 614);
+            this.pictureBox3.Location = new System.Drawing.Point(870, 613);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(38, 39);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
@@ -354,7 +414,7 @@ namespace Inscricao_e_Matricula
             // pictureBox1
             // 
             this.pictureBox1.Image = global::Inscricao_e_Matricula.Properties.Resources.Chevron_Up;
-            this.pictureBox1.Location = new System.Drawing.Point(870, 244);
+            this.pictureBox1.Location = new System.Drawing.Point(870, 234);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(38, 39);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
@@ -394,75 +454,15 @@ namespace Inscricao_e_Matricula
             this.label14.Text = "2";
             this.label14.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // pictureBox7
+            // pictureBox4
             // 
-            this.pictureBox7.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox7.BackgroundImage = global::Inscricao_e_Matricula.Properties.Resources.Rectangle_7;
-            this.pictureBox7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox7.Image = global::Inscricao_e_Matricula.Properties.Resources.Help1;
-            this.pictureBox7.Location = new System.Drawing.Point(-2, 786);
-            this.pictureBox7.Margin = new System.Windows.Forms.Padding(4);
-            this.pictureBox7.Name = "pictureBox7";
-            this.pictureBox7.Size = new System.Drawing.Size(99, 59);
-            this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.pictureBox7.TabIndex = 13;
-            this.pictureBox7.TabStop = false;
-            // 
-            // panel8
-            // 
-            this.panel8.BackgroundImage = global::Inscricao_e_Matricula.Properties.Resources.LOGO_IPIL_removebg_preview_2;
-            this.panel8.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.panel8.Location = new System.Drawing.Point(0, 11);
-            this.panel8.Margin = new System.Windows.Forms.Padding(4);
-            this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(99, 60);
-            this.panel8.TabIndex = 9;
-            // 
-            // pic_Add
-            // 
-            this.pic_Add.BackgroundImage = global::Inscricao_e_Matricula.Properties.Resources.Users;
-            this.pic_Add.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pic_Add.Location = new System.Drawing.Point(0, 331);
-            this.pic_Add.Margin = new System.Windows.Forms.Padding(4);
-            this.pic_Add.Name = "pic_Add";
-            this.pic_Add.Size = new System.Drawing.Size(99, 59);
-            this.pic_Add.TabIndex = 9;
-            this.pic_Add.TabStop = false;
-            this.pic_Add.Click += new System.EventHandler(this.pic_Add_Click);
-            // 
-            // pic_definicao
-            // 
-            this.pic_definicao.BackgroundImage = global::Inscricao_e_Matricula.Properties.Resources.Settings;
-            this.pic_definicao.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pic_definicao.Location = new System.Drawing.Point(-2, 697);
-            this.pic_definicao.Margin = new System.Windows.Forms.Padding(4);
-            this.pic_definicao.Name = "pic_definicao";
-            this.pic_definicao.Size = new System.Drawing.Size(99, 59);
-            this.pic_definicao.TabIndex = 10;
-            this.pic_definicao.TabStop = false;
-            // 
-            // pic_Home
-            // 
-            this.pic_Home.BackgroundImage = global::Inscricao_e_Matricula.Properties.Resources.Home;
-            this.pic_Home.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pic_Home.Location = new System.Drawing.Point(0, 175);
-            this.pic_Home.Margin = new System.Windows.Forms.Padding(4);
-            this.pic_Home.Name = "pic_Home";
-            this.pic_Home.Size = new System.Drawing.Size(99, 59);
-            this.pic_Home.TabIndex = 5;
-            this.pic_Home.TabStop = false;
-            this.pic_Home.Click += new System.EventHandler(this.pic_Home_Click);
-            // 
-            // pic_Folder
-            // 
-            this.pic_Folder.BackgroundImage = global::Inscricao_e_Matricula.Properties.Resources.Folder;
-            this.pic_Folder.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pic_Folder.Location = new System.Drawing.Point(0, 254);
-            this.pic_Folder.Margin = new System.Windows.Forms.Padding(4);
-            this.pic_Folder.Name = "pic_Folder";
-            this.pic_Folder.Size = new System.Drawing.Size(99, 59);
-            this.pic_Folder.TabIndex = 6;
-            this.pic_Folder.TabStop = false;
+            this.pictureBox4.Image = global::Inscricao_e_Matricula.Properties.Resources.Chevron_Up;
+            this.pictureBox4.Location = new System.Drawing.Point(870, 549);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(38, 39);
+            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pictureBox4.TabIndex = 43;
+            this.pictureBox4.TabStop = false;
             // 
             // TelaInformacao
             // 
@@ -498,18 +498,18 @@ namespace Inscricao_e_Matricula
             this.Text = "TelaInformacao";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            this.panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pic_Add)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pic_definicao)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pic_Home)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pic_Folder)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            this.panel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -548,8 +548,8 @@ namespace Inscricao_e_Matricula
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox pictureBox3;
-        private System.Windows.Forms.PictureBox pictureBox4;
         private System.Windows.Forms.PictureBox pictureBox5;
         private System.Windows.Forms.PictureBox pictureBox6;
+        private System.Windows.Forms.PictureBox pictureBox4;
     }
 }
