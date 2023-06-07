@@ -30,25 +30,22 @@ namespace Inscricao_e_Matricula
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea13 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend13 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series13 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.label4 = new System.Windows.Forms.Label();
             this.pnmat = new System.Windows.Forms.Panel();
             this.lb_Vagas = new System.Windows.Forms.Label();
             this.lb_TotalMatriculado = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.pictureBox7 = new System.Windows.Forms.PictureBox();
             this.panel3 = new System.Windows.Forms.Panel();
             this.chart1 = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.label7 = new System.Windows.Forms.Label();
             this.pnreje = new System.Windows.Forms.Panel();
             this.label10 = new System.Windows.Forms.Label();
-            this.pictureBox9 = new System.Windows.Forms.PictureBox();
             this.pnins = new System.Windows.Forms.Panel();
             this.lb_TotaInscrito = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
-            this.pictureBox10 = new System.Windows.Forms.PictureBox();
             this.panel6 = new System.Windows.Forms.Panel();
             this.ProgressBar_Electricidade = new Guna.UI2.WinForms.Guna2ProgressBar();
             this.ProgressBar_Quimica = new Guna.UI2.WinForms.Guna2ProgressBar();
@@ -73,35 +70,40 @@ namespace Inscricao_e_Matricula
             this.guna2Elipse4 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.guna2Elipse5 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.lb_Entidade = new System.Windows.Forms.Label();
-            this.btnclose = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2Button2 = new Guna.UI2.WinForms.Guna2Button();
             this.guna2DragControl1 = new Guna.UI2.WinForms.Guna2DragControl(this.components);
             this.label13 = new System.Windows.Forms.Label();
-            this.btnhome = new Guna.UI2.WinForms.Guna2Button();
-            this.btnadd = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2Button4 = new Guna.UI2.WinForms.Guna2Button();
-            this.btnhelp = new Guna.UI2.WinForms.Guna2Button();
-            this.btnconfig = new Guna.UI2.WinForms.Guna2Button();
             this.btnspanel = new Guna.UI2.WinForms.Guna2Panel();
-            this.panel9 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.guna2Elipse6 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
+            this.guna2Elipse7 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.panel8 = new System.Windows.Forms.Panel();
             this.label14 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
+            this.panel9 = new System.Windows.Forms.Panel();
+            this.btnconfig = new Guna.UI2.WinForms.Guna2Button();
+            this.btnhelp = new Guna.UI2.WinForms.Guna2Button();
+            this.guna2Button4 = new Guna.UI2.WinForms.Guna2Button();
+            this.btnadd = new Guna.UI2.WinForms.Guna2Button();
+            this.btnhome = new Guna.UI2.WinForms.Guna2Button();
+            this.guna2Button2 = new Guna.UI2.WinForms.Guna2Button();
+            this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
+            this.btnclose = new Guna.UI2.WinForms.Guna2Button();
+            this.pictureBox10 = new System.Windows.Forms.PictureBox();
+            this.pictureBox9 = new System.Windows.Forms.PictureBox();
+            this.pictureBox7 = new System.Windows.Forms.PictureBox();
+            this.paneljanela = new System.Windows.Forms.Panel();
             this.pnmat.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.chart1)).BeginInit();
             this.pnreje.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
             this.pnins.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
             this.panel6.SuspendLayout();
             this.btnspanel.SuspendLayout();
             this.panel8.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
+            this.paneljanela.SuspendLayout();
             this.SuspendLayout();
             // 
             // label4
@@ -123,22 +125,22 @@ namespace Inscricao_e_Matricula
             // 
             this.pnmat.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.pnmat.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.pnmat.Controls.Add(this.lb_Vagas);
             this.pnmat.Controls.Add(this.lb_TotalMatriculado);
             this.pnmat.Controls.Add(this.label2);
             this.pnmat.Controls.Add(this.pictureBox7);
             this.pnmat.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.pnmat.Location = new System.Drawing.Point(461, 113);
+            this.pnmat.Location = new System.Drawing.Point(384, 47);
             this.pnmat.Margin = new System.Windows.Forms.Padding(10);
             this.pnmat.Name = "pnmat";
             this.pnmat.Size = new System.Drawing.Size(292, 179);
             this.pnmat.TabIndex = 5;
+            this.pnmat.Paint += new System.Windows.Forms.PaintEventHandler(this.pnmat_Paint);
             // 
             // lb_Vagas
             // 
             this.lb_Vagas.Font = new System.Drawing.Font("Segoe UI", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lb_Vagas.ForeColor = System.Drawing.Color.DarkOrange;
-            this.lb_Vagas.Location = new System.Drawing.Point(230, 115);
+            this.lb_Vagas.Location = new System.Drawing.Point(0, 115);
             this.lb_Vagas.Name = "lb_Vagas";
             this.lb_Vagas.Size = new System.Drawing.Size(292, 43);
             this.lb_Vagas.TabIndex = 9;
@@ -155,7 +157,6 @@ namespace Inscricao_e_Matricula
             this.lb_TotalMatriculado.TabIndex = 9;
             this.lb_TotalMatriculado.Text = "2.000";
             this.lb_TotalMatriculado.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-           
             // 
             // label2
             // 
@@ -168,48 +169,38 @@ namespace Inscricao_e_Matricula
             this.label2.Text = "TOTAL DE MATRICULADOS";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // pictureBox7
-            // 
-            this.pictureBox7.BackgroundImage = global::Inscricao_e_Matricula.Properties.Resources.User_Male;
-            this.pictureBox7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox7.Location = new System.Drawing.Point(0, 11);
-            this.pictureBox7.Name = "pictureBox7";
-            this.pictureBox7.Size = new System.Drawing.Size(292, 49);
-            this.pictureBox7.TabIndex = 7;
-            this.pictureBox7.TabStop = false;
-            // 
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.WhiteSmoke;
             this.panel3.Controls.Add(this.chart1);
             this.panel3.Controls.Add(this.label7);
             this.panel3.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.panel3.Location = new System.Drawing.Point(118, 347);
+            this.panel3.Location = new System.Drawing.Point(43, 281);
             this.panel3.Margin = new System.Windows.Forms.Padding(10);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(635, 284);
             this.panel3.TabIndex = 5;
+            this.panel3.Paint += new System.Windows.Forms.PaintEventHandler(this.panel3_Paint);
             // 
             // chart1
             // 
             this.chart1.BackColor = System.Drawing.Color.Transparent;
             this.chart1.BorderSkin.BorderWidth = 5;
             this.chart1.BorderSkin.PageColor = System.Drawing.Color.Transparent;
-            chartArea1.Name = "ChartArea1";
-            this.chart1.ChartAreas.Add(chartArea1);
-            legend1.Name = "Legend1";
-            this.chart1.Legends.Add(legend1);
+            chartArea13.Name = "ChartArea1";
+            this.chart1.ChartAreas.Add(chartArea13);
+            legend13.Name = "Legend1";
+            this.chart1.Legends.Add(legend13);
             this.chart1.Location = new System.Drawing.Point(0, 41);
             this.chart1.Name = "chart1";
             this.chart1.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.EarthTones;
-            series1.ChartArea = "ChartArea1";
-            series1.Legend = "Legend1";
-            series1.Name = "Series1";
-            this.chart1.Series.Add(series1);
+            series13.ChartArea = "ChartArea1";
+            series13.Legend = "Legend1";
+            series13.Name = "Series1";
+            this.chart1.Series.Add(series13);
             this.chart1.Size = new System.Drawing.Size(639, 243);
             this.chart1.TabIndex = 9;
             this.chart1.Text = "chart1";
-           
             // 
             // label7
             // 
@@ -221,21 +212,21 @@ namespace Inscricao_e_Matricula
             this.label7.TabIndex = 8;
             this.label7.Text = "ESCALA DE ALUNOS INSCRITOS";
             this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            
             // 
             // pnreje
             // 
             this.pnreje.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.pnreje.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.pnreje.Controls.Add(this.label3);
+            this.pnreje.Controls.Add(this.lb_Vagas);
             this.pnreje.Controls.Add(this.label10);
             this.pnreje.Controls.Add(this.pictureBox9);
             this.pnreje.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.pnreje.Location = new System.Drawing.Point(802, 113);
+            this.pnreje.Location = new System.Drawing.Point(727, 47);
             this.pnreje.Margin = new System.Windows.Forms.Padding(10);
             this.pnreje.Name = "pnreje";
             this.pnreje.Size = new System.Drawing.Size(292, 179);
             this.pnreje.TabIndex = 5;
+            this.pnreje.Paint += new System.Windows.Forms.PaintEventHandler(this.pnreje_Paint);
             // 
             // label10
             // 
@@ -247,17 +238,6 @@ namespace Inscricao_e_Matricula
             this.label10.TabIndex = 8;
             this.label10.Text = "VAGAS DISPONÍVEIS";
             this.label10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            
-            // 
-            // pictureBox9
-            // 
-            this.pictureBox9.BackgroundImage = global::Inscricao_e_Matricula.Properties.Resources.User_Male;
-            this.pictureBox9.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox9.Location = new System.Drawing.Point(0, 11);
-            this.pictureBox9.Name = "pictureBox9";
-            this.pictureBox9.Size = new System.Drawing.Size(292, 49);
-            this.pictureBox9.TabIndex = 7;
-            this.pictureBox9.TabStop = false;
             // 
             // pnins
             // 
@@ -266,11 +246,12 @@ namespace Inscricao_e_Matricula
             this.pnins.Controls.Add(this.label12);
             this.pnins.Controls.Add(this.pictureBox10);
             this.pnins.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.pnins.Location = new System.Drawing.Point(118, 113);
+            this.pnins.Location = new System.Drawing.Point(43, 47);
             this.pnins.Margin = new System.Windows.Forms.Padding(10);
             this.pnins.Name = "pnins";
             this.pnins.Size = new System.Drawing.Size(292, 179);
             this.pnins.TabIndex = 5;
+            this.pnins.Paint += new System.Windows.Forms.PaintEventHandler(this.pnins_Paint);
             // 
             // lb_TotaInscrito
             // 
@@ -293,22 +274,10 @@ namespace Inscricao_e_Matricula
             this.label12.TabIndex = 8;
             this.label12.Text = "TOTAL DE INSCRITOS";
             this.label12.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            
-            // 
-            // pictureBox10
-            // 
-            this.pictureBox10.BackgroundImage = global::Inscricao_e_Matricula.Properties.Resources.User_Male;
-            this.pictureBox10.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox10.Location = new System.Drawing.Point(0, 11);
-            this.pictureBox10.Name = "pictureBox10";
-            this.pictureBox10.Size = new System.Drawing.Size(292, 49);
-            this.pictureBox10.TabIndex = 7;
-            this.pictureBox10.TabStop = false;
             // 
             // panel6
             // 
-            this.panel6.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel6.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.panel6.BackColor = System.Drawing.Color.WhiteSmoke;
             this.panel6.Controls.Add(this.ProgressBar_Electricidade);
             this.panel6.Controls.Add(this.ProgressBar_Quimica);
@@ -328,11 +297,12 @@ namespace Inscricao_e_Matricula
             this.panel6.Controls.Add(this.label15);
             this.panel6.Controls.Add(this.label6);
             this.panel6.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.panel6.Location = new System.Drawing.Point(802, 347);
+            this.panel6.Location = new System.Drawing.Point(727, 281);
             this.panel6.Margin = new System.Windows.Forms.Padding(10);
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(292, 284);
             this.panel6.TabIndex = 5;
+            this.panel6.Paint += new System.Windows.Forms.PaintEventHandler(this.panel6_Paint);
             // 
             // ProgressBar_Electricidade
             // 
@@ -413,7 +383,6 @@ namespace Inscricao_e_Matricula
             this.ProgressBar_Informatica.TabIndex = 10;
             this.ProgressBar_Informatica.TextRenderingHint = System.Drawing.Text.TextRenderingHint.SystemDefault;
             this.ProgressBar_Informatica.Value = 20;
-            
             // 
             // label25
             // 
@@ -427,7 +396,6 @@ namespace Inscricao_e_Matricula
             this.label25.Size = new System.Drawing.Size(292, 16);
             this.label25.TabIndex = 28;
             this.label25.Text = "________________________________________________________________________";
-            
             // 
             // label24
             // 
@@ -450,7 +418,6 @@ namespace Inscricao_e_Matricula
             this.label23.Size = new System.Drawing.Size(28, 14);
             this.label23.TabIndex = 18;
             this.label23.Text = "30%";
-            
             // 
             // label22
             // 
@@ -557,7 +524,6 @@ namespace Inscricao_e_Matricula
             this.label6.TabIndex = 8;
             this.label6.Text = "PERCENTAGEM DE INSCRITOS POR CURSO";
             this.label6.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            
             // 
             // guna2Elipse1
             // 
@@ -595,66 +561,6 @@ namespace Inscricao_e_Matricula
             this.lb_Entidade.Size = new System.Drawing.Size(98, 26);
             this.lb_Entidade.TabIndex = 10;
             this.lb_Entidade.Text = "Entidade";
-                        // 
-            // btnclose
-            // 
-            this.btnclose.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnclose.BackColor = System.Drawing.Color.Transparent;
-            this.btnclose.CheckedState.Parent = this.btnclose;
-            this.btnclose.CustomImages.Parent = this.btnclose;
-            this.btnclose.FillColor = System.Drawing.Color.Transparent;
-            this.btnclose.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btnclose.ForeColor = System.Drawing.Color.White;
-            this.btnclose.HoverState.FillColor = System.Drawing.Color.WhiteSmoke;
-            this.btnclose.HoverState.Parent = this.btnclose;
-            this.btnclose.Image = global::Inscricao_e_Matricula.Properties.Resources.window_close_icon_135015;
-            this.btnclose.Location = new System.Drawing.Point(1109, 0);
-            this.btnclose.Name = "btnclose";
-            this.btnclose.PressedColor = System.Drawing.Color.Gainsboro;
-            this.btnclose.ShadowDecoration.Parent = this.btnclose;
-            this.btnclose.Size = new System.Drawing.Size(35, 31);
-            this.btnclose.TabIndex = 12;
-            this.btnclose.Click += new System.EventHandler(this.btnclose_Click);
-            // 
-            // guna2Button1
-            // 
-            this.guna2Button1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.guna2Button1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2Button1.CheckedState.Parent = this.guna2Button1;
-            this.guna2Button1.CustomImages.Parent = this.guna2Button1;
-            this.guna2Button1.FillColor = System.Drawing.Color.Transparent;
-            this.guna2Button1.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2Button1.ForeColor = System.Drawing.Color.White;
-            this.guna2Button1.HoverState.FillColor = System.Drawing.Color.WhiteSmoke;
-            this.guna2Button1.HoverState.Parent = this.guna2Button1;
-            this.guna2Button1.Image = global::Inscricao_e_Matricula.Properties.Resources.window_restore_icon_137011;
-            this.guna2Button1.Location = new System.Drawing.Point(1074, 0);
-            this.guna2Button1.Name = "guna2Button1";
-            this.guna2Button1.PressedColor = System.Drawing.Color.Gainsboro;
-            this.guna2Button1.ShadowDecoration.Parent = this.guna2Button1;
-            this.guna2Button1.Size = new System.Drawing.Size(35, 31);
-            this.guna2Button1.TabIndex = 13;
-            this.guna2Button1.Click += new System.EventHandler(this.guna2Button1_Click);
-            // 
-            // guna2Button2
-            // 
-            this.guna2Button2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.guna2Button2.BackColor = System.Drawing.Color.Transparent;
-            this.guna2Button2.CheckedState.Parent = this.guna2Button2;
-            this.guna2Button2.CustomImages.Parent = this.guna2Button2;
-            this.guna2Button2.FillColor = System.Drawing.Color.Transparent;
-            this.guna2Button2.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2Button2.ForeColor = System.Drawing.Color.White;
-            this.guna2Button2.HoverState.FillColor = System.Drawing.Color.WhiteSmoke;
-            this.guna2Button2.HoverState.Parent = this.guna2Button2;
-            this.guna2Button2.Image = global::Inscricao_e_Matricula.Properties.Resources.window_minimize_icon_138009;
-            this.guna2Button2.Location = new System.Drawing.Point(1039, 0);
-            this.guna2Button2.Name = "guna2Button2";
-            this.guna2Button2.PressedColor = System.Drawing.Color.Gainsboro;
-            this.guna2Button2.ShadowDecoration.Parent = this.guna2Button2;
-            this.guna2Button2.Size = new System.Drawing.Size(35, 31);
-            this.guna2Button2.TabIndex = 14;
-            this.guna2Button2.Click += new System.EventHandler(this.guna2Button2_Click);
             // 
             // guna2DragControl1
             // 
@@ -671,142 +577,10 @@ namespace Inscricao_e_Matricula
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(70, 15);
             this.label13.TabIndex = 11;
-            this.label13.Text = "_________";
+            this.label13.Text = "_____________________________";
             this.label13.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.label13.MouseLeave += new System.EventHandler(this.Side_bar_leave);
             this.label13.MouseHover += new System.EventHandler(this.Side_bar_hover);
-            // 
-            // btnhome
-            // 
-            this.btnhome.BackgroundImage = global::Inscricao_e_Matricula.Properties.Resources.Home;
-            this.btnhome.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnhome.CheckedState.Parent = this.btnhome;
-            this.btnhome.CustomImages.Parent = this.btnhome;
-            this.btnhome.FillColor = System.Drawing.Color.DarkOrange;
-            this.btnhome.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnhome.ForeColor = System.Drawing.Color.White;
-            this.btnhome.HoverState.FillColor = System.Drawing.Color.Orange;
-            this.btnhome.HoverState.Parent = this.btnhome;
-            this.btnhome.Image = global::Inscricao_e_Matricula.Properties.Resources.Home;
-            this.btnhome.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.btnhome.ImageOffset = new System.Drawing.Point(11, 0);
-            this.btnhome.ImageSize = new System.Drawing.Size(30, 47);
-            this.btnhome.Location = new System.Drawing.Point(1, 122);
-            this.btnhome.Name = "btnhome";
-            this.btnhome.PressedColor = System.Drawing.Color.DarkOrange;
-            this.btnhome.ShadowDecoration.Parent = this.btnhome;
-            this.btnhome.Size = new System.Drawing.Size(169, 48);
-            this.btnhome.TabIndex = 15;
-            this.btnhome.Text = "Início";
-            this.btnhome.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.btnhome.TextOffset = new System.Drawing.Point(25, 0);
-            
-            this.btnhome.MouseLeave += new System.EventHandler(this.Side_bar_leave);
-            this.btnhome.MouseHover += new System.EventHandler(this.Side_bar_hover);
-            // 
-            // btnadd
-            // 
-            this.btnadd.BackgroundImage = global::Inscricao_e_Matricula.Properties.Resources.Home;
-            this.btnadd.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnadd.CheckedState.Parent = this.btnadd;
-            this.btnadd.CustomImages.Parent = this.btnadd;
-            this.btnadd.FillColor = System.Drawing.Color.DarkOrange;
-            this.btnadd.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnadd.ForeColor = System.Drawing.Color.White;
-            this.btnadd.HoverState.FillColor = System.Drawing.Color.Orange;
-            this.btnadd.HoverState.Parent = this.btnadd;
-            this.btnadd.Image = global::Inscricao_e_Matricula.Properties.Resources.Users;
-            this.btnadd.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.btnadd.ImageOffset = new System.Drawing.Point(11, 0);
-            this.btnadd.ImageSize = new System.Drawing.Size(30, 47);
-            this.btnadd.Location = new System.Drawing.Point(1, 280);
-            this.btnadd.Name = "btnadd";
-            this.btnadd.PressedColor = System.Drawing.Color.DarkOrange;
-            this.btnadd.ShadowDecoration.Parent = this.btnadd;
-            this.btnadd.Size = new System.Drawing.Size(169, 48);
-            this.btnadd.TabIndex = 16;
-            this.btnadd.Text = "Operações";
-            this.btnadd.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.btnadd.TextOffset = new System.Drawing.Point(25, 0);
-            this.btnadd.Click += new System.EventHandler(this.guna2Button3_Click);
-            this.btnadd.MouseLeave += new System.EventHandler(this.Side_bar_leave);
-            this.btnadd.MouseHover += new System.EventHandler(this.Side_bar_hover);
-            // 
-            // guna2Button4
-            // 
-            this.guna2Button4.BackgroundImage = global::Inscricao_e_Matricula.Properties.Resources.Home;
-            this.guna2Button4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.guna2Button4.CheckedState.Parent = this.guna2Button4;
-            this.guna2Button4.CustomImages.Parent = this.guna2Button4;
-            this.guna2Button4.FillColor = System.Drawing.Color.DarkOrange;
-            this.guna2Button4.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2Button4.ForeColor = System.Drawing.Color.White;
-            this.guna2Button4.HoverState.FillColor = System.Drawing.Color.Orange;
-            this.guna2Button4.HoverState.Parent = this.guna2Button4;
-            this.guna2Button4.Image = global::Inscricao_e_Matricula.Properties.Resources.Folder;
-            this.guna2Button4.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.guna2Button4.ImageOffset = new System.Drawing.Point(11, 0);
-            this.guna2Button4.ImageSize = new System.Drawing.Size(30, 47);
-            this.guna2Button4.Location = new System.Drawing.Point(1, 200);
-            this.guna2Button4.Name = "guna2Button4";
-            this.guna2Button4.PressedColor = System.Drawing.Color.DarkOrange;
-            this.guna2Button4.ShadowDecoration.Parent = this.guna2Button4;
-            this.guna2Button4.Size = new System.Drawing.Size(169, 48);
-            this.guna2Button4.TabIndex = 17;
-            this.guna2Button4.Text = "Ver";
-            this.guna2Button4.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.guna2Button4.TextOffset = new System.Drawing.Point(25, 0);
-            this.guna2Button4.MouseLeave += new System.EventHandler(this.Side_bar_leave);
-            this.guna2Button4.MouseHover += new System.EventHandler(this.Side_bar_hover);
-            // 
-            // btnhelp
-            // 
-            this.btnhelp.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnhelp.BackgroundImage = global::Inscricao_e_Matricula.Properties.Resources.Home;
-            this.btnhelp.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnhelp.CheckedState.Parent = this.btnhelp;
-            this.btnhelp.CustomImages.Parent = this.btnhelp;
-            this.btnhelp.FillColor = System.Drawing.Color.DarkOrange;
-            this.btnhelp.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btnhelp.ForeColor = System.Drawing.Color.White;
-            this.btnhelp.HoverState.FillColor = System.Drawing.Color.Orange;
-            this.btnhelp.HoverState.Parent = this.btnhelp;
-            this.btnhelp.Image = global::Inscricao_e_Matricula.Properties.Resources.Help;
-            this.btnhelp.ImageSize = new System.Drawing.Size(30, 47);
-            this.btnhelp.Location = new System.Drawing.Point(1, 628);
-            this.btnhelp.Name = "btnhelp";
-            this.btnhelp.PressedColor = System.Drawing.Color.DarkOrange;
-            this.btnhelp.ShadowDecoration.Parent = this.btnhelp;
-            this.btnhelp.Size = new System.Drawing.Size(73, 48);
-            this.btnhelp.TabIndex = 18;
-            this.btnhelp.MouseLeave += new System.EventHandler(this.Side_bar_leave);
-            this.btnhelp.MouseHover += new System.EventHandler(this.Side_bar_hover);
-            // 
-            // btnconfig
-            // 
-            this.btnconfig.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnconfig.BackgroundImage = global::Inscricao_e_Matricula.Properties.Resources.Home;
-            this.btnconfig.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnconfig.CheckedState.Parent = this.btnconfig;
-            this.btnconfig.CustomImages.Parent = this.btnconfig;
-            this.btnconfig.FillColor = System.Drawing.Color.DarkOrange;
-            this.btnconfig.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btnconfig.ForeColor = System.Drawing.Color.White;
-            this.btnconfig.HoverState.FillColor = System.Drawing.Color.Orange;
-            this.btnconfig.HoverState.Parent = this.btnconfig;
-            this.btnconfig.Image = global::Inscricao_e_Matricula.Properties.Resources.Settings;
-            this.btnconfig.ImageSize = new System.Drawing.Size(30, 47);
-            this.btnconfig.Location = new System.Drawing.Point(1, 555);
-            this.btnconfig.Name = "btnconfig";
-            this.btnconfig.PressedColor = System.Drawing.Color.DarkOrange;
-            this.btnconfig.ShadowDecoration.Parent = this.btnconfig;
-            this.btnconfig.Size = new System.Drawing.Size(73, 48);
-            this.btnconfig.TabIndex = 19;
-            
-            this.btnconfig.MouseLeave += new System.EventHandler(this.Side_bar_leave);
-            this.btnconfig.MouseHover += new System.EventHandler(this.Side_bar_hover);
             // 
             // btnspanel
             // 
@@ -828,17 +602,6 @@ namespace Inscricao_e_Matricula
             this.btnspanel.MouseLeave += new System.EventHandler(this.Side_bar_leave);
             this.btnspanel.MouseHover += new System.EventHandler(this.Side_bar_hover);
             // 
-            // panel9
-            // 
-            this.panel9.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel9.BackgroundImage = global::Inscricao_e_Matricula.Properties.Resources.LOGO_IPIL_removebg_preview_2;
-            this.panel9.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.panel9.Location = new System.Drawing.Point(0, 11);
-            this.panel9.Name = "panel9";
-            this.panel9.Size = new System.Drawing.Size(74, 49);
-            this.panel9.TabIndex = 21;
-            // 
             // label1
             // 
             this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
@@ -850,17 +613,22 @@ namespace Inscricao_e_Matricula
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(70, 15);
             this.label1.TabIndex = 20;
-            this.label1.Text = "_________";
+            this.label1.Text = "_____________________";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // timer1
             // 
-            this.timer1.Interval = 8;
+            this.timer1.Interval = 1;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
             // guna2Elipse6
             // 
             this.guna2Elipse6.BorderRadius = 10;
+            // 
+            // guna2Elipse7
+            // 
+            this.guna2Elipse7.BorderRadius = 20;
+            this.guna2Elipse7.TargetControl = this;
             // 
             // panel8
             // 
@@ -886,33 +654,268 @@ namespace Inscricao_e_Matricula
             this.label14.Text = "2";
             this.label14.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // label3
+            // panel9
             // 
-            this.label3.Font = new System.Drawing.Font("Segoe UI", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.DarkOrange;
-            this.label3.Location = new System.Drawing.Point(0, 115);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(292, 43);
-            this.label3.TabIndex = 10;
-            this.label3.Text = "2.000";
-            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.panel9.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel9.BackgroundImage = global::Inscricao_e_Matricula.Properties.Resources.LOGO_IPIL_removebg_preview_2;
+            this.panel9.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.panel9.Location = new System.Drawing.Point(0, 11);
+            this.panel9.Name = "panel9";
+            this.panel9.Size = new System.Drawing.Size(74, 49);
+            this.panel9.TabIndex = 21;
+            // 
+            // btnconfig
+            // 
+            this.btnconfig.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnconfig.BackgroundImage = global::Inscricao_e_Matricula.Properties.Resources.Home;
+            this.btnconfig.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnconfig.BorderRadius = 10;
+            this.btnconfig.CheckedState.Parent = this.btnconfig;
+            this.btnconfig.CustomImages.Parent = this.btnconfig;
+            this.btnconfig.FillColor = System.Drawing.Color.DarkOrange;
+            this.btnconfig.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnconfig.ForeColor = System.Drawing.Color.White;
+            this.btnconfig.HoverState.FillColor = System.Drawing.Color.Orange;
+            this.btnconfig.HoverState.Parent = this.btnconfig;
+            this.btnconfig.Image = global::Inscricao_e_Matricula.Properties.Resources.Settings;
+            this.btnconfig.ImageSize = new System.Drawing.Size(30, 47);
+            this.btnconfig.Location = new System.Drawing.Point(2, 555);
+            this.btnconfig.Name = "btnconfig";
+            this.btnconfig.PressedColor = System.Drawing.Color.DarkOrange;
+            this.btnconfig.ShadowDecoration.Parent = this.btnconfig;
+            this.btnconfig.Size = new System.Drawing.Size(70, 48);
+            this.btnconfig.TabIndex = 19;
+            this.btnconfig.Click += new System.EventHandler(this.btnconfig_Click);
+            this.btnconfig.MouseLeave += new System.EventHandler(this.Side_bar_leave);
+            this.btnconfig.MouseHover += new System.EventHandler(this.Side_bar_hover);
+            // 
+            // btnhelp
+            // 
+            this.btnhelp.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnhelp.BackgroundImage = global::Inscricao_e_Matricula.Properties.Resources.Home;
+            this.btnhelp.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnhelp.BorderRadius = 10;
+            this.btnhelp.CheckedState.Parent = this.btnhelp;
+            this.btnhelp.CustomImages.Parent = this.btnhelp;
+            this.btnhelp.FillColor = System.Drawing.Color.DarkOrange;
+            this.btnhelp.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnhelp.ForeColor = System.Drawing.Color.White;
+            this.btnhelp.HoverState.FillColor = System.Drawing.Color.Orange;
+            this.btnhelp.HoverState.Parent = this.btnhelp;
+            this.btnhelp.Image = global::Inscricao_e_Matricula.Properties.Resources.Help;
+            this.btnhelp.ImageSize = new System.Drawing.Size(30, 47);
+            this.btnhelp.Location = new System.Drawing.Point(2, 628);
+            this.btnhelp.Name = "btnhelp";
+            this.btnhelp.PressedColor = System.Drawing.Color.DarkOrange;
+            this.btnhelp.ShadowDecoration.Parent = this.btnhelp;
+            this.btnhelp.Size = new System.Drawing.Size(70, 48);
+            this.btnhelp.TabIndex = 18;
+            this.btnhelp.MouseLeave += new System.EventHandler(this.Side_bar_leave);
+            this.btnhelp.MouseHover += new System.EventHandler(this.Side_bar_hover);
+            // 
+            // guna2Button4
+            // 
+            this.guna2Button4.BackgroundImage = global::Inscricao_e_Matricula.Properties.Resources.Home;
+            this.guna2Button4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.guna2Button4.BorderRadius = 10;
+            this.guna2Button4.CheckedState.Parent = this.guna2Button4;
+            this.guna2Button4.CustomImages.Parent = this.guna2Button4;
+            this.guna2Button4.FillColor = System.Drawing.Color.DarkOrange;
+            this.guna2Button4.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2Button4.ForeColor = System.Drawing.Color.White;
+            this.guna2Button4.HoverState.FillColor = System.Drawing.Color.Orange;
+            this.guna2Button4.HoverState.Parent = this.guna2Button4;
+            this.guna2Button4.Image = global::Inscricao_e_Matricula.Properties.Resources.Folder;
+            this.guna2Button4.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.guna2Button4.ImageOffset = new System.Drawing.Point(11, 0);
+            this.guna2Button4.ImageSize = new System.Drawing.Size(30, 47);
+            this.guna2Button4.Location = new System.Drawing.Point(2, 200);
+            this.guna2Button4.Name = "guna2Button4";
+            this.guna2Button4.PressedColor = System.Drawing.Color.DarkOrange;
+            this.guna2Button4.ShadowDecoration.Parent = this.guna2Button4;
+            this.guna2Button4.Size = new System.Drawing.Size(169, 48);
+            this.guna2Button4.TabIndex = 17;
+            this.guna2Button4.Text = "Ver";
+            this.guna2Button4.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.guna2Button4.TextOffset = new System.Drawing.Point(25, 0);
+            this.guna2Button4.MouseLeave += new System.EventHandler(this.Side_bar_leave);
+            this.guna2Button4.MouseHover += new System.EventHandler(this.Side_bar_hover);
+            // 
+            // btnadd
+            // 
+            this.btnadd.BackgroundImage = global::Inscricao_e_Matricula.Properties.Resources.Home;
+            this.btnadd.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnadd.BorderRadius = 10;
+            this.btnadd.CheckedState.Parent = this.btnadd;
+            this.btnadd.CustomImages.Parent = this.btnadd;
+            this.btnadd.FillColor = System.Drawing.Color.DarkOrange;
+            this.btnadd.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnadd.ForeColor = System.Drawing.Color.White;
+            this.btnadd.HoverState.FillColor = System.Drawing.Color.Orange;
+            this.btnadd.HoverState.Parent = this.btnadd;
+            this.btnadd.Image = global::Inscricao_e_Matricula.Properties.Resources.Users;
+            this.btnadd.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btnadd.ImageOffset = new System.Drawing.Point(11, 0);
+            this.btnadd.ImageSize = new System.Drawing.Size(30, 47);
+            this.btnadd.Location = new System.Drawing.Point(2, 280);
+            this.btnadd.Name = "btnadd";
+            this.btnadd.PressedColor = System.Drawing.Color.DarkOrange;
+            this.btnadd.ShadowDecoration.Parent = this.btnadd;
+            this.btnadd.Size = new System.Drawing.Size(169, 48);
+            this.btnadd.TabIndex = 16;
+            this.btnadd.Text = "Operações";
+            this.btnadd.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btnadd.TextOffset = new System.Drawing.Point(25, 0);
+            this.btnadd.Click += new System.EventHandler(this.guna2Button3_Click);
+            this.btnadd.MouseLeave += new System.EventHandler(this.Side_bar_leave);
+            this.btnadd.MouseHover += new System.EventHandler(this.Side_bar_hover);
+            // 
+            // btnhome
+            // 
+            this.btnhome.Animated = true;
+            this.btnhome.BackgroundImage = global::Inscricao_e_Matricula.Properties.Resources.Home;
+            this.btnhome.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnhome.BorderRadius = 10;
+            this.btnhome.CheckedState.Parent = this.btnhome;
+            this.btnhome.CustomImages.Parent = this.btnhome;
+            this.btnhome.FillColor = System.Drawing.Color.DarkOrange;
+            this.btnhome.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnhome.ForeColor = System.Drawing.Color.White;
+            this.btnhome.HoverState.FillColor = System.Drawing.Color.Orange;
+            this.btnhome.HoverState.Parent = this.btnhome;
+            this.btnhome.Image = global::Inscricao_e_Matricula.Properties.Resources.Home;
+            this.btnhome.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btnhome.ImageOffset = new System.Drawing.Point(11, 0);
+            this.btnhome.ImageSize = new System.Drawing.Size(30, 47);
+            this.btnhome.Location = new System.Drawing.Point(2, 122);
+            this.btnhome.Name = "btnhome";
+            this.btnhome.PressedColor = System.Drawing.Color.DarkOrange;
+            this.btnhome.ShadowDecoration.Parent = this.btnhome;
+            this.btnhome.Size = new System.Drawing.Size(169, 48);
+            this.btnhome.TabIndex = 15;
+            this.btnhome.Text = "Início";
+            this.btnhome.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btnhome.TextOffset = new System.Drawing.Point(25, 0);
+            this.btnhome.MouseLeave += new System.EventHandler(this.Side_bar_leave);
+            this.btnhome.MouseHover += new System.EventHandler(this.Side_bar_hover);
+            // 
+            // guna2Button2
+            // 
+            this.guna2Button2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.guna2Button2.BackColor = System.Drawing.Color.Transparent;
+            this.guna2Button2.CheckedState.Parent = this.guna2Button2;
+            this.guna2Button2.CustomImages.Parent = this.guna2Button2;
+            this.guna2Button2.FillColor = System.Drawing.Color.Transparent;
+            this.guna2Button2.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.guna2Button2.ForeColor = System.Drawing.Color.White;
+            this.guna2Button2.HoverState.FillColor = System.Drawing.Color.WhiteSmoke;
+            this.guna2Button2.HoverState.Parent = this.guna2Button2;
+            this.guna2Button2.Image = global::Inscricao_e_Matricula.Properties.Resources.window_minimize_icon_138009;
+            this.guna2Button2.Location = new System.Drawing.Point(1039, 0);
+            this.guna2Button2.Name = "guna2Button2";
+            this.guna2Button2.PressedColor = System.Drawing.Color.Gainsboro;
+            this.guna2Button2.ShadowDecoration.Parent = this.guna2Button2;
+            this.guna2Button2.Size = new System.Drawing.Size(35, 31);
+            this.guna2Button2.TabIndex = 14;
+            this.guna2Button2.Click += new System.EventHandler(this.guna2Button2_Click);
+            // 
+            // guna2Button1
+            // 
+            this.guna2Button1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.guna2Button1.BackColor = System.Drawing.Color.Transparent;
+            this.guna2Button1.CheckedState.Parent = this.guna2Button1;
+            this.guna2Button1.CustomImages.Parent = this.guna2Button1;
+            this.guna2Button1.FillColor = System.Drawing.Color.Transparent;
+            this.guna2Button1.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.guna2Button1.ForeColor = System.Drawing.Color.White;
+            this.guna2Button1.HoverState.FillColor = System.Drawing.Color.WhiteSmoke;
+            this.guna2Button1.HoverState.Parent = this.guna2Button1;
+            this.guna2Button1.Image = global::Inscricao_e_Matricula.Properties.Resources.window_restore_icon_137011;
+            this.guna2Button1.Location = new System.Drawing.Point(1074, 0);
+            this.guna2Button1.Name = "guna2Button1";
+            this.guna2Button1.PressedColor = System.Drawing.Color.Gainsboro;
+            this.guna2Button1.ShadowDecoration.Parent = this.guna2Button1;
+            this.guna2Button1.Size = new System.Drawing.Size(35, 31);
+            this.guna2Button1.TabIndex = 13;
+            this.guna2Button1.Click += new System.EventHandler(this.guna2Button1_Click);
+            // 
+            // btnclose
+            // 
+            this.btnclose.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnclose.BackColor = System.Drawing.Color.Transparent;
+            this.btnclose.CheckedState.Parent = this.btnclose;
+            this.btnclose.CustomImages.Parent = this.btnclose;
+            this.btnclose.FillColor = System.Drawing.Color.Transparent;
+            this.btnclose.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnclose.ForeColor = System.Drawing.Color.White;
+            this.btnclose.HoverState.FillColor = System.Drawing.Color.WhiteSmoke;
+            this.btnclose.HoverState.Parent = this.btnclose;
+            this.btnclose.Image = global::Inscricao_e_Matricula.Properties.Resources.window_close_icon_135015;
+            this.btnclose.Location = new System.Drawing.Point(1109, 0);
+            this.btnclose.Name = "btnclose";
+            this.btnclose.PressedColor = System.Drawing.Color.Gainsboro;
+            this.btnclose.ShadowDecoration.Parent = this.btnclose;
+            this.btnclose.Size = new System.Drawing.Size(35, 31);
+            this.btnclose.TabIndex = 12;
+            this.btnclose.Click += new System.EventHandler(this.btnclose_Click);
+            // 
+            // pictureBox10
+            // 
+            this.pictureBox10.BackgroundImage = global::Inscricao_e_Matricula.Properties.Resources.User_Male;
+            this.pictureBox10.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pictureBox10.Location = new System.Drawing.Point(0, 11);
+            this.pictureBox10.Name = "pictureBox10";
+            this.pictureBox10.Size = new System.Drawing.Size(292, 49);
+            this.pictureBox10.TabIndex = 7;
+            this.pictureBox10.TabStop = false;
+            // 
+            // pictureBox9
+            // 
+            this.pictureBox9.BackgroundImage = global::Inscricao_e_Matricula.Properties.Resources.User_Male;
+            this.pictureBox9.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pictureBox9.Location = new System.Drawing.Point(0, 11);
+            this.pictureBox9.Name = "pictureBox9";
+            this.pictureBox9.Size = new System.Drawing.Size(292, 49);
+            this.pictureBox9.TabIndex = 7;
+            this.pictureBox9.TabStop = false;
+            // 
+            // pictureBox7
+            // 
+            this.pictureBox7.BackgroundImage = global::Inscricao_e_Matricula.Properties.Resources.User_Male;
+            this.pictureBox7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pictureBox7.Location = new System.Drawing.Point(0, 11);
+            this.pictureBox7.Name = "pictureBox7";
+            this.pictureBox7.Size = new System.Drawing.Size(292, 49);
+            this.pictureBox7.TabIndex = 7;
+            this.pictureBox7.TabStop = false;
+            // 
+            // paneljanela
+            // 
+            this.paneljanela.Controls.Add(this.pnins);
+            this.paneljanela.Controls.Add(this.pnmat);
+            this.paneljanela.Controls.Add(this.pnreje);
+            this.paneljanela.Controls.Add(this.panel3);
+            this.paneljanela.Controls.Add(this.panel6);
+            this.paneljanela.Location = new System.Drawing.Point(75, 73);
+            this.paneljanela.Name = "paneljanela";
+            this.paneljanela.Size = new System.Drawing.Size(1069, 626);
+            this.paneljanela.TabIndex = 23;
             // 
             // TelaPrincipal
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1144, 699);
+            this.Controls.Add(this.paneljanela);
             this.Controls.Add(this.panel8);
             this.Controls.Add(this.btnspanel);
             this.Controls.Add(this.guna2Button2);
             this.Controls.Add(this.guna2Button1);
             this.Controls.Add(this.btnclose);
             this.Controls.Add(this.lb_Entidade);
-            this.Controls.Add(this.pnins);
-            this.Controls.Add(this.panel6);
-            this.Controls.Add(this.panel3);
-            this.Controls.Add(this.pnreje);
-            this.Controls.Add(this.pnmat);
             this.Controls.Add(this.label4);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(2);
@@ -921,17 +924,18 @@ namespace Inscricao_e_Matricula
             this.Text = "TelaPrincipal";
             this.Load += new System.EventHandler(this.TelaPrincipal_Load);
             this.pnmat.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
             this.panel3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.chart1)).EndInit();
             this.pnreje.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
             this.pnins.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
             this.panel6.ResumeLayout(false);
             this.panel6.PerformLayout();
             this.btnspanel.ResumeLayout(false);
             this.panel8.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
+            this.paneljanela.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -991,11 +995,12 @@ namespace Inscricao_e_Matricula
         private System.Windows.Forms.Label label13;
         private Guna.UI2.WinForms.Guna2Panel btnspanel;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Timer timer1;
         private System.Windows.Forms.Panel panel9;
         private Guna.UI2.WinForms.Guna2Elipse guna2Elipse6;
         private System.Windows.Forms.Panel panel8;
         private System.Windows.Forms.Label label14;
-        private System.Windows.Forms.Label label3;
+        private Guna.UI2.WinForms.Guna2Elipse guna2Elipse7;
+        private System.Windows.Forms.Panel paneljanela;
+        public System.Windows.Forms.Timer timer1;
     }
 }

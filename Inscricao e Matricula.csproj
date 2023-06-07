@@ -77,6 +77,12 @@
     <Compile Include="Telas\Configuracoes.Designer.cs">
       <DependentUpon>Configuracoes.cs</DependentUpon>
     </Compile>
+    <Compile Include="Telas\TelaVisualizacao.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Telas\TelaVisualizacao.Designer.cs">
+      <DependentUpon>TelaVisualizacao.cs</DependentUpon>
+    </Compile>
     <Compile Include="Telas\TelaInscricao.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -123,6 +129,9 @@
     </Compile>
     <EmbeddedResource Include="Telas\Configuracoes.resx">
       <DependentUpon>Configuracoes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Telas\TelaVisualizacao.resx">
+      <DependentUpon>TelaVisualizacao.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Telas\TelaInscricao.resx">
       <DependentUpon>TelaInscricao.cs</DependentUpon>

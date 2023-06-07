@@ -1,6 +1,6 @@
 ﻿namespace Inscricao_e_Matricula.Telas
 {
-    partial class Configuracoes
+    partial class Tela_Visualização
     {
         /// <summary>
         /// Required designer variable.
@@ -30,15 +30,14 @@
         {
             this.SuspendLayout();
             // 
-            // Configuracoes
+            // Tela_Visualização
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(968, 573);
+            this.ClientSize = new System.Drawing.Size(578, 379);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "Configuracoes";
-            this.Text = "Configuracões";
-            this.Load += new System.EventHandler(this.Configuracões_Load);
+            this.Name = "Tela_Visualização";
+            this.Text = "Tela_Visualização";
             this.ResumeLayout(false);
 
         }

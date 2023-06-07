@@ -85,7 +85,8 @@ namespace Inscricao_e_Matricula
             this.Hide();
             tl.ShowDialog();
         }
-
+        int p=0;
+        int w = 0;
         private void timer1_Tick(object sender, EventArgs e)
         {
             if (opcao == 1)
@@ -93,6 +94,8 @@ namespace Inscricao_e_Matricula
                 if (btnspanel.Width <= 170)
                 {
                     btnspanel.Width = btnspanel.Width + 3;
+                    paneljanela.Width = paneljanela.Width - 3;
+                    paneljanela.Location = new Point(paneljanela.Location.X + 3, paneljanela.Location.Y);
                 }
                 else
                 {
@@ -104,6 +107,8 @@ namespace Inscricao_e_Matricula
                 if (btnspanel.Width >= 74)
                 {
                     btnspanel.Width = btnspanel.Width - 3;
+                    paneljanela.Width = paneljanela.Width + 3;
+                    paneljanela.Location = new Point(paneljanela.Location.X - 3, paneljanela.Location.Y);
                 }
                 else
                 {
@@ -119,12 +124,46 @@ namespace Inscricao_e_Matricula
 
         private void Side_bar_hover(object sender, EventArgs e)
         {
+            
             expandir();
         }
 
         private void Side_bar_leave(object sender, EventArgs e)
         {
             ocultar();
+        }
+
+        private void btnconfig_Click(object sender, EventArgs e)
+        {
+            Telas.Configuracoes tl = new Telas.Configuracoes();
+            tl.TopLevel=false;
+            tl.Visible = true;
+            paneljanela.Controls.Add(tl);
+        }
+
+        private void pnins_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void pnmat_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void pnreje_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void panel3_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void panel6_Paint(object sender, PaintEventArgs e)
+        {
+
         }
 
        
