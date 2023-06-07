@@ -148,10 +148,6 @@ namespace Inscricao_e_Matricula
                     _TelaInscricao.mat9 = Convert.ToDouble(txt_Mat9.Text);
                     _TelaInscricao.mat_media = Convert.ToDouble(txt_Matmedia.Text);
 
-                    _TelaInscricao.Ing7 = Convert.ToDouble(txt_Ing7.Text);
-                    _TelaInscricao.Ing8 = Convert.ToDouble(txt_Ing8.Text);
-                    _TelaInscricao.Ing9 = Convert.ToDouble(txt_Ing9.Text);
-                    _TelaInscricao.Ing_media = Convert.ToDouble(txt_Ingmedia.Text);
 
                     _TelaInscricao.Fis7 = Convert.ToDouble(txt_Fis7.Text);
                     _TelaInscricao.Fis8 = Convert.ToDouble(txt_Fis8.Text);
@@ -211,9 +207,6 @@ namespace Inscricao_e_Matricula
 
         }
 
-        private void dateTimePicker1_ValueChanged_1(object sender, EventArgs e)
-        {
-
-        }
+        
     }
 }

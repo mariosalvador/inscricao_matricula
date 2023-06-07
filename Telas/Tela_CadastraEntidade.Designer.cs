@@ -40,6 +40,7 @@ namespace Inscricao_e_Matricula
             this.guna2TextBox1 = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
             this.btncancelar = new Guna.UI2.WinForms.Guna2Button();
+            this.btnclose = new Guna.UI2.WinForms.Guna2Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -155,7 +156,7 @@ namespace Inscricao_e_Matricula
             this.guna2ComboBox2.Name = "guna2ComboBox2";
             this.guna2ComboBox2.ShadowDecoration.Parent = this.guna2ComboBox2;
             this.guna2ComboBox2.Size = new System.Drawing.Size(308, 36);
-            this.guna2ComboBox2.TabIndex = 17;
+            this.guna2ComboBox2.TabIndex = 2;
             // 
             // guna2TextBox2
             // 
@@ -180,7 +181,7 @@ namespace Inscricao_e_Matricula
             this.guna2TextBox2.SelectedText = "";
             this.guna2TextBox2.ShadowDecoration.Parent = this.guna2TextBox2;
             this.guna2TextBox2.Size = new System.Drawing.Size(308, 51);
-            this.guna2TextBox2.TabIndex = 17;
+            this.guna2TextBox2.TabIndex = 3;
             this.guna2TextBox2.TextOffset = new System.Drawing.Point(10, 0);
             this.guna2TextBox2.TextChanged += new System.EventHandler(this.guna2TextBox2_TextChanged);
             // 
@@ -203,11 +204,11 @@ namespace Inscricao_e_Matricula
             this.guna2TextBox1.Location = new System.Drawing.Point(465, 155);
             this.guna2TextBox1.Name = "guna2TextBox1";
             this.guna2TextBox1.PasswordChar = '\0';
-            this.guna2TextBox1.PlaceholderText = "Informe o seu nome";
+            this.guna2TextBox1.PlaceholderText = "Informe o Nome de Usuário ";
             this.guna2TextBox1.SelectedText = "";
             this.guna2TextBox1.ShadowDecoration.Parent = this.guna2TextBox1;
             this.guna2TextBox1.Size = new System.Drawing.Size(308, 51);
-            this.guna2TextBox1.TabIndex = 16;
+            this.guna2TextBox1.TabIndex = 1;
             this.guna2TextBox1.TextOffset = new System.Drawing.Point(10, 0);
             // 
             // guna2Button1
@@ -223,7 +224,7 @@ namespace Inscricao_e_Matricula
             this.guna2Button1.Name = "guna2Button1";
             this.guna2Button1.ShadowDecoration.Parent = this.guna2Button1;
             this.guna2Button1.Size = new System.Drawing.Size(124, 48);
-            this.guna2Button1.TabIndex = 19;
+            this.guna2Button1.TabIndex = 4;
             this.guna2Button1.Text = "CRIAR";
             // 
             // btncancelar
@@ -239,9 +240,27 @@ namespace Inscricao_e_Matricula
             this.btncancelar.Name = "btncancelar";
             this.btncancelar.ShadowDecoration.Parent = this.btncancelar;
             this.btncancelar.Size = new System.Drawing.Size(124, 48);
-            this.btncancelar.TabIndex = 20;
+            this.btncancelar.TabIndex = 5;
             this.btncancelar.Text = "CANCELAR";
             this.btncancelar.Click += new System.EventHandler(this.btncancelar_Click);
+            // 
+            // btnclose
+            // 
+            this.btnclose.CheckedState.Parent = this.btnclose;
+            this.btnclose.CustomImages.Parent = this.btnclose;
+            this.btnclose.FillColor = System.Drawing.Color.Transparent;
+            this.btnclose.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnclose.ForeColor = System.Drawing.Color.White;
+            this.btnclose.HoverState.FillColor = System.Drawing.Color.Orange;
+            this.btnclose.HoverState.Parent = this.btnclose;
+            this.btnclose.Image = global::Inscricao_e_Matricula.Properties.Resources.window_close_icon_135015;
+            this.btnclose.Location = new System.Drawing.Point(800, -2);
+            this.btnclose.Name = "btnclose";
+            this.btnclose.PressedColor = System.Drawing.Color.DarkOrange;
+            this.btnclose.ShadowDecoration.Parent = this.btnclose;
+            this.btnclose.Size = new System.Drawing.Size(35, 31);
+            this.btnclose.TabIndex = 16;
+            this.btnclose.Click += new System.EventHandler(this.btnclose_Click);
             // 
             // Tela_CadastraEntidade
             // 
@@ -249,6 +268,7 @@ namespace Inscricao_e_Matricula
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DarkOrange;
             this.ClientSize = new System.Drawing.Size(834, 575);
+            this.Controls.Add(this.btnclose);
             this.Controls.Add(this.btncancelar);
             this.Controls.Add(this.guna2Button1);
             this.Controls.Add(this.guna2ComboBox2);
@@ -284,5 +304,6 @@ namespace Inscricao_e_Matricula
         private System.Windows.Forms.PictureBox pictureBox1;
         private Guna.UI2.WinForms.Guna2Button guna2Button1;
         private Guna.UI2.WinForms.Guna2Button btncancelar;
+        private Guna.UI2.WinForms.Guna2Button btnclose;
     }
 }

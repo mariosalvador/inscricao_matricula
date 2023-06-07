@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Guna.UI2.WinForms;
+using System.Threading;
 
 
 namespace Inscricao_e_Matricula
@@ -19,6 +20,19 @@ namespace Inscricao_e_Matricula
             InitializeComponent();
             this.SetStyle(ControlStyles.ResizeRedraw, true);
         }
+        public int opcao;
+        public void expandir()
+        {
+            timer1.Enabled = true;
+            opcao = 1;
+            label4.Visible = false;
+        }
+        public void ocultar()
+        {
+            timer1.Enabled = true;
+            opcao = 2;
+            label4.Visible = true;
+        }
 
         private void TelaPrincipal_Load(object sender, EventArgs e)
         {
@@ -29,25 +43,7 @@ namespace Inscricao_e_Matricula
             lb_TotaInscrito.Text =Convert.ToString( _TelaInscricao.totalInscrito);
         }
 
-        private void label2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void pictureBox6_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label14_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void panel1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
+       
 
         private void pic_Add_Click(object sender, EventArgs e)
         {
@@ -57,55 +53,7 @@ namespace Inscricao_e_Matricula
 
         }
 
-        private void label23_Click(object sender, EventArgs e)
-        {
-            
-        }
-
-        private void guna2ProgressBar1_ValueChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void lb_Entidade_Click(object sender, EventArgs e)
-        {
-           
-        }
-
-        private void pic_Info_Click(object sender, EventArgs e)
-        {
- 
-        }
-
-        private void chart1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void pictureBox1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void pic_Folder_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label8_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label25_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void panel8_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
+       
 
         private void guna2Button1_Click(object sender, EventArgs e)
         {
@@ -129,15 +77,7 @@ namespace Inscricao_e_Matricula
             this.WindowState = FormWindowState.Minimized;
         }
 
-        private void btnhome_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void pic_Home_Click(object sender, EventArgs e)
-        {
-
-        }
+        
 
         private void guna2Button3_Click(object sender, EventArgs e)
         {
@@ -146,10 +86,50 @@ namespace Inscricao_e_Matricula
             tl.ShowDialog();
         }
 
-        private void btnhome_MouseHover(object sender, EventArgs e)
+        private void timer1_Tick(object sender, EventArgs e)
         {
-
+            if (opcao == 1)
+            {
+                if (btnspanel.Width <= 170)
+                {
+                    btnspanel.Width = btnspanel.Width + 3;
+                }
+                else
+                {
+                    timer1.Enabled = false;
+                }
+            }
+            else
+            {
+                if (btnspanel.Width >= 74)
+                {
+                    btnspanel.Width = btnspanel.Width - 3;
+                }
+                else
+                {
+                    timer1.Enabled = false;
+                }
+            }
         }
+
+        private void btnssidebar_leave(object sender, EventArgs e)
+        {
+            ocultar();
+        }
+
+        private void Side_bar_hover(object sender, EventArgs e)
+        {
+            expandir();
+        }
+
+        private void Side_bar_leave(object sender, EventArgs e)
+        {
+            ocultar();
+        }
+
+       
+
+       
 
        
     }

@@ -65,6 +65,18 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Codigo.cs" />
+    <Compile Include="Telas\Ajuda.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Telas\Ajuda.Designer.cs">
+      <DependentUpon>Ajuda.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Telas\Configuracoes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Telas\Configuracoes.Designer.cs">
+      <DependentUpon>Configuracoes.cs</DependentUpon>
+    </Compile>
     <Compile Include="Telas\TelaInscricao.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -109,6 +121,9 @@
     <Compile Include="Telas\Tela_CadastraEntidade.Designer.cs">
       <DependentUpon>Tela_CadastraEntidade.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Telas\Configuracoes.resx">
+      <DependentUpon>Configuracoes.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Telas\TelaInscricao.resx">
       <DependentUpon>TelaInscricao.cs</DependentUpon>
     </EmbeddedResource>

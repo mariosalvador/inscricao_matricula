@@ -45,6 +45,11 @@ namespace Inscricao_e_Matricula
             telaOperacao.Show();
         }
 
+        private void btnclose_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
         
 
        

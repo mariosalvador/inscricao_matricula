@@ -34,14 +34,12 @@ namespace Inscricao_e_Matricula
         private void pictureBox9_Click(object sender, EventArgs e)
         {
             Tela_CadastraEntidade tela_CadastraEntidade = new Tela_CadastraEntidade();
-            this.Hide();
             tela_CadastraEntidade.Show();
         }
 
         private void label12_Click(object sender, EventArgs e)
         {
             Tela_CadastraEntidade tela_CadastraEntidade = new Tela_CadastraEntidade();
-            this.Hide();
             tela_CadastraEntidade.Show();
         }
 
@@ -85,6 +83,21 @@ namespace Inscricao_e_Matricula
             this.Hide();
             telaPrincipal.Show();
         }
+
+        
+        private void panel_btns_hover(object sender, EventArgs e)
+        {
+            TelaPrincipal n = new TelaPrincipal();
+            n.expandir();
+        }
+
+        private void panel_btns_leave(object sender, EventArgs e)
+        {
+            TelaPrincipal n = new TelaPrincipal();
+            n.ocultar();
+        }
+
+       
 
     }
 }
