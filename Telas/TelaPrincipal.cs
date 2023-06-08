@@ -31,7 +31,7 @@ namespace Inscricao_e_Matricula
         {
             timer1.Enabled = true;
             opcao = 2;
-            label4.Visible = true;
+            
         }
 
         private void TelaPrincipal_Load(object sender, EventArgs e)
@@ -93,9 +93,8 @@ namespace Inscricao_e_Matricula
             {
                 if (btnspanel.Width <= 170)
                 {
-                    btnspanel.Width = btnspanel.Width + 3;
-                    paneljanela.Width = paneljanela.Width - 3;
-                    paneljanela.Location = new Point(paneljanela.Location.X + 3, paneljanela.Location.Y);
+                    btnspanel.Width += 5;
+                    
                 }
                 else
                 {
@@ -106,13 +105,13 @@ namespace Inscricao_e_Matricula
             {
                 if (btnspanel.Width >= 74)
                 {
-                    btnspanel.Width = btnspanel.Width - 3;
-                    paneljanela.Width = paneljanela.Width + 3;
-                    paneljanela.Location = new Point(paneljanela.Location.X - 3, paneljanela.Location.Y);
+                    btnspanel.Width = btnspanel.Width - 4;
+                    
                 }
                 else
                 {
                     timer1.Enabled = false;
+                    label4.Visible = true;
                 }
             }
         }
@@ -124,13 +123,15 @@ namespace Inscricao_e_Matricula
 
         private void Side_bar_hover(object sender, EventArgs e)
         {
-            
+            btnspanel.BringToFront();
             expandir();
+            guna2Transition1.ShowSync(btnspanel);
         }
 
         private void Side_bar_leave(object sender, EventArgs e)
         {
             ocultar();
+          
         }
 
         private void btnconfig_Click(object sender, EventArgs e)
@@ -138,6 +139,7 @@ namespace Inscricao_e_Matricula
             Telas.Configuracoes tl = new Telas.Configuracoes();
             tl.TopLevel=false;
             tl.Visible = true;
+            paneljanela
             paneljanela.Controls.Add(tl);
         }
 
