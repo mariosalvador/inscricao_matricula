@@ -51,8 +51,6 @@ namespace Inscricao_e_Matricula
         private void TelaOperacao_Load(object sender, EventArgs e)
         {
             TelaLogin telaLogin = new TelaLogin();
-            lb_Entidade.Text = telaLogin.nome;
-            btnadd.BackColor = Color.Orange;
         }
 
         private void btnclose_Click(object sender, EventArgs e)

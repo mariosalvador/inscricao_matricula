@@ -74,3 +74,4 @@ C:\Users\Jesimiel\Documents\IM\inscricao_matricula\obj\Debug\Inscricao_e_Matricu
 C:\Users\Jesimiel\Documents\IM\inscricao_matricula\bin\Debug\MySql.Data.dll
 C:\Users\Jesimiel\Documents\IM\inscricao_matricula\obj\Debug\Inscricao_e_Matricula.Telas.Configuracoes.resources
 C:\Users\Jesimiel\Documents\IM\inscricao_matricula\obj\Debug\Inscricao_e_Matricula.Telas.Tela_Visualização.resources
+C:\Users\Jesimiel\Documents\IM\inscricao_matricula\obj\Debug\Inscricao_e_Matricula.Telas.Tela_informacao.resources

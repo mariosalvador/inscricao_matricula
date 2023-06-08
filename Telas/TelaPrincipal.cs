@@ -20,9 +20,10 @@ namespace Inscricao_e_Matricula
             InitializeComponent();
             this.SetStyle(ControlStyles.ResizeRedraw, true);
         }
+
         public int opcao;
         public void expandir()
-        {
+        {   
             timer1.Enabled = true;
             opcao = 1;
             label4.Visible = false;
@@ -33,14 +34,16 @@ namespace Inscricao_e_Matricula
             opcao = 2;
             
         }
-
         private void TelaPrincipal_Load(object sender, EventArgs e)
         {
+            TelaLogin login = new TelaLogin();
+            lb_Entidade.Text = login.nome;
             btnhome.FillColor = Color.Orange;
-            TelaLogin telaLogin = new TelaLogin();
-            lb_Entidade.Text = telaLogin.nome;
-            Class_TelaInscricao _TelaInscricao = new Class_TelaInscricao();
-            lb_TotaInscrito.Text =Convert.ToString( _TelaInscricao.totalInscrito);
+            Telas.Tela_informacao tela = new Telas.Tela_informacao();
+            tela.Visible = true;
+            tela.Dock = DockStyle.Fill;
+            paneljanela.Controls.Add(tela);
+
         }
 
        
@@ -60,10 +63,13 @@ namespace Inscricao_e_Matricula
             if (this.WindowState == FormWindowState.Normal)
             {
                 this.WindowState = FormWindowState.Maximized;
+                
+                guna2Elipse7.BorderRadius = 0;
             }
             else
             {
                 this.WindowState = FormWindowState.Normal;
+                guna2Elipse7.BorderRadius = 35;
             }
         }
 
@@ -76,17 +82,15 @@ namespace Inscricao_e_Matricula
         {
             this.WindowState = FormWindowState.Minimized;
         }
-
-        
-
         private void guna2Button3_Click(object sender, EventArgs e)
         {
-            TelaOperacao tl = new TelaOperacao();
-            this.Hide();
-            tl.ShowDialog();
+            paneljanela.Controls.Clear();
+            TelaOperacao tela = new TelaOperacao();
+            tela.TopLevel = false;
+            tela.Visible = true;
+            tela.Dock = DockStyle.Fill;
+            paneljanela.Controls.Add(tela);
         }
-        int p=0;
-        int w = 0;
         private void timer1_Tick(object sender, EventArgs e)
         {
             if (opcao == 1)
@@ -125,7 +129,7 @@ namespace Inscricao_e_Matricula
         {
             btnspanel.BringToFront();
             expandir();
-            guna2Transition1.ShowSync(btnspanel);
+            
         }
 
         private void Side_bar_leave(object sender, EventArgs e)
@@ -139,7 +143,6 @@ namespace Inscricao_e_Matricula
             Telas.Configuracoes tl = new Telas.Configuracoes();
             tl.TopLevel=false;
             tl.Visible = true;
-            paneljanela
             paneljanela.Controls.Add(tl);
         }
 
@@ -166,6 +169,21 @@ namespace Inscricao_e_Matricula
         private void panel6_Paint(object sender, PaintEventArgs e)
         {
 
+        }
+
+        private void paneljanela_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void btnhome_Click(object sender, EventArgs e)
+        {
+            paneljanela.Controls.Clear();
+            Telas.Tela_informacao tela = new Telas.Tela_informacao();
+            tela.TopLevel = false;
+            tela.Visible = true;
+            paneljanela.Controls.Add(tela);
+            tela.Dock = DockStyle.Fill;
         }
 
        

@@ -127,6 +127,12 @@
     <Compile Include="Telas\Tela_CadastraEntidade.Designer.cs">
       <DependentUpon>Tela_CadastraEntidade.cs</DependentUpon>
     </Compile>
+    <Compile Include="Telas\Tela_informacao.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Telas\Tela_informacao.Designer.cs">
+      <DependentUpon>Tela_informacao.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Telas\Configuracoes.resx">
       <DependentUpon>Configuracoes.cs</DependentUpon>
     </EmbeddedResource>
@@ -163,6 +169,9 @@
     </Compile>
     <EmbeddedResource Include="Telas\Tela_CadastraEntidade.resx">
       <DependentUpon>Tela_CadastraEntidade.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Telas\Tela_informacao.resx">
+      <DependentUpon>Tela_informacao.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="app.config" />
     <None Include="packages.config" />
