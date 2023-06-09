@@ -13,8 +13,9 @@ namespace Inscricao_e_Matricula
 {
     public partial class TelaLogin : Form
     {
-        public string nome = "Admin_Master";
-        public string senha = "master";
+        public DataTable dataTable = new DataTable();
+        public static string nome;
+        public static string senha;
         DialogResult btr = new DialogResult();
         public TelaLogin()
         {
@@ -101,36 +102,57 @@ namespace Inscricao_e_Matricula
         private void btnentrar_Click(object sender, EventArgs e)
         {
              TelaPrincipal telaPrincipal = new TelaPrincipal();
-            if (txtnome.Text==nome && txtsenha.Text==senha)
-            {
-                this.Hide();
-                telaPrincipal.ShowDialog();
-            }
-            else if (txtnome.Text == "")
-            {
-                btr= MessageBox.Show("Preencha o campo do nome...", "Atenção", MessageBoxButtons.OKCancel, MessageBoxIcon.Information);
-                reposta(1);
-            }
-            else if (txtsenha.Text == "")
-            {
-                btr = MessageBox.Show("Preencha o campo do da senha...", "Atenção", MessageBoxButtons.OKCancel, MessageBoxIcon.Information);
-                reposta(2);
-            }
-            else if( txtnome.Text !=nome)
-            {
-                btr = MessageBox.Show("O nome de usuário está incorreto", "Atenção", MessageBoxButtons.OKCancel, MessageBoxIcon.Information);
-                reposta(1);
-            }
-            else if (txtsenha.Text != senha)
-            {
-                btr = MessageBox.Show("A senha inserida está incorreta", "Atenção", MessageBoxButtons.OKCancel, MessageBoxIcon.Information);
-                reposta(2);
-            }
-            else if (txtnome.Text != nome && txtsenha.Text != senha)
-            {
-                btr = MessageBox.Show("O nome de Usuário e a senha estão incorretos", "Atenção", MessageBoxButtons.OKCancel, MessageBoxIcon.Information);
-                reposta(1);
-            }
+            /*  if (txtnome.Text==nome && txtsenha.Text==senha)
+              {
+                  this.Hide();
+                  telaPrincipal.ShowDialog();
+              }
+              else if (txtnome.Text == "")
+              {
+                  btr= MessageBox.Show("Preencha o campo do nome...", "Atenção", MessageBoxButtons.OKCancel, MessageBoxIcon.Information);
+                  reposta(1);
+              }
+              else if (txtsenha.Text == "")
+              {
+                  btr = MessageBox.Show("Preencha o campo do da senha...", "Atenção", MessageBoxButtons.OKCancel, MessageBoxIcon.Information);
+                  reposta(2);
+              }
+              else if( txtnome.Text !=nome)
+              {
+                  btr = MessageBox.Show("O nome de usuário está incorreto", "Atenção", MessageBoxButtons.OKCancel, MessageBoxIcon.Information);
+                  reposta(1);
+              }
+              else if (txtsenha.Text != senha)
+              {
+                  btr = MessageBox.Show("A senha inserida está incorreta", "Atenção", MessageBoxButtons.OKCancel, MessageBoxIcon.Information);
+                  reposta(2);
+              }
+              else if (txtnome.Text != nome && txtsenha.Text != senha)
+              {
+                  btr = MessageBox.Show("O nome de Usuário e a senha estão incorretos", "Atenção", MessageBoxButtons.OKCancel, MessageBoxIcon.Information);
+                  reposta(1);
+              }*/
+                nome = txtnome.Text;
+                senha=txtsenha.Text;
+                if (txtnome.Text == "" && txtsenha.Text == "")
+                {
+                    txtnome.Focus();
+                    return;
+                }
+
+                string mySql = "SELECT * FROM entidade WHERE nome_entidade='" + nome  + "' AND senha_entidade='" + senha  + "'";
+                dataTable = Data_Base.Consulta(mySql);
+
+                if (dataTable.Rows.Count == 1)
+                {
+                   telaPrincipal.Show();
+                    MessageBox.Show(" usuario encontrado");
+                }
+                else
+                {
+                    MessageBox.Show("Usuario nao encontrado");
+                }
+            
            
         }
 
