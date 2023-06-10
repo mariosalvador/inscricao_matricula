@@ -55,7 +55,7 @@ namespace Inscricao_e_Matricula
             this.panel1.Location = new System.Drawing.Point(0, -2);
             this.panel1.Margin = new System.Windows.Forms.Padding(2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(419, 602);
+            this.panel1.Size = new System.Drawing.Size(423, 571);
             this.panel1.TabIndex = 1;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
@@ -64,10 +64,10 @@ namespace Inscricao_e_Matricula
             this.pictureBox1.BackColor = System.Drawing.Color.White;
             this.pictureBox1.BackgroundImage = global::Inscricao_e_Matricula.Properties.Resources._1684060439009;
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox1.Location = new System.Drawing.Point(-3, 232);
+            this.pictureBox1.Location = new System.Drawing.Point(-3, 208);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(422, 138);
+            this.pictureBox1.Size = new System.Drawing.Size(426, 138);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.pictureBox1.TabIndex = 18;
             this.pictureBox1.TabStop = false;
@@ -80,10 +80,10 @@ namespace Inscricao_e_Matricula
             this.label1.BackColor = System.Drawing.Color.DarkOrange;
             this.label1.Font = new System.Drawing.Font("Segoe UI", 23.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(418, 41);
+            this.label1.Location = new System.Drawing.Point(422, 44);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(417, 41);
+            this.label1.Size = new System.Drawing.Size(416, 43);
             this.label1.TabIndex = 2;
             this.label1.Text = "CADASTRAR";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -97,7 +97,7 @@ namespace Inscricao_e_Matricula
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Segoe UI", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(471, 132);
+            this.label4.Location = new System.Drawing.Point(483, 132);
             this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(148, 23);
@@ -112,7 +112,7 @@ namespace Inscricao_e_Matricula
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Segoe UI", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(471, 317);
+            this.label3.Location = new System.Drawing.Point(483, 317);
             this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(58, 23);
@@ -127,7 +127,7 @@ namespace Inscricao_e_Matricula
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Segoe UI", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(471, 231);
+            this.label2.Location = new System.Drawing.Point(483, 231);
             this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(66, 23);
@@ -152,7 +152,7 @@ namespace Inscricao_e_Matricula
             "Catalogador",
             "Admin"});
             this.guna2ComboBox2.ItemsAppearance.Parent = this.guna2ComboBox2;
-            this.guna2ComboBox2.Location = new System.Drawing.Point(465, 254);
+            this.guna2ComboBox2.Location = new System.Drawing.Point(477, 254);
             this.guna2ComboBox2.Name = "guna2ComboBox2";
             this.guna2ComboBox2.ShadowDecoration.Parent = this.guna2ComboBox2;
             this.guna2ComboBox2.Size = new System.Drawing.Size(308, 36);
@@ -174,7 +174,7 @@ namespace Inscricao_e_Matricula
             this.guna2TextBox2.HoverState.Parent = this.guna2TextBox2;
             this.guna2TextBox2.IconLeft = global::Inscricao_e_Matricula.Properties.Resources.padlock_1;
             this.guna2TextBox2.IconLeftOffset = new System.Drawing.Point(5, 0);
-            this.guna2TextBox2.Location = new System.Drawing.Point(465, 340);
+            this.guna2TextBox2.Location = new System.Drawing.Point(477, 340);
             this.guna2TextBox2.Name = "guna2TextBox2";
             this.guna2TextBox2.PasswordChar = '\0';
             this.guna2TextBox2.PlaceholderText = "Informe a senha para o Usuário";
@@ -201,7 +201,7 @@ namespace Inscricao_e_Matricula
             this.guna2TextBox1.HoverState.Parent = this.guna2TextBox1;
             this.guna2TextBox1.IconLeft = global::Inscricao_e_Matricula.Properties.Resources.user_1;
             this.guna2TextBox1.IconLeftOffset = new System.Drawing.Point(5, 0);
-            this.guna2TextBox1.Location = new System.Drawing.Point(465, 155);
+            this.guna2TextBox1.Location = new System.Drawing.Point(477, 155);
             this.guna2TextBox1.Name = "guna2TextBox1";
             this.guna2TextBox1.PasswordChar = '\0';
             this.guna2TextBox1.PlaceholderText = "Informe o Nome de Usuário ";
@@ -220,7 +220,7 @@ namespace Inscricao_e_Matricula
             this.guna2Button1.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2Button1.ForeColor = System.Drawing.Color.DarkOrange;
             this.guna2Button1.HoverState.Parent = this.guna2Button1;
-            this.guna2Button1.Location = new System.Drawing.Point(465, 470);
+            this.guna2Button1.Location = new System.Drawing.Point(477, 439);
             this.guna2Button1.Name = "guna2Button1";
             this.guna2Button1.ShadowDecoration.Parent = this.guna2Button1;
             this.guna2Button1.Size = new System.Drawing.Size(124, 48);
@@ -236,7 +236,7 @@ namespace Inscricao_e_Matricula
             this.btncancelar.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btncancelar.ForeColor = System.Drawing.Color.DarkOrange;
             this.btncancelar.HoverState.Parent = this.btncancelar;
-            this.btncancelar.Location = new System.Drawing.Point(649, 470);
+            this.btncancelar.Location = new System.Drawing.Point(661, 439);
             this.btncancelar.Name = "btncancelar";
             this.btncancelar.ShadowDecoration.Parent = this.btncancelar;
             this.btncancelar.Size = new System.Drawing.Size(124, 48);
@@ -254,7 +254,7 @@ namespace Inscricao_e_Matricula
             this.btnclose.HoverState.FillColor = System.Drawing.Color.Orange;
             this.btnclose.HoverState.Parent = this.btnclose;
             this.btnclose.Image = global::Inscricao_e_Matricula.Properties.Resources.window_close_icon_135015;
-            this.btnclose.Location = new System.Drawing.Point(800, -2);
+            this.btnclose.Location = new System.Drawing.Point(802, 1);
             this.btnclose.Name = "btnclose";
             this.btnclose.PressedColor = System.Drawing.Color.DarkOrange;
             this.btnclose.ShadowDecoration.Parent = this.btnclose;
@@ -267,8 +267,9 @@ namespace Inscricao_e_Matricula
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DarkOrange;
-            this.ClientSize = new System.Drawing.Size(834, 575);
+            this.ClientSize = new System.Drawing.Size(838, 544);
             this.Controls.Add(this.btnclose);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.btncancelar);
             this.Controls.Add(this.guna2Button1);
             this.Controls.Add(this.guna2ComboBox2);
@@ -277,7 +278,6 @@ namespace Inscricao_e_Matricula
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.label1);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(2);
