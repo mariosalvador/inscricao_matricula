@@ -65,6 +65,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Codigo.cs" />
+    <Compile Include="Data_Base.cs" />
     <Compile Include="Telas\Ajuda.cs">
       <SubType>Form</SubType>
     </Compile>

@@ -7,12 +7,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using MySql.Data.MySqlClient;
 
 namespace Inscricao_e_Matricula
 {
     public partial class TelaInscricao : Form
     {
         Class_TelaInscricao _TelaInscricao = new Class_TelaInscricao();
+        MySqlConnection Conexao;
         public TelaInscricao()
         {
             InitializeComponent();
@@ -118,12 +120,43 @@ namespace Inscricao_e_Matricula
                     txt_AreaFormacao.Focus();
                 }
             }
+           // id_aluno,nome_aluno,data_aluno,tel_aluno,bi_aluno,genero,media_id,curso_id 
 
             try
             {
                 if (txt_AreaFormacao.Text != "" && txt_Curso.Text != "" && txt_Localidade.Text != "" && txt_Nacionalidade.Text != "" && txt_Genero.Text != "" && txt_Tel.Text != "" && txt_Bi.Text != "" && txtnome.Text != "")
                 {
-                    _TelaInscricao.Insc_Nome = txtnome.Text;
+                    string data_source = "datasource=localhost;username=root;password=mariopaulos06;database=insc_mat";
+                    // conexao com o MYsql
+                    Conexao = new MySqlConnection(data_source);
+
+
+                    string sql = "INSERT INTO aluno(nome_aluno,tel_aluno,bi_aluno,genero) VALUES('" + txtnome.Text + "','" + txt_Tel.Text + "','" + txt_Bi.Text + "','" + txt_Genero.Text+ "')";
+
+                    // comando insert
+                    MySqlCommand comando = new MySqlCommand(sql, Conexao);
+
+
+                    Conexao.Open();
+
+                    comando.ExecuteReader();
+
+                    MessageBox.Show("Aluno inscrito");
+
+                }
+            /*catch (Exception ex)
+            {
+                MessageBox.Show("ERRO: " + ex.Message);
+            }
+            finally
+            {
+                Conexao.Close();
+            }
+
+
+
+
+            _TelaInscricao.Insc_Nome = txtnome.Text;
                     _TelaInscricao.Insc_nuneroBI = txt_Bi.Text;
                     _TelaInscricao.Insc_numTelefone = Convert.ToInt32(txt_Tel.Text);
                     _TelaInscricao.Insc_Genero = txt_Genero.Text;
@@ -154,8 +187,8 @@ namespace Inscricao_e_Matricula
                     _TelaInscricao.Fis9 = Convert.ToDouble(txt_Fis9.Text);
                     _TelaInscricao.Fis_media = Convert.ToDouble(txt_Fismedia.Text);
 
-                    _TelaInscricao.totalInscrito += 1;
-                }
+                    _TelaInscricao.totalInscrito += 1;*/
+                
             } catch (Exception erro)
             {
                 MessageBox.Show("ERRO: {0}",erro.Message);

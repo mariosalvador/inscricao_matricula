@@ -75,3 +75,7 @@ C:\Users\Jesimiel\Documents\IM\inscricao_matricula\bin\Debug\MySql.Data.dll
 C:\Users\Jesimiel\Documents\IM\inscricao_matricula\obj\Debug\Inscricao_e_Matricula.Telas.Configuracoes.resources
 C:\Users\Jesimiel\Documents\IM\inscricao_matricula\obj\Debug\Inscricao_e_Matricula.Telas.Tela_Visualização.resources
 C:\Users\Jesimiel\Documents\IM\inscricao_matricula\obj\Debug\Inscricao_e_Matricula.Telas.Tela_informacao.resources
+C:\Users\m\OneDrive\Desktop\visual studio 2023\Windows form\IM\inscricao_matricula\obj\Debug\Inscricao_e_Matricula.Telas.Configuracoes.resources
+C:\Users\m\OneDrive\Desktop\visual studio 2023\Windows form\IM\inscricao_matricula\obj\Debug\Inscricao_e_Matricula.Telas.Tela_Visualização.resources
+C:\Users\m\OneDrive\Desktop\visual studio 2023\Windows form\IM\inscricao_matricula\obj\Debug\Inscricao_e_Matricula.Telas.TelaProcesso.resources
+C:\Users\m\OneDrive\Desktop\visual studio 2023\Windows form\IM\inscricao_matricula\obj\Debug\Inscricao_e_Matricula.Telas.Tela_informacao.resources
