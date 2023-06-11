@@ -34,7 +34,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(284, 262);
+            this.ClientSize = new System.Drawing.Size(322, 262);
             this.Name = "Telaconfirmar";
             this.Text = "Telaconfirmar";
             this.Load += new System.EventHandler(this.Telaconfirmar_Load);

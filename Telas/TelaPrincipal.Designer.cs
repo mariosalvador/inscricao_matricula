@@ -80,12 +80,13 @@ namespace Inscricao_e_Matricula
             this.lb_Entidade.AutoSize = true;
             this.guna2Transition1.SetDecoration(this.lb_Entidade, Guna.UI2.AnimatorNS.DecorationType.None);
             this.lb_Entidade.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.8F);
-            this.lb_Entidade.Location = new System.Drawing.Point(876, 41);
+            this.lb_Entidade.Location = new System.Drawing.Point(876, 37);
             this.lb_Entidade.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lb_Entidade.Name = "lb_Entidade";
-            this.lb_Entidade.Size = new System.Drawing.Size(98, 26);
+            this.lb_Entidade.Size = new System.Drawing.Size(121, 31);
             this.lb_Entidade.TabIndex = 10;
             this.lb_Entidade.Text = "Entidade";
+            this.lb_Entidade.Click += new System.EventHandler(this.lb_Entidade_Click);
             // 
             // guna2DragControl1
             // 

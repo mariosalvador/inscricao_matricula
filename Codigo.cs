@@ -43,4 +43,11 @@ namespace Inscricao_e_Matricula
 
         public int totalInscrito = 0;
     }
+
+    public class Entidade
+    {
+        public string nome_entidade;
+        public string senha_entidade;
+        public string tipo_entidade;
+    }
 }

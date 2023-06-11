@@ -78,6 +78,12 @@
     <Compile Include="Telas\Configuracoes.Designer.cs">
       <DependentUpon>Configuracoes.cs</DependentUpon>
     </Compile>
+    <Compile Include="Telas\Primeira_conta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Telas\Primeira_conta.Designer.cs">
+      <DependentUpon>Primeira_conta.cs</DependentUpon>
+    </Compile>
     <Compile Include="Telas\Telaconfirmar.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -142,6 +148,9 @@
     </Compile>
     <EmbeddedResource Include="Telas\Configuracoes.resx">
       <DependentUpon>Configuracoes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Telas\Primeira_conta.resx">
+      <DependentUpon>Primeira_conta.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Telas\Telaconfirmar.resx">
       <DependentUpon>Telaconfirmar.cs</DependentUpon>

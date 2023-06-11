@@ -4,6 +4,7 @@ using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 using MySql.Data.MySqlClient;
 
 namespace Inscricao_e_Matricula
@@ -19,7 +20,6 @@ namespace Inscricao_e_Matricula
             conexao.Open();
             return conexao;
         }
-
 
         public DataTable Obter_Usuarios()
         {
@@ -68,7 +68,28 @@ namespace Inscricao_e_Matricula
                 Conexao_Banco().Close();
                 throw ex;
             }
-
         }
+        
+        
+        public static void Nova_Entidade(Entidade e)
+        {
+            try
+            {
+                var cmd = Conexao_Banco().CreateCommand();
+                cmd.CommandText = "INSERT INTO usuario (nome_usuario,senha_usuario,entidade_usuario,id_usuario) VALUES(@nome, @senha, @entidade,(SELECT MAX(id_usuario)+1 FROM usuario))";
+                cmd.Parameters.AddWithValue("@nome", e.nome_entidade);
+                cmd.Parameters.AddWithValue("@senha", e.senha_entidade);
+                cmd.Parameters.AddWithValue("@entidade", e.tipo_entidade);
+
+                MessageBox.Show("Entidade Criada!");
+                Conexao_Banco().Close();
+            }
+            catch (Exception ex)
+            {
+                Conexao_Banco().Close();
+                MessageBox.Show(" " + ex.Message);
+            }
+        }
+    
     }
 }
