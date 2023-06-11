@@ -14,7 +14,7 @@ namespace Inscricao_e_Matricula
     public partial class TelaLogin : Form
     {
         public DataTable dataTable = new DataTable();
-        public static string nome;
+        public  string nome;
         public static string senha;
         DialogResult btr = new DialogResult();
         public TelaLogin()
@@ -171,6 +171,11 @@ namespace Inscricao_e_Matricula
             {
                 txtsenha.PasswordChar = '*';
             }
+        }
+
+        private void txtnome_TextChanged(object sender, EventArgs e)
+        {
+        
         }  
         
     }

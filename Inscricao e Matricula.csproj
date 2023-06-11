@@ -78,6 +78,12 @@
     <Compile Include="Telas\Configuracoes.Designer.cs">
       <DependentUpon>Configuracoes.cs</DependentUpon>
     </Compile>
+    <Compile Include="Telas\Telaconfirmar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Telas\Telaconfirmar.Designer.cs">
+      <DependentUpon>Telaconfirmar.cs</DependentUpon>
+    </Compile>
     <Compile Include="Telas\TelaVisualizacao.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -136,6 +142,9 @@
     </Compile>
     <EmbeddedResource Include="Telas\Configuracoes.resx">
       <DependentUpon>Configuracoes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Telas\Telaconfirmar.resx">
+      <DependentUpon>Telaconfirmar.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Telas\TelaVisualizacao.resx">
       <DependentUpon>TelaVisualizacao.cs</DependentUpon>
@@ -302,6 +311,21 @@
   </ItemGroup>
   <ItemGroup>
     <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Vector %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\6522516.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ellipse 6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Vector.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\window_maximize_icon_137012.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

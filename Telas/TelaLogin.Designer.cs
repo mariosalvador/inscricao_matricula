@@ -199,6 +199,7 @@ namespace Inscricao_e_Matricula
             this.txtnome.Size = new System.Drawing.Size(308, 51);
             this.txtnome.TabIndex = 1;
             this.txtnome.TextOffset = new System.Drawing.Point(10, 0);
+            this.txtnome.TextChanged += new System.EventHandler(this.txtnome_TextChanged);
             // 
             // txtsenha
             // 

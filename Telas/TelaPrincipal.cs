@@ -63,12 +63,14 @@ namespace Inscricao_e_Matricula
             if (this.WindowState == FormWindowState.Normal)
             {
                 this.WindowState = FormWindowState.Maximized;
-                
+                guna2Button1.Image = Image.FromFile(@"C:\Users\Jesimiel\Documents\IM\inscricao_matricula\Resources\window_restore_icon_137011.png");
+
                 guna2Elipse7.BorderRadius = 0;
             }
             else
             {
                 this.WindowState = FormWindowState.Normal;
+                guna2Button1.Image = Image.FromFile(@"C:\Users\Jesimiel\Documents\IM\inscricao_matricula\Resources\window_maximize_icon_137012.png");
                 guna2Elipse7.BorderRadius = 35;
             }
         }
@@ -141,9 +143,12 @@ namespace Inscricao_e_Matricula
         private void btnconfig_Click(object sender, EventArgs e)
         {
             Telas.Configuracoes tl = new Telas.Configuracoes();
+            paneljanela.Controls.Clear();
             tl.TopLevel=false;
             tl.Visible = true;
             paneljanela.Controls.Add(tl);
+            tl.Dock = DockStyle.Fill;
+            btnconfig.BackColor = Color.Orange;
         }
 
         private void pnins_Paint(object sender, PaintEventArgs e)
