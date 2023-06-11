@@ -29,11 +29,10 @@ namespace Inscricao_e_Matricula
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.btnentrar = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.btn_Voltar = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label16 = new System.Windows.Forms.Label();
             this.guna2DateTimePicker1 = new Guna.UI2.WinForms.Guna2DateTimePicker();
@@ -75,19 +74,22 @@ namespace Inscricao_e_Matricula
             this.label7 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.txt_Localidade = new Guna.UI2.WinForms.Guna2TextBox();
-            this.txt_Endereco = new Guna.UI2.WinForms.Guna2TextBox();
-            this.txt_Nacionalidade = new Guna.UI2.WinForms.Guna2TextBox();
-            this.txt_Tel = new Guna.UI2.WinForms.Guna2TextBox();
-            this.txt_Bi = new Guna.UI2.WinForms.Guna2TextBox();
-            this.txtnome = new Guna.UI2.WinForms.Guna2TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.gunaButton1 = new Guna.UI.WinForms.GunaButton();
+            this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
+            this.txtnome = new Guna.UI2.WinForms.Guna2TextBox();
+            this.txt_Bi = new Guna.UI2.WinForms.Guna2TextBox();
+            this.txt_Tel = new Guna.UI2.WinForms.Guna2TextBox();
+            this.txt_Endereco = new Guna.UI2.WinForms.Guna2TextBox();
+            this.label17 = new System.Windows.Forms.Label();
+            this.label19 = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // btnentrar
@@ -118,45 +120,26 @@ namespace Inscricao_e_Matricula
             // 
             // panel1
             // 
+            this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.panel1.BackColor = System.Drawing.Color.White;
-            this.panel1.Controls.Add(this.btn_Voltar);
             this.panel1.Controls.Add(this.pictureBox1);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Margin = new System.Windows.Forms.Padding(2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(419, 780);
+            this.panel1.Size = new System.Drawing.Size(421, 788);
             this.panel1.TabIndex = 19;
-            // 
-            // btn_Voltar
-            // 
-            this.btn_Voltar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.8F);
-            this.btn_Voltar.ForeColor = System.Drawing.Color.Black;
-            this.btn_Voltar.Location = new System.Drawing.Point(0, 0);
-            this.btn_Voltar.Margin = new System.Windows.Forms.Padding(2);
-            this.btn_Voltar.Name = "btn_Voltar";
-            this.btn_Voltar.Size = new System.Drawing.Size(68, 32);
-            this.btn_Voltar.TabIndex = 57;
-            this.btn_Voltar.Text = "Voltar";
-            this.btn_Voltar.UseVisualStyleBackColor = true;
-            this.btn_Voltar.Click += new System.EventHandler(this.btn_Voltar_Click);
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackColor = System.Drawing.Color.White;
-            this.pictureBox1.BackgroundImage = global::Inscricao_e_Matricula.Properties.Resources._1684060439009;
-            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox1.Location = new System.Drawing.Point(-2, 362);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(425, 162);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
-            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // panel2
             // 
+            this.panel2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel2.Controls.Add(this.label19);
+            this.panel2.Controls.Add(this.label17);
+            this.panel2.Controls.Add(this.txt_Tel);
+            this.panel2.Controls.Add(this.txt_Endereco);
+            this.panel2.Controls.Add(this.txt_Bi);
+            this.panel2.Controls.Add(this.txtnome);
+            this.panel2.Controls.Add(this.gunaButton1);
             this.panel2.Controls.Add(this.label16);
             this.panel2.Controls.Add(this.guna2DateTimePicker1);
             this.panel2.Controls.Add(this.btn_Validar);
@@ -167,27 +150,22 @@ namespace Inscricao_e_Matricula
             this.panel2.Controls.Add(this.label7);
             this.panel2.Controls.Add(this.label6);
             this.panel2.Controls.Add(this.label5);
-            this.panel2.Controls.Add(this.txt_Localidade);
-            this.panel2.Controls.Add(this.txt_Endereco);
-            this.panel2.Controls.Add(this.txt_Nacionalidade);
-            this.panel2.Controls.Add(this.txt_Tel);
-            this.panel2.Controls.Add(this.txt_Bi);
-            this.panel2.Controls.Add(this.txtnome);
             this.panel2.Controls.Add(this.label4);
             this.panel2.Controls.Add(this.label3);
             this.panel2.Controls.Add(this.label1);
             this.panel2.Location = new System.Drawing.Point(419, -51);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(608, 1095);
+            this.panel2.Size = new System.Drawing.Size(650, 1095);
             this.panel2.TabIndex = 56;
             this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
             // 
             // label16
             // 
+            this.label16.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label16.AutoSize = true;
             this.label16.Font = new System.Drawing.Font("Segoe UI", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label16.ForeColor = System.Drawing.Color.White;
-            this.label16.Location = new System.Drawing.Point(389, 117);
+            this.label16.Location = new System.Drawing.Point(418, 103);
             this.label16.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label16.Name = "label16";
             this.label16.Size = new System.Drawing.Size(172, 23);
@@ -196,17 +174,19 @@ namespace Inscricao_e_Matricula
             // 
             // guna2DateTimePicker1
             // 
+            this.guna2DateTimePicker1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.guna2DateTimePicker1.BorderRadius = 10;
             this.guna2DateTimePicker1.CheckedState.Parent = this.guna2DateTimePicker1;
             this.guna2DateTimePicker1.FillColor = System.Drawing.Color.White;
             this.guna2DateTimePicker1.Font = new System.Drawing.Font("Segoe UI", 8F);
             this.guna2DateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Long;
             this.guna2DateTimePicker1.HoverState.Parent = this.guna2DateTimePicker1;
-            this.guna2DateTimePicker1.Location = new System.Drawing.Point(393, 140);
+            this.guna2DateTimePicker1.Location = new System.Drawing.Point(410, 126);
             this.guna2DateTimePicker1.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
             this.guna2DateTimePicker1.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
             this.guna2DateTimePicker1.Name = "guna2DateTimePicker1";
             this.guna2DateTimePicker1.ShadowDecoration.Parent = this.guna2DateTimePicker1;
-            this.guna2DateTimePicker1.Size = new System.Drawing.Size(204, 37);
+            this.guna2DateTimePicker1.Size = new System.Drawing.Size(205, 37);
             this.guna2DateTimePicker1.TabIndex = 63;
             this.guna2DateTimePicker1.Value = new System.DateTime(2023, 6, 6, 22, 52, 13, 98);
             // 
@@ -223,7 +203,7 @@ namespace Inscricao_e_Matricula
             this.btn_Validar.ForeColor = System.Drawing.Color.DarkOrange;
             this.btn_Validar.Image = null;
             this.btn_Validar.ImageSize = new System.Drawing.Size(20, 20);
-            this.btn_Validar.Location = new System.Drawing.Point(148, 735);
+            this.btn_Validar.Location = new System.Drawing.Point(84, 596);
             this.btn_Validar.Name = "btn_Validar";
             this.btn_Validar.OnHoverBaseColor = System.Drawing.Color.WhiteSmoke;
             this.btn_Validar.OnHoverBorderColor = System.Drawing.Color.Black;
@@ -231,17 +211,17 @@ namespace Inscricao_e_Matricula
             this.btn_Validar.OnHoverImage = null;
             this.btn_Validar.OnPressedColor = System.Drawing.Color.White;
             this.btn_Validar.Radius = 15;
-            this.btn_Validar.Size = new System.Drawing.Size(308, 51);
+            this.btn_Validar.Size = new System.Drawing.Size(208, 51);
             this.btn_Validar.TabIndex = 62;
-            this.btn_Validar.Text = "VALIDAR";
+            this.btn_Validar.Text = "Validar";
             this.btn_Validar.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.btn_Validar.Click += new System.EventHandler(this.btn_Validar_Click);
             // 
             // txt_AreaFormacao
             // 
-            this.txt_AreaFormacao.AutoRoundedCorners = true;
+            this.txt_AreaFormacao.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.txt_AreaFormacao.BackColor = System.Drawing.Color.Transparent;
-            this.txt_AreaFormacao.BorderRadius = 17;
+            this.txt_AreaFormacao.BorderRadius = 10;
             this.txt_AreaFormacao.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
             this.txt_AreaFormacao.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.txt_AreaFormacao.FocusedColor = System.Drawing.Color.Empty;
@@ -251,15 +231,12 @@ namespace Inscricao_e_Matricula
             this.txt_AreaFormacao.FormattingEnabled = true;
             this.txt_AreaFormacao.HoverState.Parent = this.txt_AreaFormacao;
             this.txt_AreaFormacao.ItemHeight = 30;
-            this.txt_AreaFormacao.Items.AddRange(new object[] {
-            "Femenino",
-            "Masculino"});
             this.txt_AreaFormacao.ItemsAppearance.Parent = this.txt_AreaFormacao;
-            this.txt_AreaFormacao.Location = new System.Drawing.Point(328, 406);
+            this.txt_AreaFormacao.Location = new System.Drawing.Point(327, 315);
             this.txt_AreaFormacao.Margin = new System.Windows.Forms.Padding(2);
             this.txt_AreaFormacao.Name = "txt_AreaFormacao";
             this.txt_AreaFormacao.ShadowDecoration.Parent = this.txt_AreaFormacao;
-            this.txt_AreaFormacao.Size = new System.Drawing.Size(263, 36);
+            this.txt_AreaFormacao.Size = new System.Drawing.Size(288, 36);
             this.txt_AreaFormacao.Sorted = true;
             this.txt_AreaFormacao.TabIndex = 60;
             // 
@@ -283,17 +260,18 @@ namespace Inscricao_e_Matricula
             "Mecânica",
             "Química"});
             this.txt_Curso.ItemsAppearance.Parent = this.txt_Curso;
-            this.txt_Curso.Location = new System.Drawing.Point(8, 406);
+            this.txt_Curso.Location = new System.Drawing.Point(26, 315);
             this.txt_Curso.Margin = new System.Windows.Forms.Padding(2);
             this.txt_Curso.Name = "txt_Curso";
             this.txt_Curso.ShadowDecoration.Parent = this.txt_Curso;
-            this.txt_Curso.Size = new System.Drawing.Size(303, 36);
+            this.txt_Curso.Size = new System.Drawing.Size(288, 36);
             this.txt_Curso.Sorted = true;
             this.txt_Curso.TabIndex = 61;
             // 
             // txt_Genero
             // 
             this.txt_Genero.BackColor = System.Drawing.Color.Transparent;
+            this.txt_Genero.BorderRadius = 10;
             this.txt_Genero.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
             this.txt_Genero.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.txt_Genero.FocusedColor = System.Drawing.Color.Empty;
@@ -307,18 +285,19 @@ namespace Inscricao_e_Matricula
             "Femenino",
             "Masculino"});
             this.txt_Genero.ItemsAppearance.Parent = this.txt_Genero;
-            this.txt_Genero.Location = new System.Drawing.Point(9, 267);
+            this.txt_Genero.Location = new System.Drawing.Point(26, 253);
             this.txt_Genero.Margin = new System.Windows.Forms.Padding(2);
             this.txt_Genero.Name = "txt_Genero";
             this.txt_Genero.ShadowDecoration.Parent = this.txt_Genero;
-            this.txt_Genero.Size = new System.Drawing.Size(160, 36);
+            this.txt_Genero.Size = new System.Drawing.Size(185, 36);
             this.txt_Genero.Sorted = true;
             this.txt_Genero.TabIndex = 59;
+            this.txt_Genero.TextOffset = new System.Drawing.Point(10, 0);
             this.txt_Genero.SelectedIndexChanged += new System.EventHandler(this.txt_Genero_SelectedIndexChanged);
             // 
             // panel3
             // 
-            this.panel3.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.panel3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.panel3.BackColor = System.Drawing.Color.WhiteSmoke;
             this.panel3.Controls.Add(this.txt_Quimedia);
             this.panel3.Controls.Add(this.txt_Qui7);
@@ -351,16 +330,17 @@ namespace Inscricao_e_Matricula
             this.panel3.Controls.Add(this.label9);
             this.panel3.Controls.Add(this.label12);
             this.panel3.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.panel3.Location = new System.Drawing.Point(11, 475);
+            this.panel3.Location = new System.Drawing.Point(25, 373);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(586, 232);
+            this.panel3.Size = new System.Drawing.Size(589, 210);
             this.panel3.TabIndex = 50;
             this.panel3.Paint += new System.Windows.Forms.PaintEventHandler(this.panel3_Paint);
             // 
             // txt_Quimedia
             // 
+            this.txt_Quimedia.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.txt_Quimedia.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txt_Quimedia.Location = new System.Drawing.Point(494, 188);
+            this.txt_Quimedia.Location = new System.Drawing.Point(494, 174);
             this.txt_Quimedia.Margin = new System.Windows.Forms.Padding(2);
             this.txt_Quimedia.Name = "txt_Quimedia";
             this.txt_Quimedia.Size = new System.Drawing.Size(76, 20);
@@ -369,8 +349,9 @@ namespace Inscricao_e_Matricula
             // 
             // txt_Qui7
             // 
+            this.txt_Qui7.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.txt_Qui7.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txt_Qui7.Location = new System.Drawing.Point(154, 188);
+            this.txt_Qui7.Location = new System.Drawing.Point(154, 174);
             this.txt_Qui7.Margin = new System.Windows.Forms.Padding(2);
             this.txt_Qui7.Name = "txt_Qui7";
             this.txt_Qui7.Size = new System.Drawing.Size(76, 20);
@@ -379,8 +360,9 @@ namespace Inscricao_e_Matricula
             // 
             // txt_Qui9
             // 
+            this.txt_Qui9.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.txt_Qui9.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txt_Qui9.Location = new System.Drawing.Point(386, 189);
+            this.txt_Qui9.Location = new System.Drawing.Point(386, 175);
             this.txt_Qui9.Margin = new System.Windows.Forms.Padding(2);
             this.txt_Qui9.Name = "txt_Qui9";
             this.txt_Qui9.Size = new System.Drawing.Size(76, 20);
@@ -389,8 +371,9 @@ namespace Inscricao_e_Matricula
             // 
             // txt_Qui8
             // 
+            this.txt_Qui8.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.txt_Qui8.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txt_Qui8.Location = new System.Drawing.Point(271, 188);
+            this.txt_Qui8.Location = new System.Drawing.Point(271, 174);
             this.txt_Qui8.Margin = new System.Windows.Forms.Padding(2);
             this.txt_Qui8.Name = "txt_Qui8";
             this.txt_Qui8.Size = new System.Drawing.Size(76, 20);
@@ -399,9 +382,10 @@ namespace Inscricao_e_Matricula
             // 
             // label15
             // 
+            this.label15.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.label15.AutoSize = true;
             this.label15.Font = new System.Drawing.Font("Arial", 10.25F, System.Drawing.FontStyle.Bold);
-            this.label15.Location = new System.Drawing.Point(10, 189);
+            this.label15.Location = new System.Drawing.Point(10, 175);
             this.label15.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(64, 16);
@@ -410,8 +394,9 @@ namespace Inscricao_e_Matricula
             // 
             // txt_LPmedia
             // 
+            this.txt_LPmedia.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.txt_LPmedia.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txt_LPmedia.Location = new System.Drawing.Point(494, 97);
+            this.txt_LPmedia.Location = new System.Drawing.Point(494, 83);
             this.txt_LPmedia.Margin = new System.Windows.Forms.Padding(2);
             this.txt_LPmedia.Name = "txt_LPmedia";
             this.txt_LPmedia.Size = new System.Drawing.Size(76, 20);
@@ -420,8 +405,9 @@ namespace Inscricao_e_Matricula
             // 
             // txt_Matmedia
             // 
+            this.txt_Matmedia.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.txt_Matmedia.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txt_Matmedia.Location = new System.Drawing.Point(494, 130);
+            this.txt_Matmedia.Location = new System.Drawing.Point(494, 116);
             this.txt_Matmedia.Margin = new System.Windows.Forms.Padding(2);
             this.txt_Matmedia.Name = "txt_Matmedia";
             this.txt_Matmedia.Size = new System.Drawing.Size(76, 20);
@@ -430,8 +416,9 @@ namespace Inscricao_e_Matricula
             // 
             // txt_Fismedia
             // 
+            this.txt_Fismedia.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.txt_Fismedia.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txt_Fismedia.Location = new System.Drawing.Point(494, 158);
+            this.txt_Fismedia.Location = new System.Drawing.Point(494, 144);
             this.txt_Fismedia.Margin = new System.Windows.Forms.Padding(2);
             this.txt_Fismedia.Name = "txt_Fismedia";
             this.txt_Fismedia.Size = new System.Drawing.Size(76, 20);
@@ -451,8 +438,9 @@ namespace Inscricao_e_Matricula
             // 
             // txt_Fis9
             // 
+            this.txt_Fis9.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.txt_Fis9.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txt_Fis9.Location = new System.Drawing.Point(386, 158);
+            this.txt_Fis9.Location = new System.Drawing.Point(386, 144);
             this.txt_Fis9.Margin = new System.Windows.Forms.Padding(2);
             this.txt_Fis9.Name = "txt_Fis9";
             this.txt_Fis9.Size = new System.Drawing.Size(76, 20);
@@ -461,8 +449,9 @@ namespace Inscricao_e_Matricula
             // 
             // txt_Fis8
             // 
+            this.txt_Fis8.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.txt_Fis8.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txt_Fis8.Location = new System.Drawing.Point(271, 158);
+            this.txt_Fis8.Location = new System.Drawing.Point(271, 144);
             this.txt_Fis8.Margin = new System.Windows.Forms.Padding(2);
             this.txt_Fis8.Name = "txt_Fis8";
             this.txt_Fis8.Size = new System.Drawing.Size(76, 20);
@@ -491,8 +480,9 @@ namespace Inscricao_e_Matricula
             // 
             // txt_Fis7
             // 
+            this.txt_Fis7.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.txt_Fis7.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txt_Fis7.Location = new System.Drawing.Point(154, 158);
+            this.txt_Fis7.Location = new System.Drawing.Point(154, 144);
             this.txt_Fis7.Margin = new System.Windows.Forms.Padding(2);
             this.txt_Fis7.Name = "txt_Fis7";
             this.txt_Fis7.Size = new System.Drawing.Size(76, 20);
@@ -511,8 +501,9 @@ namespace Inscricao_e_Matricula
             // 
             // txt_LP9
             // 
+            this.txt_LP9.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.txt_LP9.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txt_LP9.Location = new System.Drawing.Point(386, 98);
+            this.txt_LP9.Location = new System.Drawing.Point(386, 84);
             this.txt_LP9.Margin = new System.Windows.Forms.Padding(2);
             this.txt_LP9.Name = "txt_LP9";
             this.txt_LP9.Size = new System.Drawing.Size(76, 20);
@@ -521,8 +512,9 @@ namespace Inscricao_e_Matricula
             // 
             // txt_Mat9
             // 
+            this.txt_Mat9.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.txt_Mat9.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txt_Mat9.Location = new System.Drawing.Point(386, 129);
+            this.txt_Mat9.Location = new System.Drawing.Point(386, 115);
             this.txt_Mat9.Margin = new System.Windows.Forms.Padding(2);
             this.txt_Mat9.Name = "txt_Mat9";
             this.txt_Mat9.Size = new System.Drawing.Size(76, 20);
@@ -531,8 +523,9 @@ namespace Inscricao_e_Matricula
             // 
             // txt_LP8
             // 
+            this.txt_LP8.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.txt_LP8.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txt_LP8.Location = new System.Drawing.Point(271, 97);
+            this.txt_LP8.Location = new System.Drawing.Point(271, 83);
             this.txt_LP8.Margin = new System.Windows.Forms.Padding(2);
             this.txt_LP8.Name = "txt_LP8";
             this.txt_LP8.Size = new System.Drawing.Size(76, 20);
@@ -541,8 +534,9 @@ namespace Inscricao_e_Matricula
             // 
             // txt_Mat8
             // 
+            this.txt_Mat8.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.txt_Mat8.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txt_Mat8.Location = new System.Drawing.Point(271, 128);
+            this.txt_Mat8.Location = new System.Drawing.Point(271, 114);
             this.txt_Mat8.Margin = new System.Windows.Forms.Padding(2);
             this.txt_Mat8.Name = "txt_Mat8";
             this.txt_Mat8.Size = new System.Drawing.Size(76, 20);
@@ -551,8 +545,9 @@ namespace Inscricao_e_Matricula
             // 
             // txt_Mat7
             // 
+            this.txt_Mat7.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.txt_Mat7.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txt_Mat7.Location = new System.Drawing.Point(154, 128);
+            this.txt_Mat7.Location = new System.Drawing.Point(154, 114);
             this.txt_Mat7.Margin = new System.Windows.Forms.Padding(2);
             this.txt_Mat7.Name = "txt_Mat7";
             this.txt_Mat7.Size = new System.Drawing.Size(76, 20);
@@ -561,8 +556,9 @@ namespace Inscricao_e_Matricula
             // 
             // txt_LP7
             // 
+            this.txt_LP7.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.txt_LP7.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txt_LP7.Location = new System.Drawing.Point(154, 97);
+            this.txt_LP7.Location = new System.Drawing.Point(154, 83);
             this.txt_LP7.Margin = new System.Windows.Forms.Padding(2);
             this.txt_LP7.Name = "txt_LP7";
             this.txt_LP7.Size = new System.Drawing.Size(76, 20);
@@ -571,9 +567,10 @@ namespace Inscricao_e_Matricula
             // 
             // label22
             // 
+            this.label22.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.label22.AutoSize = true;
             this.label22.Font = new System.Drawing.Font("Arial", 10.25F, System.Drawing.FontStyle.Bold);
-            this.label22.Location = new System.Drawing.Point(10, 159);
+            this.label22.Location = new System.Drawing.Point(10, 145);
             this.label22.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label22.Name = "label22";
             this.label22.Size = new System.Drawing.Size(49, 16);
@@ -593,9 +590,10 @@ namespace Inscricao_e_Matricula
             // 
             // label18
             // 
+            this.label18.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.label18.AutoSize = true;
             this.label18.Font = new System.Drawing.Font("Arial", 10.25F, System.Drawing.FontStyle.Bold);
-            this.label18.Location = new System.Drawing.Point(10, 130);
+            this.label18.Location = new System.Drawing.Point(10, 116);
             this.label18.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label18.Name = "label18";
             this.label18.Size = new System.Drawing.Size(88, 16);
@@ -604,9 +602,10 @@ namespace Inscricao_e_Matricula
             // 
             // label14
             // 
+            this.label14.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.label14.AutoSize = true;
             this.label14.Font = new System.Drawing.Font("Arial", 10.25F, System.Drawing.FontStyle.Bold);
-            this.label14.Location = new System.Drawing.Point(10, 98);
+            this.label14.Location = new System.Drawing.Point(10, 84);
             this.label14.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(105, 16);
@@ -615,10 +614,9 @@ namespace Inscricao_e_Matricula
             // 
             // label13
             // 
-            this.label13.AutoSize = true;
             this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.3F);
             this.label13.ForeColor = System.Drawing.SystemColors.ControlLight;
-            this.label13.Location = new System.Drawing.Point(2, 63);
+            this.label13.Location = new System.Drawing.Point(2, 59);
             this.label13.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(679, 15);
@@ -664,7 +662,7 @@ namespace Inscricao_e_Matricula
             // 
             this.label12.Font = new System.Drawing.Font("Consolas", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label12.ForeColor = System.Drawing.SystemColors.ControlDark;
-            this.label12.Location = new System.Drawing.Point(0, 7);
+            this.label12.Location = new System.Drawing.Point(-1, 11);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(584, 22);
             this.label12.TabIndex = 9;
@@ -676,7 +674,7 @@ namespace Inscricao_e_Matricula
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Segoe UI", 10.75F, System.Drawing.FontStyle.Bold);
             this.label7.ForeColor = System.Drawing.Color.White;
-            this.label7.Location = new System.Drawing.Point(7, 384);
+            this.label7.Location = new System.Drawing.Point(34, 295);
             this.label7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(49, 20);
@@ -688,214 +686,31 @@ namespace Inscricao_e_Matricula
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Segoe UI", 10.75F, System.Drawing.FontStyle.Bold);
             this.label6.ForeColor = System.Drawing.Color.White;
-            this.label6.Location = new System.Drawing.Point(7, 319);
+            this.label6.Location = new System.Drawing.Point(237, 232);
             this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(122, 20);
+            this.label6.Size = new System.Drawing.Size(53, 20);
             this.label6.TabIndex = 47;
-            this.label6.Text = "Endereço virtual";
+            this.label6.Text = "E-mail";
             // 
             // label5
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Segoe UI", 10.75F, System.Drawing.FontStyle.Bold);
             this.label5.ForeColor = System.Drawing.Color.White;
-            this.label5.Location = new System.Drawing.Point(7, 246);
+            this.label5.Location = new System.Drawing.Point(34, 232);
             this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(60, 20);
             this.label5.TabIndex = 46;
             this.label5.Text = "Gênero";
             // 
-            // txt_Localidade
-            // 
-            this.txt_Localidade.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txt_Localidade.DefaultText = "";
-            this.txt_Localidade.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txt_Localidade.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txt_Localidade.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txt_Localidade.DisabledState.Parent = this.txt_Localidade;
-            this.txt_Localidade.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txt_Localidade.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txt_Localidade.FocusedState.Parent = this.txt_Localidade;
-            this.txt_Localidade.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_Localidade.ForeColor = System.Drawing.Color.Black;
-            this.txt_Localidade.HoverState.BorderColor = System.Drawing.Color.Silver;
-            this.txt_Localidade.HoverState.Parent = this.txt_Localidade;
-            this.txt_Localidade.IconLeft = global::Inscricao_e_Matricula.Properties.Resources.user_1;
-            this.txt_Localidade.IconLeftOffset = new System.Drawing.Point(5, 0);
-            this.txt_Localidade.Location = new System.Drawing.Point(393, 267);
-            this.txt_Localidade.Margin = new System.Windows.Forms.Padding(6);
-            this.txt_Localidade.Name = "txt_Localidade";
-            this.txt_Localidade.PasswordChar = '\0';
-            this.txt_Localidade.PlaceholderText = "Localidade";
-            this.txt_Localidade.SelectedText = "";
-            this.txt_Localidade.ShadowDecoration.Parent = this.txt_Localidade;
-            this.txt_Localidade.Size = new System.Drawing.Size(202, 37);
-            this.txt_Localidade.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material;
-            this.txt_Localidade.TabIndex = 45;
-            this.txt_Localidade.TextOffset = new System.Drawing.Point(10, 0);
-            this.txt_Localidade.TextChanged += new System.EventHandler(this.txt_Localidade_TextChanged);
-            // 
-            // txt_Endereco
-            // 
-            this.txt_Endereco.AutoRoundedCorners = true;
-            this.txt_Endereco.BorderRadius = 17;
-            this.txt_Endereco.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txt_Endereco.DefaultText = "";
-            this.txt_Endereco.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txt_Endereco.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txt_Endereco.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txt_Endereco.DisabledState.Parent = this.txt_Endereco;
-            this.txt_Endereco.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txt_Endereco.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txt_Endereco.FocusedState.Parent = this.txt_Endereco;
-            this.txt_Endereco.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_Endereco.ForeColor = System.Drawing.Color.Black;
-            this.txt_Endereco.HoverState.BorderColor = System.Drawing.Color.Silver;
-            this.txt_Endereco.HoverState.Parent = this.txt_Endereco;
-            this.txt_Endereco.IconLeft = global::Inscricao_e_Matricula.Properties.Resources.user_1;
-            this.txt_Endereco.IconLeftOffset = new System.Drawing.Point(5, 0);
-            this.txt_Endereco.Location = new System.Drawing.Point(10, 341);
-            this.txt_Endereco.Margin = new System.Windows.Forms.Padding(6);
-            this.txt_Endereco.Name = "txt_Endereco";
-            this.txt_Endereco.PasswordChar = '\0';
-            this.txt_Endereco.PlaceholderText = "Informe o seu Email";
-            this.txt_Endereco.SelectedText = "";
-            this.txt_Endereco.ShadowDecoration.Parent = this.txt_Endereco;
-            this.txt_Endereco.Size = new System.Drawing.Size(585, 37);
-            this.txt_Endereco.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material;
-            this.txt_Endereco.TabIndex = 43;
-            this.txt_Endereco.TextOffset = new System.Drawing.Point(10, 0);
-            // 
-            // txt_Nacionalidade
-            // 
-            this.txt_Nacionalidade.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txt_Nacionalidade.DefaultText = "";
-            this.txt_Nacionalidade.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txt_Nacionalidade.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txt_Nacionalidade.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txt_Nacionalidade.DisabledState.Parent = this.txt_Nacionalidade;
-            this.txt_Nacionalidade.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txt_Nacionalidade.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txt_Nacionalidade.FocusedState.Parent = this.txt_Nacionalidade;
-            this.txt_Nacionalidade.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_Nacionalidade.ForeColor = System.Drawing.Color.Black;
-            this.txt_Nacionalidade.HoverState.BorderColor = System.Drawing.Color.Silver;
-            this.txt_Nacionalidade.HoverState.Parent = this.txt_Nacionalidade;
-            this.txt_Nacionalidade.IconLeft = global::Inscricao_e_Matricula.Properties.Resources.user_1;
-            this.txt_Nacionalidade.IconLeftOffset = new System.Drawing.Point(5, 0);
-            this.txt_Nacionalidade.Location = new System.Drawing.Point(177, 267);
-            this.txt_Nacionalidade.Margin = new System.Windows.Forms.Padding(6);
-            this.txt_Nacionalidade.Name = "txt_Nacionalidade";
-            this.txt_Nacionalidade.PasswordChar = '\0';
-            this.txt_Nacionalidade.PlaceholderText = "Nacionalidade";
-            this.txt_Nacionalidade.SelectedText = "";
-            this.txt_Nacionalidade.ShadowDecoration.Parent = this.txt_Nacionalidade;
-            this.txt_Nacionalidade.Size = new System.Drawing.Size(205, 37);
-            this.txt_Nacionalidade.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material;
-            this.txt_Nacionalidade.TabIndex = 42;
-            this.txt_Nacionalidade.TextOffset = new System.Drawing.Point(10, 0);
-            this.txt_Nacionalidade.TextChanged += new System.EventHandler(this.txt_Nacionalidade_TextChanged);
-            // 
-            // txt_Tel
-            // 
-            this.txt_Tel.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txt_Tel.DefaultText = "";
-            this.txt_Tel.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txt_Tel.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txt_Tel.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txt_Tel.DisabledState.Parent = this.txt_Tel;
-            this.txt_Tel.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txt_Tel.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txt_Tel.FocusedState.Parent = this.txt_Tel;
-            this.txt_Tel.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_Tel.ForeColor = System.Drawing.Color.Black;
-            this.txt_Tel.HoverState.BorderColor = System.Drawing.Color.Silver;
-            this.txt_Tel.HoverState.Parent = this.txt_Tel;
-            this.txt_Tel.IconLeft = global::Inscricao_e_Matricula.Properties.Resources.user_1;
-            this.txt_Tel.IconLeftOffset = new System.Drawing.Point(5, 0);
-            this.txt_Tel.Location = new System.Drawing.Point(393, 203);
-            this.txt_Tel.Margin = new System.Windows.Forms.Padding(6);
-            this.txt_Tel.Name = "txt_Tel";
-            this.txt_Tel.PasswordChar = '\0';
-            this.txt_Tel.PlaceholderText = "Telefone";
-            this.txt_Tel.SelectedText = "";
-            this.txt_Tel.ShadowDecoration.Parent = this.txt_Tel;
-            this.txt_Tel.Size = new System.Drawing.Size(202, 37);
-            this.txt_Tel.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material;
-            this.txt_Tel.TabIndex = 41;
-            this.txt_Tel.TextOffset = new System.Drawing.Point(10, 0);
-            this.txt_Tel.TextChanged += new System.EventHandler(this.txt_Tel_TextChanged);
-            // 
-            // txt_Bi
-            // 
-            this.txt_Bi.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txt_Bi.DefaultText = "";
-            this.txt_Bi.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txt_Bi.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txt_Bi.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txt_Bi.DisabledState.Parent = this.txt_Bi;
-            this.txt_Bi.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txt_Bi.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txt_Bi.FocusedState.Parent = this.txt_Bi;
-            this.txt_Bi.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_Bi.ForeColor = System.Drawing.Color.Black;
-            this.txt_Bi.HoverState.BorderColor = System.Drawing.Color.Silver;
-            this.txt_Bi.HoverState.Parent = this.txt_Bi;
-            this.txt_Bi.IconLeft = global::Inscricao_e_Matricula.Properties.Resources.user_1;
-            this.txt_Bi.IconLeftOffset = new System.Drawing.Point(5, 0);
-            this.txt_Bi.Location = new System.Drawing.Point(10, 203);
-            this.txt_Bi.Margin = new System.Windows.Forms.Padding(6);
-            this.txt_Bi.Name = "txt_Bi";
-            this.txt_Bi.PasswordChar = '\0';
-            this.txt_Bi.PlaceholderText = "Informe o seu numero de BI";
-            this.txt_Bi.SelectedText = "";
-            this.txt_Bi.ShadowDecoration.Parent = this.txt_Bi;
-            this.txt_Bi.Size = new System.Drawing.Size(370, 37);
-            this.txt_Bi.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material;
-            this.txt_Bi.TabIndex = 38;
-            this.txt_Bi.TextOffset = new System.Drawing.Point(10, 0);
-            this.txt_Bi.TextChanged += new System.EventHandler(this.txt_Bi_TextChanged);
-            // 
-            // txtnome
-            // 
-            this.txtnome.AutoRoundedCorners = true;
-            this.txtnome.BorderRadius = 15;
-            this.txtnome.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtnome.DefaultText = "";
-            this.txtnome.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txtnome.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txtnome.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtnome.DisabledState.Parent = this.txtnome;
-            this.txtnome.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtnome.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtnome.FocusedState.Parent = this.txtnome;
-            this.txtnome.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtnome.ForeColor = System.Drawing.Color.Black;
-            this.txtnome.HoverState.BorderColor = System.Drawing.Color.Silver;
-            this.txtnome.HoverState.Parent = this.txtnome;
-            this.txtnome.IconLeft = global::Inscricao_e_Matricula.Properties.Resources.user_1;
-            this.txtnome.IconLeftOffset = new System.Drawing.Point(5, 0);
-            this.txtnome.Location = new System.Drawing.Point(10, 140);
-            this.txtnome.Margin = new System.Windows.Forms.Padding(6);
-            this.txtnome.Name = "txtnome";
-            this.txtnome.PasswordChar = '\0';
-            this.txtnome.PlaceholderText = "Informe o seu nome";
-            this.txtnome.SelectedText = "";
-            this.txtnome.ShadowDecoration.Parent = this.txtnome;
-            this.txtnome.Size = new System.Drawing.Size(370, 37);
-            this.txtnome.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material;
-            this.txtnome.TabIndex = 34;
-            this.txtnome.TextOffset = new System.Drawing.Point(10, 0);
-            this.txtnome.TextChanged += new System.EventHandler(this.txtnome_TextChanged);
-            // 
             // label4
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Segoe UI", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(5, 117);
+            this.label4.Location = new System.Drawing.Point(34, 103);
             this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(58, 23);
@@ -907,33 +722,209 @@ namespace Inscricao_e_Matricula
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Segoe UI", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(7, 181);
+            this.label3.Location = new System.Drawing.Point(34, 167);
             this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(69, 23);
+            this.label3.Size = new System.Drawing.Size(77, 23);
             this.label3.TabIndex = 36;
-            this.label3.Text = "N de BI";
+            this.label3.Text = "Nº de BI";
             // 
             // label1
             // 
+            this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.label1.BackColor = System.Drawing.Color.DarkOrange;
             this.label1.Font = new System.Drawing.Font("Segoe UI", 23.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point(0, 58);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(604, 42);
+            this.label1.Size = new System.Drawing.Size(651, 42);
             this.label1.TabIndex = 35;
             this.label1.Text = "INSCRICÃO";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.label1.Click += new System.EventHandler(this.label1_Click);
+            // 
+            // gunaButton1
+            // 
+            this.gunaButton1.AnimationHoverSpeed = 0.07F;
+            this.gunaButton1.AnimationSpeed = 0.03F;
+            this.gunaButton1.BackColor = System.Drawing.Color.Transparent;
+            this.gunaButton1.BaseColor = System.Drawing.Color.White;
+            this.gunaButton1.BorderColor = System.Drawing.Color.Black;
+            this.gunaButton1.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.gunaButton1.FocusedColor = System.Drawing.Color.Empty;
+            this.gunaButton1.Font = new System.Drawing.Font("Segoe UI", 16F, System.Drawing.FontStyle.Bold);
+            this.gunaButton1.ForeColor = System.Drawing.Color.DarkOrange;
+            this.gunaButton1.Image = null;
+            this.gunaButton1.ImageSize = new System.Drawing.Size(20, 20);
+            this.gunaButton1.Location = new System.Drawing.Point(347, 596);
+            this.gunaButton1.Name = "gunaButton1";
+            this.gunaButton1.OnHoverBaseColor = System.Drawing.Color.WhiteSmoke;
+            this.gunaButton1.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.gunaButton1.OnHoverForeColor = System.Drawing.Color.DarkOrange;
+            this.gunaButton1.OnHoverImage = null;
+            this.gunaButton1.OnPressedColor = System.Drawing.Color.White;
+            this.gunaButton1.Radius = 15;
+            this.gunaButton1.Size = new System.Drawing.Size(209, 51);
+            this.gunaButton1.TabIndex = 65;
+            this.gunaButton1.Text = "Cancelar";
+            this.gunaButton1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.gunaButton1.Click += new System.EventHandler(this.gunaButton1_Click);
+            // 
+            // guna2Elipse1
+            // 
+            this.guna2Elipse1.BorderRadius = 35;
+            this.guna2Elipse1.TargetControl = this.panel3;
+            // 
+            // txtnome
+            // 
+            this.txtnome.BorderRadius = 10;
+            this.txtnome.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtnome.DefaultText = "";
+            this.txtnome.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtnome.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtnome.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtnome.DisabledState.Parent = this.txtnome;
+            this.txtnome.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtnome.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtnome.FocusedState.Parent = this.txtnome;
+            this.txtnome.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtnome.HoverState.Parent = this.txtnome;
+            this.txtnome.Location = new System.Drawing.Point(26, 126);
+            this.txtnome.Name = "txtnome";
+            this.txtnome.PasswordChar = '\0';
+            this.txtnome.PlaceholderText = "Obrigatório";
+            this.txtnome.SelectedText = "";
+            this.txtnome.ShadowDecoration.Parent = this.txtnome;
+            this.txtnome.Size = new System.Drawing.Size(373, 37);
+            this.txtnome.TabIndex = 1;
+            this.txtnome.TextOffset = new System.Drawing.Point(10, 0);
+            this.txtnome.TextChanged += new System.EventHandler(this.txtnome_TextChanged_1);
+            // 
+            // txt_Bi
+            // 
+            this.txt_Bi.BorderRadius = 10;
+            this.txt_Bi.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txt_Bi.DefaultText = "";
+            this.txt_Bi.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txt_Bi.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txt_Bi.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txt_Bi.DisabledState.Parent = this.txt_Bi;
+            this.txt_Bi.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txt_Bi.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txt_Bi.FocusedState.Parent = this.txt_Bi;
+            this.txt_Bi.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txt_Bi.HoverState.Parent = this.txt_Bi;
+            this.txt_Bi.Location = new System.Drawing.Point(26, 189);
+            this.txt_Bi.Name = "txt_Bi";
+            this.txt_Bi.PasswordChar = '\0';
+            this.txt_Bi.PlaceholderText = "Obrigatório";
+            this.txt_Bi.SelectedText = "";
+            this.txt_Bi.ShadowDecoration.Parent = this.txt_Bi;
+            this.txt_Bi.Size = new System.Drawing.Size(373, 37);
+            this.txt_Bi.TabIndex = 1;
+            this.txt_Bi.TextOffset = new System.Drawing.Point(10, 0);
+            this.txt_Bi.TextChanged += new System.EventHandler(this.txt_Bi_TextChanged_1);
+            // 
+            // txt_Tel
+            // 
+            this.txt_Tel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.txt_Tel.BorderRadius = 10;
+            this.txt_Tel.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txt_Tel.DefaultText = "";
+            this.txt_Tel.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txt_Tel.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txt_Tel.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txt_Tel.DisabledState.Parent = this.txt_Tel;
+            this.txt_Tel.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txt_Tel.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txt_Tel.FocusedState.Parent = this.txt_Tel;
+            this.txt_Tel.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txt_Tel.HoverState.Parent = this.txt_Tel;
+            this.txt_Tel.Location = new System.Drawing.Point(410, 189);
+            this.txt_Tel.Name = "txt_Tel";
+            this.txt_Tel.PasswordChar = '\0';
+            this.txt_Tel.PlaceholderText = "Opcional";
+            this.txt_Tel.SelectedText = "";
+            this.txt_Tel.ShadowDecoration.Parent = this.txt_Tel;
+            this.txt_Tel.Size = new System.Drawing.Size(204, 37);
+            this.txt_Tel.TabIndex = 1;
+            this.txt_Tel.TextOffset = new System.Drawing.Point(10, 0);
+            this.txt_Tel.TextChanged += new System.EventHandler(this.txt_Tel_TextChanged_1);
+            // 
+            // txt_Endereco
+            // 
+            this.txt_Endereco.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.txt_Endereco.BorderRadius = 10;
+            this.txt_Endereco.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txt_Endereco.DefaultText = "Opcional";
+            this.txt_Endereco.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txt_Endereco.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txt_Endereco.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txt_Endereco.DisabledState.Parent = this.txt_Endereco;
+            this.txt_Endereco.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txt_Endereco.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txt_Endereco.FocusedState.Parent = this.txt_Endereco;
+            this.txt_Endereco.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txt_Endereco.HoverState.Parent = this.txt_Endereco;
+            this.txt_Endereco.Location = new System.Drawing.Point(229, 252);
+            this.txt_Endereco.Name = "txt_Endereco";
+            this.txt_Endereco.PasswordChar = '\0';
+            this.txt_Endereco.PlaceholderText = "";
+            this.txt_Endereco.SelectedText = "";
+            this.txt_Endereco.SelectionStart = 8;
+            this.txt_Endereco.ShadowDecoration.Parent = this.txt_Endereco;
+            this.txt_Endereco.Size = new System.Drawing.Size(386, 37);
+            this.txt_Endereco.TabIndex = 1;
+            this.txt_Endereco.TextOffset = new System.Drawing.Point(10, 0);
+            this.txt_Endereco.TextChanged += new System.EventHandler(this.txt_Endereco_TextChanged);
+            // 
+            // label17
+            // 
+            this.label17.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.label17.AutoSize = true;
+            this.label17.Font = new System.Drawing.Font("Segoe UI", 10.75F, System.Drawing.FontStyle.Bold);
+            this.label17.ForeColor = System.Drawing.Color.White;
+            this.label17.Location = new System.Drawing.Point(339, 295);
+            this.label17.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(136, 20);
+            this.label17.TabIndex = 66;
+            this.label17.Text = "Área de Formação";
+            // 
+            // label19
+            // 
+            this.label19.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.label19.AutoSize = true;
+            this.label19.Font = new System.Drawing.Font("Segoe UI", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label19.ForeColor = System.Drawing.Color.White;
+            this.label19.Location = new System.Drawing.Point(418, 166);
+            this.label19.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label19.Name = "label19";
+            this.label19.Size = new System.Drawing.Size(79, 23);
+            this.label19.TabIndex = 67;
+            this.label19.Text = "Telefone";
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.pictureBox1.BackColor = System.Drawing.Color.White;
+            this.pictureBox1.BackgroundImage = global::Inscricao_e_Matricula.Properties.Resources._1684060439009;
+            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pictureBox1.Location = new System.Drawing.Point(-2, 238);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(421, 138);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pictureBox1.TabIndex = 1;
+            this.pictureBox1.TabStop = false;
             // 
             // TelaInscricao
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DarkOrange;
-            this.ClientSize = new System.Drawing.Size(1028, 780);
+            this.ClientSize = new System.Drawing.Size(1069, 614);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.btnentrar);
@@ -943,13 +934,12 @@ namespace Inscricao_e_Matricula
             this.Name = "TelaInscricao";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "TelaInscricao";
-            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.panel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -960,7 +950,6 @@ namespace Inscricao_e_Matricula
         private System.Windows.Forms.Button btnentrar;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.TextBox txt_Fis9;
@@ -987,16 +976,9 @@ namespace Inscricao_e_Matricula
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label5;
-        private Guna.UI2.WinForms.Guna2TextBox txt_Localidade;
-        private Guna.UI2.WinForms.Guna2TextBox txt_Endereco;
-        private Guna.UI2.WinForms.Guna2TextBox txt_Nacionalidade;
-        private Guna.UI2.WinForms.Guna2TextBox txt_Tel;
-        private Guna.UI2.WinForms.Guna2TextBox txt_Bi;
-        private Guna.UI2.WinForms.Guna2TextBox txtnome;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button btn_Voltar;
         private Guna.UI2.WinForms.Guna2ComboBox txt_AreaFormacao;
         private Guna.UI2.WinForms.Guna2ComboBox txt_Curso;
         private Guna.UI2.WinForms.Guna2ComboBox txt_Genero;
@@ -1012,5 +994,14 @@ namespace Inscricao_e_Matricula
         private Guna.UI.WinForms.GunaButton btn_Validar;
         private System.Windows.Forms.Label label16;
         private Guna.UI2.WinForms.Guna2DateTimePicker guna2DateTimePicker1;
+        private Guna.UI.WinForms.GunaButton gunaButton1;
+        private Guna.UI2.WinForms.Guna2Elipse guna2Elipse1;
+        private System.Windows.Forms.Label label19;
+        private System.Windows.Forms.Label label17;
+        private Guna.UI2.WinForms.Guna2TextBox txt_Tel;
+        private Guna.UI2.WinForms.Guna2TextBox txt_Endereco;
+        private Guna.UI2.WinForms.Guna2TextBox txt_Bi;
+        private Guna.UI2.WinForms.Guna2TextBox txtnome;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

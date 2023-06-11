@@ -124,6 +124,9 @@
   <data name="1000_F_314620575_2XFir8yuxqCufuqns5wwkQg0U9vxBv93" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\1000_F_314620575_2XFir8yuxqCufuqns5wwkQg0U9vxBv93.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Ellipse 9" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Ellipse 9.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Ellipse 4" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Ellipse 4.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -181,9 +184,6 @@
   <data name="50874" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\50874.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Chart" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Chart.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="1684060439009" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\1684060439009.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -214,14 +214,17 @@
   <data name="2521784" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\2521784.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Ellipse 21" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Ellipse 2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Ellipse 1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Ellipse 1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Ellipse 3" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Ellipse 3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Ellipse 2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Ellipse 2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="V" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\V.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="LOGO_IPIL-removebg-preview 2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\LOGO_IPIL-removebg-preview 2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -250,16 +253,16 @@
   <data name="Home (1)1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Home (1)1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Ellipse 9" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Ellipse 9.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Ellipse 21" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Ellipse 2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Ellipse 9 (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Ellipse 9 (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Ellipse 1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Ellipse 1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Chart" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Chart.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="V" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\V.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Chevron Up1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Chevron Up1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

@@ -30,6 +30,7 @@ namespace Inscricao_e_Matricula
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(TelaOperacao));
             this.panel5 = new System.Windows.Forms.Panel();
             this.pictureBox9 = new System.Windows.Forms.PictureBox();
             this.label12 = new System.Windows.Forms.Label();
@@ -38,8 +39,6 @@ namespace Inscricao_e_Matricula
             this.label2 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
             this.label6 = new System.Windows.Forms.Label();
-            this.panel4 = new System.Windows.Forms.Panel();
-            this.label7 = new System.Windows.Forms.Label();
             this.panel6 = new System.Windows.Forms.Panel();
             this.pictureBox10 = new System.Windows.Forms.PictureBox();
             this.label8 = new System.Windows.Forms.Label();
@@ -51,15 +50,17 @@ namespace Inscricao_e_Matricula
             this.guna2Elipse4 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.guna2Elipse5 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.guna2Elipse6 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
+            this.label7 = new System.Windows.Forms.Label();
+            this.panel4 = new System.Windows.Forms.Panel();
             this.panel5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
             this.panel3.SuspendLayout();
-            this.panel4.SuspendLayout();
             this.panel6.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
             this.panel7.SuspendLayout();
+            this.panel4.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel5
@@ -75,7 +76,7 @@ namespace Inscricao_e_Matricula
             // 
             // pictureBox9
             // 
-            this.pictureBox9.Image = global::Inscricao_e_Matricula.Properties.Resources._50874;
+            this.pictureBox9.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox9.Image")));
             this.pictureBox9.Location = new System.Drawing.Point(0, 2);
             this.pictureBox9.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox9.Name = "pictureBox9";
@@ -111,7 +112,7 @@ namespace Inscricao_e_Matricula
             // 
             // pictureBox8
             // 
-            this.pictureBox8.Image = global::Inscricao_e_Matricula.Properties.Resources._2521784;
+            this.pictureBox8.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox8.Image")));
             this.pictureBox8.Location = new System.Drawing.Point(0, 2);
             this.pictureBox8.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox8.Name = "pictureBox8";
@@ -155,28 +156,6 @@ namespace Inscricao_e_Matricula
             this.label6.Text = "Eliminar Entidade";
             this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // panel4
-            // 
-            this.panel4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel4.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.panel4.Controls.Add(this.label7);
-            this.panel4.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.panel4.Location = new System.Drawing.Point(719, 305);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(292, 179);
-            this.panel4.TabIndex = 9;
-            // 
-            // label7
-            // 
-            this.label7.Font = new System.Drawing.Font("Consolas", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.ForeColor = System.Drawing.SystemColors.ControlDark;
-            this.label7.Location = new System.Drawing.Point(0, 142);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(289, 37);
-            this.label7.TabIndex = 8;
-            this.label7.Text = "Lista de Alunos Inscritos";
-            this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
             // panel6
             // 
             this.panel6.Anchor = System.Windows.Forms.AnchorStyles.Left;
@@ -191,7 +170,7 @@ namespace Inscricao_e_Matricula
             // 
             // pictureBox10
             // 
-            this.pictureBox10.Image = global::Inscricao_e_Matricula.Properties.Resources._50493;
+            this.pictureBox10.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox10.Image")));
             this.pictureBox10.Location = new System.Drawing.Point(0, 2);
             this.pictureBox10.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox10.Name = "pictureBox10";
@@ -263,6 +242,28 @@ namespace Inscricao_e_Matricula
             this.guna2Elipse6.BorderRadius = 35;
             this.guna2Elipse6.TargetControl = this.panel3;
             // 
+            // label7
+            // 
+            this.label7.Font = new System.Drawing.Font("Consolas", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.ForeColor = System.Drawing.SystemColors.ControlDark;
+            this.label7.Location = new System.Drawing.Point(0, 142);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(289, 37);
+            this.label7.TabIndex = 8;
+            this.label7.Text = "Lista de Alunos Inscritos";
+            this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // panel4
+            // 
+            this.panel4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel4.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.panel4.Controls.Add(this.label7);
+            this.panel4.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.panel4.Location = new System.Drawing.Point(719, 305);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(292, 179);
+            this.panel4.TabIndex = 9;
+            // 
             // TelaOperacao
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -286,10 +287,10 @@ namespace Inscricao_e_Matricula
             this.panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
             this.panel3.ResumeLayout(false);
-            this.panel4.ResumeLayout(false);
             this.panel6.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
             this.panel7.ResumeLayout(false);
+            this.panel4.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -302,8 +303,6 @@ namespace Inscricao_e_Matricula
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Panel panel4;
-        private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Panel panel6;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Panel panel7;
@@ -317,5 +316,7 @@ namespace Inscricao_e_Matricula
         private Guna.UI2.WinForms.Guna2Elipse guna2Elipse4;
         private Guna.UI2.WinForms.Guna2Elipse guna2Elipse5;
         private Guna.UI2.WinForms.Guna2Elipse guna2Elipse6;
+        private System.Windows.Forms.Panel panel4;
+        private System.Windows.Forms.Label label7;
     }
 }

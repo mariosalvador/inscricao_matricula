@@ -47,9 +47,7 @@ namespace Inscricao_e_Matricula
 
         private void btn_Voltar_Click(object sender, EventArgs e)
         {
-            TelaOperacao telaOperacao = new TelaOperacao();
-            this.Hide();
-            telaOperacao.Show();
+            
         }
 
         private void label9_Click(object sender, EventArgs e)
@@ -95,18 +93,6 @@ namespace Inscricao_e_Matricula
                     MessageBox.Show(" Preencha o campo de Genero");
                     txt_Genero.Focus();
                 }
-                if (txt_Nacionalidade.Text == "")
-                {
-                    MessageBox.Show(" Campo Vazio Detetado!!!");
-                    MessageBox.Show(" Preencha o campo de Nacionalidade");
-                    txt_Nacionalidade.Focus();
-                }
-                if (txt_Localidade.Text == "")
-                {
-                    MessageBox.Show(" Campo Vazio Detetado!!!");
-                    MessageBox.Show(" Preencha o campo de Localidade");
-                    txt_Localidade.Focus();
-                }
                 if (txt_Curso.Text == "")
                 {
                     MessageBox.Show(" Campo Vazio Detetado!!!");
@@ -124,7 +110,7 @@ namespace Inscricao_e_Matricula
 
             try
             {
-                if (txt_AreaFormacao.Text != "" && txt_Curso.Text != "" && txt_Localidade.Text != "" && txt_Nacionalidade.Text != "" && txt_Genero.Text != "" && txt_Tel.Text != "" && txt_Bi.Text != "" && txtnome.Text != "")
+                if (txt_AreaFormacao.Text != "" && txt_Curso.Text != "" && txt_Genero.Text != "" && txt_Tel.Text != "" && txt_Bi.Text != "" && txtnome.Text != "")
                 {
                     string data_source = "datasource=localhost;username=root;password=mariopaulos06;database=insc_mat";
                     // conexao com o MYsql
@@ -236,6 +222,33 @@ namespace Inscricao_e_Matricula
         }
 
         private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void gunaButton1_Click(object sender, EventArgs e)
+        {
+            TelaPrincipal tela= new TelaPrincipal();
+            this.Close();
+            tela.WindowState = FormWindowState.Normal;
+        }
+
+        private void txt_Endereco_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txt_Bi_TextChanged_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtnome_TextChanged_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txt_Tel_TextChanged_1(object sender, EventArgs e)
         {
 
         }

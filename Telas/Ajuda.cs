@@ -16,5 +16,65 @@ namespace Inscricao_e_Matricula.Telas
         {
             InitializeComponent();
         }
+
+        private void tableLayoutPanel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void label7_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label11_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label12_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Ajuda_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label6_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void guna2CircleButton6_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void guna2CircleButton5_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void guna2CircleButton1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void guna2CircleButton4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void guna2CircleButton3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void guna2CircleButton2_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -19,6 +19,8 @@ namespace Inscricao_e_Matricula.Telas
     {
         public string caminho_fotos = System.Environment.CurrentDirectory + @"\fotos\";
         public string Nome;
+        public string imagem_perfil = "";
+        string caminho_imagem = "";
 
         public Configuracoes()
         {
@@ -32,7 +34,7 @@ namespace Inscricao_e_Matricula.Telas
 
         private void btn_add_foto_Click(object sender, EventArgs e)
         {
-            string caminho_imagem="";
+            
             string nome_imagem ="";
             string destino_imagem ="";
             if (openFileDialog1.ShowDialog() == DialogResult.OK)
@@ -118,6 +120,7 @@ namespace Inscricao_e_Matricula.Telas
             }
             else
             {
+                imagem_perfil = caminho_imagem;
                 Telas.confirmado telaconf = new Telas.confirmado();
                 telaconf.TopMost = true;
                 telaconf.ShowDialog();
