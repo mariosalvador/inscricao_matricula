@@ -47,12 +47,26 @@ namespace Inscricao_e_Matricula.Telas
             //System.IO.File.Copy(caminho_imagem, destino_imagem, true);
             //if (File.Exists(destino_imagem))
             //{
-            pic_perfil.Image = Image.FromFile(caminho_imagem);
+            pic_perfil.Image = Image.FromFile(@caminho_imagem);
             //}
             //else
             //{
             //    MessageBox.Show("O Arquivo não foi copiado.", "Aviso!!", MessageBoxButtons.OK,MessageBoxIcon.Exclamation);
             //}
+            
+        }
+
+        private void guna2Button2_Click(object sender, EventArgs e)
+        {
+            Telas.Telaconfirmar tela = new Telas.Telaconfirmar();
+            tela.TopMost = true;
+            this.Enabled = false;
+            tela.ShowDialog();
+
+            if (tela.aberto == false)
+            {
+                this.Enabled = true;
+            }
             
         }
 
