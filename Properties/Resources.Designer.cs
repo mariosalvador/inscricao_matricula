@@ -253,6 +253,16 @@ namespace Inscricao_e_Matricula.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Ellipse_9__1_ {
+            get {
+                object obj = ResourceManager.GetObject("Ellipse 9 (1)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Entidade {
             get {
                 object obj = ResourceManager.GetObject("Entidade", resourceCulture);
@@ -456,6 +466,16 @@ namespace Inscricao_e_Matricula.Properties {
         internal static System.Drawing.Bitmap Users1 {
             get {
                 object obj = ResourceManager.GetObject("Users1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap V {
+            get {
+                object obj = ResourceManager.GetObject("V", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

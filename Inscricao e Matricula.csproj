@@ -66,6 +66,7 @@
   <ItemGroup>
     <Compile Include="Codigo.cs" />
     <Compile Include="Data_Base.cs" />
+    <Compile Include="Email.cs" />
     <Compile Include="Telas\Ajuda.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -77,6 +78,12 @@
     </Compile>
     <Compile Include="Telas\Configuracoes.Designer.cs">
       <DependentUpon>Configuracoes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Telas\confirmado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Telas\confirmado.Designer.cs">
+      <DependentUpon>confirmado.cs</DependentUpon>
     </Compile>
     <Compile Include="Telas\Primeira_conta.cs">
       <SubType>Form</SubType>
@@ -146,8 +153,14 @@
     <Compile Include="Telas\Tela_informacao.Designer.cs">
       <DependentUpon>Tela_informacao.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Telas\Ajuda.resx">
+      <DependentUpon>Ajuda.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Telas\Configuracoes.resx">
       <DependentUpon>Configuracoes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Telas\confirmado.resx">
+      <DependentUpon>confirmado.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Telas\Primeira_conta.resx">
       <DependentUpon>Primeira_conta.cs</DependentUpon>
@@ -341,6 +354,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\!.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ellipse 9 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\V.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

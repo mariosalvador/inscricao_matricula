@@ -35,6 +35,8 @@ namespace Inscricao_e_Matricula
             this.btn_Voltar = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.label16 = new System.Windows.Forms.Label();
+            this.guna2DateTimePicker1 = new Guna.UI2.WinForms.Guna2DateTimePicker();
             this.btn_Validar = new Guna.UI.WinForms.GunaButton();
             this.txt_AreaFormacao = new Guna.UI2.WinForms.Guna2ComboBox();
             this.txt_Curso = new Guna.UI2.WinForms.Guna2ComboBox();
@@ -82,8 +84,6 @@ namespace Inscricao_e_Matricula
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.guna2DateTimePicker1 = new Guna.UI2.WinForms.Guna2DateTimePicker();
-            this.label16 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel2.SuspendLayout();
@@ -123,9 +123,9 @@ namespace Inscricao_e_Matricula
             this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(419, 788);
+            this.panel1.Size = new System.Drawing.Size(419, 780);
             this.panel1.TabIndex = 19;
             // 
             // btn_Voltar
@@ -133,7 +133,7 @@ namespace Inscricao_e_Matricula
             this.btn_Voltar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.8F);
             this.btn_Voltar.ForeColor = System.Drawing.Color.Black;
             this.btn_Voltar.Location = new System.Drawing.Point(0, 0);
-            this.btn_Voltar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btn_Voltar.Margin = new System.Windows.Forms.Padding(2);
             this.btn_Voltar.Name = "btn_Voltar";
             this.btn_Voltar.Size = new System.Drawing.Size(68, 32);
             this.btn_Voltar.TabIndex = 57;
@@ -147,7 +147,7 @@ namespace Inscricao_e_Matricula
             this.pictureBox1.BackgroundImage = global::Inscricao_e_Matricula.Properties.Resources._1684060439009;
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.pictureBox1.Location = new System.Drawing.Point(-2, 362);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(425, 162);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
@@ -176,11 +176,39 @@ namespace Inscricao_e_Matricula
             this.panel2.Controls.Add(this.label4);
             this.panel2.Controls.Add(this.label3);
             this.panel2.Controls.Add(this.label1);
-            this.panel2.Location = new System.Drawing.Point(418, -51);
+            this.panel2.Location = new System.Drawing.Point(419, -51);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(608, 1095);
             this.panel2.TabIndex = 56;
             this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.Font = new System.Drawing.Font("Segoe UI", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label16.ForeColor = System.Drawing.Color.White;
+            this.label16.Location = new System.Drawing.Point(389, 117);
+            this.label16.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(172, 23);
+            this.label16.TabIndex = 64;
+            this.label16.Text = "Data de Nascimento";
+            // 
+            // guna2DateTimePicker1
+            // 
+            this.guna2DateTimePicker1.CheckedState.Parent = this.guna2DateTimePicker1;
+            this.guna2DateTimePicker1.FillColor = System.Drawing.Color.White;
+            this.guna2DateTimePicker1.Font = new System.Drawing.Font("Segoe UI", 8F);
+            this.guna2DateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Long;
+            this.guna2DateTimePicker1.HoverState.Parent = this.guna2DateTimePicker1;
+            this.guna2DateTimePicker1.Location = new System.Drawing.Point(393, 140);
+            this.guna2DateTimePicker1.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
+            this.guna2DateTimePicker1.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
+            this.guna2DateTimePicker1.Name = "guna2DateTimePicker1";
+            this.guna2DateTimePicker1.ShadowDecoration.Parent = this.guna2DateTimePicker1;
+            this.guna2DateTimePicker1.Size = new System.Drawing.Size(204, 37);
+            this.guna2DateTimePicker1.TabIndex = 63;
+            this.guna2DateTimePicker1.Value = new System.DateTime(2023, 6, 6, 22, 52, 13, 98);
             // 
             // btn_Validar
             // 
@@ -195,7 +223,7 @@ namespace Inscricao_e_Matricula
             this.btn_Validar.ForeColor = System.Drawing.Color.DarkOrange;
             this.btn_Validar.Image = null;
             this.btn_Validar.ImageSize = new System.Drawing.Size(20, 20);
-            this.btn_Validar.Location = new System.Drawing.Point(148, 770);
+            this.btn_Validar.Location = new System.Drawing.Point(148, 735);
             this.btn_Validar.Name = "btn_Validar";
             this.btn_Validar.OnHoverBaseColor = System.Drawing.Color.WhiteSmoke;
             this.btn_Validar.OnHoverBorderColor = System.Drawing.Color.Black;
@@ -213,7 +241,7 @@ namespace Inscricao_e_Matricula
             // 
             this.txt_AreaFormacao.AutoRoundedCorners = true;
             this.txt_AreaFormacao.BackColor = System.Drawing.Color.Transparent;
-            this.txt_AreaFormacao.BorderRadius = 10;
+            this.txt_AreaFormacao.BorderRadius = 17;
             this.txt_AreaFormacao.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
             this.txt_AreaFormacao.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.txt_AreaFormacao.FocusedColor = System.Drawing.Color.Empty;
@@ -228,7 +256,7 @@ namespace Inscricao_e_Matricula
             "Masculino"});
             this.txt_AreaFormacao.ItemsAppearance.Parent = this.txt_AreaFormacao;
             this.txt_AreaFormacao.Location = new System.Drawing.Point(328, 406);
-            this.txt_AreaFormacao.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txt_AreaFormacao.Margin = new System.Windows.Forms.Padding(2);
             this.txt_AreaFormacao.Name = "txt_AreaFormacao";
             this.txt_AreaFormacao.ShadowDecoration.Parent = this.txt_AreaFormacao;
             this.txt_AreaFormacao.Size = new System.Drawing.Size(263, 36);
@@ -256,7 +284,7 @@ namespace Inscricao_e_Matricula
             "Química"});
             this.txt_Curso.ItemsAppearance.Parent = this.txt_Curso;
             this.txt_Curso.Location = new System.Drawing.Point(8, 406);
-            this.txt_Curso.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txt_Curso.Margin = new System.Windows.Forms.Padding(2);
             this.txt_Curso.Name = "txt_Curso";
             this.txt_Curso.ShadowDecoration.Parent = this.txt_Curso;
             this.txt_Curso.Size = new System.Drawing.Size(303, 36);
@@ -280,10 +308,10 @@ namespace Inscricao_e_Matricula
             "Masculino"});
             this.txt_Genero.ItemsAppearance.Parent = this.txt_Genero;
             this.txt_Genero.Location = new System.Drawing.Point(9, 267);
-            this.txt_Genero.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txt_Genero.Margin = new System.Windows.Forms.Padding(2);
             this.txt_Genero.Name = "txt_Genero";
             this.txt_Genero.ShadowDecoration.Parent = this.txt_Genero;
-            this.txt_Genero.Size = new System.Drawing.Size(166, 36);
+            this.txt_Genero.Size = new System.Drawing.Size(160, 36);
             this.txt_Genero.Sorted = true;
             this.txt_Genero.TabIndex = 59;
             this.txt_Genero.SelectedIndexChanged += new System.EventHandler(this.txt_Genero_SelectedIndexChanged);
@@ -333,7 +361,7 @@ namespace Inscricao_e_Matricula
             // 
             this.txt_Quimedia.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txt_Quimedia.Location = new System.Drawing.Point(494, 188);
-            this.txt_Quimedia.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txt_Quimedia.Margin = new System.Windows.Forms.Padding(2);
             this.txt_Quimedia.Name = "txt_Quimedia";
             this.txt_Quimedia.Size = new System.Drawing.Size(76, 20);
             this.txt_Quimedia.TabIndex = 64;
@@ -343,7 +371,7 @@ namespace Inscricao_e_Matricula
             // 
             this.txt_Qui7.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txt_Qui7.Location = new System.Drawing.Point(154, 188);
-            this.txt_Qui7.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txt_Qui7.Margin = new System.Windows.Forms.Padding(2);
             this.txt_Qui7.Name = "txt_Qui7";
             this.txt_Qui7.Size = new System.Drawing.Size(76, 20);
             this.txt_Qui7.TabIndex = 63;
@@ -353,7 +381,7 @@ namespace Inscricao_e_Matricula
             // 
             this.txt_Qui9.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txt_Qui9.Location = new System.Drawing.Point(386, 189);
-            this.txt_Qui9.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txt_Qui9.Margin = new System.Windows.Forms.Padding(2);
             this.txt_Qui9.Name = "txt_Qui9";
             this.txt_Qui9.Size = new System.Drawing.Size(76, 20);
             this.txt_Qui9.TabIndex = 61;
@@ -363,7 +391,7 @@ namespace Inscricao_e_Matricula
             // 
             this.txt_Qui8.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txt_Qui8.Location = new System.Drawing.Point(271, 188);
-            this.txt_Qui8.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txt_Qui8.Margin = new System.Windows.Forms.Padding(2);
             this.txt_Qui8.Name = "txt_Qui8";
             this.txt_Qui8.Size = new System.Drawing.Size(76, 20);
             this.txt_Qui8.TabIndex = 62;
@@ -384,7 +412,7 @@ namespace Inscricao_e_Matricula
             // 
             this.txt_LPmedia.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txt_LPmedia.Location = new System.Drawing.Point(494, 97);
-            this.txt_LPmedia.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txt_LPmedia.Margin = new System.Windows.Forms.Padding(2);
             this.txt_LPmedia.Name = "txt_LPmedia";
             this.txt_LPmedia.Size = new System.Drawing.Size(76, 20);
             this.txt_LPmedia.TabIndex = 59;
@@ -394,7 +422,7 @@ namespace Inscricao_e_Matricula
             // 
             this.txt_Matmedia.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txt_Matmedia.Location = new System.Drawing.Point(494, 130);
-            this.txt_Matmedia.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txt_Matmedia.Margin = new System.Windows.Forms.Padding(2);
             this.txt_Matmedia.Name = "txt_Matmedia";
             this.txt_Matmedia.Size = new System.Drawing.Size(76, 20);
             this.txt_Matmedia.TabIndex = 58;
@@ -404,7 +432,7 @@ namespace Inscricao_e_Matricula
             // 
             this.txt_Fismedia.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txt_Fismedia.Location = new System.Drawing.Point(494, 158);
-            this.txt_Fismedia.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txt_Fismedia.Margin = new System.Windows.Forms.Padding(2);
             this.txt_Fismedia.Name = "txt_Fismedia";
             this.txt_Fismedia.Size = new System.Drawing.Size(76, 20);
             this.txt_Fismedia.TabIndex = 57;
@@ -425,7 +453,7 @@ namespace Inscricao_e_Matricula
             // 
             this.txt_Fis9.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txt_Fis9.Location = new System.Drawing.Point(386, 158);
-            this.txt_Fis9.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txt_Fis9.Margin = new System.Windows.Forms.Padding(2);
             this.txt_Fis9.Name = "txt_Fis9";
             this.txt_Fis9.Size = new System.Drawing.Size(76, 20);
             this.txt_Fis9.TabIndex = 54;
@@ -435,7 +463,7 @@ namespace Inscricao_e_Matricula
             // 
             this.txt_Fis8.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txt_Fis8.Location = new System.Drawing.Point(271, 158);
-            this.txt_Fis8.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txt_Fis8.Margin = new System.Windows.Forms.Padding(2);
             this.txt_Fis8.Name = "txt_Fis8";
             this.txt_Fis8.Size = new System.Drawing.Size(76, 20);
             this.txt_Fis8.TabIndex = 54;
@@ -445,7 +473,7 @@ namespace Inscricao_e_Matricula
             // 
             this.textBox20.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBox20.Location = new System.Drawing.Point(899, 128);
-            this.textBox20.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBox20.Margin = new System.Windows.Forms.Padding(2);
             this.textBox20.Name = "textBox20";
             this.textBox20.Size = new System.Drawing.Size(76, 20);
             this.textBox20.TabIndex = 46;
@@ -455,7 +483,7 @@ namespace Inscricao_e_Matricula
             // 
             this.textBox23.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBox23.Location = new System.Drawing.Point(1130, 130);
-            this.textBox23.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBox23.Margin = new System.Windows.Forms.Padding(2);
             this.textBox23.Name = "textBox23";
             this.textBox23.Size = new System.Drawing.Size(76, 20);
             this.textBox23.TabIndex = 42;
@@ -465,7 +493,7 @@ namespace Inscricao_e_Matricula
             // 
             this.txt_Fis7.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txt_Fis7.Location = new System.Drawing.Point(154, 158);
-            this.txt_Fis7.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txt_Fis7.Margin = new System.Windows.Forms.Padding(2);
             this.txt_Fis7.Name = "txt_Fis7";
             this.txt_Fis7.Size = new System.Drawing.Size(76, 20);
             this.txt_Fis7.TabIndex = 43;
@@ -475,7 +503,7 @@ namespace Inscricao_e_Matricula
             // 
             this.textBox16.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBox16.Location = new System.Drawing.Point(1016, 128);
-            this.textBox16.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBox16.Margin = new System.Windows.Forms.Padding(2);
             this.textBox16.Name = "textBox16";
             this.textBox16.Size = new System.Drawing.Size(76, 20);
             this.textBox16.TabIndex = 42;
@@ -485,7 +513,7 @@ namespace Inscricao_e_Matricula
             // 
             this.txt_LP9.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txt_LP9.Location = new System.Drawing.Point(386, 98);
-            this.txt_LP9.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txt_LP9.Margin = new System.Windows.Forms.Padding(2);
             this.txt_LP9.Name = "txt_LP9";
             this.txt_LP9.Size = new System.Drawing.Size(76, 20);
             this.txt_LP9.TabIndex = 37;
@@ -495,7 +523,7 @@ namespace Inscricao_e_Matricula
             // 
             this.txt_Mat9.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txt_Mat9.Location = new System.Drawing.Point(386, 129);
-            this.txt_Mat9.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txt_Mat9.Margin = new System.Windows.Forms.Padding(2);
             this.txt_Mat9.Name = "txt_Mat9";
             this.txt_Mat9.Size = new System.Drawing.Size(76, 20);
             this.txt_Mat9.TabIndex = 34;
@@ -505,7 +533,7 @@ namespace Inscricao_e_Matricula
             // 
             this.txt_LP8.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txt_LP8.Location = new System.Drawing.Point(271, 97);
-            this.txt_LP8.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txt_LP8.Margin = new System.Windows.Forms.Padding(2);
             this.txt_LP8.Name = "txt_LP8";
             this.txt_LP8.Size = new System.Drawing.Size(76, 20);
             this.txt_LP8.TabIndex = 37;
@@ -515,7 +543,7 @@ namespace Inscricao_e_Matricula
             // 
             this.txt_Mat8.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txt_Mat8.Location = new System.Drawing.Point(271, 128);
-            this.txt_Mat8.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txt_Mat8.Margin = new System.Windows.Forms.Padding(2);
             this.txt_Mat8.Name = "txt_Mat8";
             this.txt_Mat8.Size = new System.Drawing.Size(76, 20);
             this.txt_Mat8.TabIndex = 34;
@@ -525,7 +553,7 @@ namespace Inscricao_e_Matricula
             // 
             this.txt_Mat7.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txt_Mat7.Location = new System.Drawing.Point(154, 128);
-            this.txt_Mat7.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txt_Mat7.Margin = new System.Windows.Forms.Padding(2);
             this.txt_Mat7.Name = "txt_Mat7";
             this.txt_Mat7.Size = new System.Drawing.Size(76, 20);
             this.txt_Mat7.TabIndex = 33;
@@ -535,7 +563,7 @@ namespace Inscricao_e_Matricula
             // 
             this.txt_LP7.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txt_LP7.Location = new System.Drawing.Point(154, 97);
-            this.txt_LP7.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txt_LP7.Margin = new System.Windows.Forms.Padding(2);
             this.txt_LP7.Name = "txt_LP7";
             this.txt_LP7.Size = new System.Drawing.Size(76, 20);
             this.txt_LP7.TabIndex = 27;
@@ -697,7 +725,7 @@ namespace Inscricao_e_Matricula
             this.txt_Localidade.IconLeft = global::Inscricao_e_Matricula.Properties.Resources.user_1;
             this.txt_Localidade.IconLeftOffset = new System.Drawing.Point(5, 0);
             this.txt_Localidade.Location = new System.Drawing.Point(393, 267);
-            this.txt_Localidade.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.txt_Localidade.Margin = new System.Windows.Forms.Padding(6);
             this.txt_Localidade.Name = "txt_Localidade";
             this.txt_Localidade.PasswordChar = '\0';
             this.txt_Localidade.PlaceholderText = "Localidade";
@@ -712,7 +740,7 @@ namespace Inscricao_e_Matricula
             // txt_Endereco
             // 
             this.txt_Endereco.AutoRoundedCorners = true;
-            this.txt_Endereco.BorderRadius = 20;
+            this.txt_Endereco.BorderRadius = 17;
             this.txt_Endereco.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txt_Endereco.DefaultText = "";
             this.txt_Endereco.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
@@ -729,7 +757,7 @@ namespace Inscricao_e_Matricula
             this.txt_Endereco.IconLeft = global::Inscricao_e_Matricula.Properties.Resources.user_1;
             this.txt_Endereco.IconLeftOffset = new System.Drawing.Point(5, 0);
             this.txt_Endereco.Location = new System.Drawing.Point(10, 341);
-            this.txt_Endereco.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.txt_Endereco.Margin = new System.Windows.Forms.Padding(6);
             this.txt_Endereco.Name = "txt_Endereco";
             this.txt_Endereco.PasswordChar = '\0';
             this.txt_Endereco.PlaceholderText = "Informe o seu Email";
@@ -758,7 +786,7 @@ namespace Inscricao_e_Matricula
             this.txt_Nacionalidade.IconLeft = global::Inscricao_e_Matricula.Properties.Resources.user_1;
             this.txt_Nacionalidade.IconLeftOffset = new System.Drawing.Point(5, 0);
             this.txt_Nacionalidade.Location = new System.Drawing.Point(177, 267);
-            this.txt_Nacionalidade.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.txt_Nacionalidade.Margin = new System.Windows.Forms.Padding(6);
             this.txt_Nacionalidade.Name = "txt_Nacionalidade";
             this.txt_Nacionalidade.PasswordChar = '\0';
             this.txt_Nacionalidade.PlaceholderText = "Nacionalidade";
@@ -788,7 +816,7 @@ namespace Inscricao_e_Matricula
             this.txt_Tel.IconLeft = global::Inscricao_e_Matricula.Properties.Resources.user_1;
             this.txt_Tel.IconLeftOffset = new System.Drawing.Point(5, 0);
             this.txt_Tel.Location = new System.Drawing.Point(393, 203);
-            this.txt_Tel.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.txt_Tel.Margin = new System.Windows.Forms.Padding(6);
             this.txt_Tel.Name = "txt_Tel";
             this.txt_Tel.PasswordChar = '\0';
             this.txt_Tel.PlaceholderText = "Telefone";
@@ -818,7 +846,7 @@ namespace Inscricao_e_Matricula
             this.txt_Bi.IconLeft = global::Inscricao_e_Matricula.Properties.Resources.user_1;
             this.txt_Bi.IconLeftOffset = new System.Drawing.Point(5, 0);
             this.txt_Bi.Location = new System.Drawing.Point(10, 203);
-            this.txt_Bi.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.txt_Bi.Margin = new System.Windows.Forms.Padding(6);
             this.txt_Bi.Name = "txt_Bi";
             this.txt_Bi.PasswordChar = '\0';
             this.txt_Bi.PlaceholderText = "Informe o seu numero de BI";
@@ -833,7 +861,7 @@ namespace Inscricao_e_Matricula
             // txtnome
             // 
             this.txtnome.AutoRoundedCorners = true;
-            this.txtnome.BorderRadius = 17;
+            this.txtnome.BorderRadius = 15;
             this.txtnome.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtnome.DefaultText = "";
             this.txtnome.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
@@ -850,7 +878,7 @@ namespace Inscricao_e_Matricula
             this.txtnome.IconLeft = global::Inscricao_e_Matricula.Properties.Resources.user_1;
             this.txtnome.IconLeftOffset = new System.Drawing.Point(5, 0);
             this.txtnome.Location = new System.Drawing.Point(10, 140);
-            this.txtnome.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.txtnome.Margin = new System.Windows.Forms.Padding(6);
             this.txtnome.Name = "txtnome";
             this.txtnome.PasswordChar = '\0';
             this.txtnome.PlaceholderText = "Informe o seu nome";
@@ -900,46 +928,18 @@ namespace Inscricao_e_Matricula
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
-            // guna2DateTimePicker1
-            // 
-            this.guna2DateTimePicker1.CheckedState.Parent = this.guna2DateTimePicker1;
-            this.guna2DateTimePicker1.FillColor = System.Drawing.Color.White;
-            this.guna2DateTimePicker1.Font = new System.Drawing.Font("Segoe UI", 8F);
-            this.guna2DateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Long;
-            this.guna2DateTimePicker1.HoverState.Parent = this.guna2DateTimePicker1;
-            this.guna2DateTimePicker1.Location = new System.Drawing.Point(393, 140);
-            this.guna2DateTimePicker1.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
-            this.guna2DateTimePicker1.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
-            this.guna2DateTimePicker1.Name = "guna2DateTimePicker1";
-            this.guna2DateTimePicker1.ShadowDecoration.Parent = this.guna2DateTimePicker1;
-            this.guna2DateTimePicker1.Size = new System.Drawing.Size(204, 37);
-            this.guna2DateTimePicker1.TabIndex = 63;
-            this.guna2DateTimePicker1.Value = new System.DateTime(2023, 6, 6, 22, 52, 13, 98);
-            // 
-            // label16
-            // 
-            this.label16.AutoSize = true;
-            this.label16.Font = new System.Drawing.Font("Segoe UI", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label16.ForeColor = System.Drawing.Color.White;
-            this.label16.Location = new System.Drawing.Point(389, 117);
-            this.label16.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(172, 23);
-            this.label16.TabIndex = 64;
-            this.label16.Text = "Data de Nascimento";
-            // 
             // TelaInscricao
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DarkOrange;
-            this.ClientSize = new System.Drawing.Size(1028, 788);
+            this.ClientSize = new System.Drawing.Size(1028, 780);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.btnentrar);
             this.Controls.Add(this.label2);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "TelaInscricao";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "TelaInscricao";

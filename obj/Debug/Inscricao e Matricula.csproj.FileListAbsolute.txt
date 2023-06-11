@@ -81,3 +81,5 @@ C:\Users\m\OneDrive\Desktop\visual studio 2023\Windows form\IM\inscricao_matricu
 C:\Users\m\OneDrive\Desktop\visual studio 2023\Windows form\IM\inscricao_matricula\obj\Debug\Inscricao_e_Matricula.Telas.Tela_informacao.resources
 C:\Users\Jesimiel\Documents\IM\inscricao_matricula\obj\Debug\Inscricao_e_Matricula.Telas.Primeira_conta.resources
 C:\Users\Jesimiel\Documents\IM\inscricao_matricula\obj\Debug\Inscricao_e_Matricula.Telas.Telaconfirmar.resources
+C:\Users\Jesimiel\Documents\IM\inscricao_matricula\obj\Debug\Inscricao_e_Matricula.Telas.confirmado.resources
+C:\Users\Jesimiel\Documents\IM\inscricao_matricula\obj\Debug\Inscricao_e_Matricula.Telas.Ajuda.resources

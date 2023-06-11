@@ -36,12 +36,6 @@
             this.label2 = new System.Windows.Forms.Label();
             this.btn_salvar = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
-            this.btn_add_foto = new Guna.UI2.WinForms.Guna2Button();
-            this.pic_perfil = new Guna.UI2.WinForms.Guna2CirclePictureBox();
-            this.txtemail = new Guna.UI2.WinForms.Guna2TextBox();
-            this.txttelefone = new Guna.UI2.WinForms.Guna2TextBox();
-            this.txtpalapass = new Guna.UI2.WinForms.Guna2TextBox();
-            this.txtnome = new Guna.UI2.WinForms.Guna2TextBox();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
@@ -49,6 +43,12 @@
             this.label6 = new System.Windows.Forms.Label();
             this.altswitch = new Guna.UI2.WinForms.Guna2ToggleSwitch();
             this.notswitch = new Guna.UI2.WinForms.Guna2ToggleSwitch();
+            this.btn_add_foto = new Guna.UI2.WinForms.Guna2Button();
+            this.pic_perfil = new Guna.UI2.WinForms.Guna2CirclePictureBox();
+            this.txtemail = new Guna.UI2.WinForms.Guna2TextBox();
+            this.txttelefone = new Guna.UI2.WinForms.Guna2TextBox();
+            this.txtpalapass = new Guna.UI2.WinForms.Guna2TextBox();
+            this.txtnome = new Guna.UI2.WinForms.Guna2TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.pic_perfil)).BeginInit();
             this.SuspendLayout();
             // 
@@ -66,7 +66,7 @@
             this.btn_cancelar.ForeColor = System.Drawing.Color.Black;
             this.btn_cancelar.HoverState.FillColor = System.Drawing.Color.WhiteSmoke;
             this.btn_cancelar.HoverState.Parent = this.btn_cancelar;
-            this.btn_cancelar.Location = new System.Drawing.Point(649, 69);
+            this.btn_cancelar.Location = new System.Drawing.Point(682, 69);
             this.btn_cancelar.Name = "btn_cancelar";
             this.btn_cancelar.PressedColor = System.Drawing.Color.Gainsboro;
             this.btn_cancelar.ShadowDecoration.BorderRadius = 15;
@@ -126,7 +126,7 @@
             this.btn_salvar.ForeColor = System.Drawing.Color.White;
             this.btn_salvar.HoverState.FillColor = System.Drawing.Color.Orange;
             this.btn_salvar.HoverState.Parent = this.btn_salvar;
-            this.btn_salvar.Location = new System.Drawing.Point(827, 69);
+            this.btn_salvar.Location = new System.Drawing.Point(860, 69);
             this.btn_salvar.Name = "btn_salvar";
             this.btn_salvar.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.btn_salvar.ShadowDecoration.Color = System.Drawing.Color.DimGray;
@@ -143,179 +143,6 @@
             // 
             this.guna2Elipse1.BorderRadius = 170;
             // 
-            // btn_add_foto
-            // 
-            this.btn_add_foto.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btn_add_foto.Animated = true;
-            this.btn_add_foto.BorderRadius = 15;
-            this.btn_add_foto.CheckedState.Parent = this.btn_add_foto;
-            this.btn_add_foto.CustomImages.Parent = this.btn_add_foto;
-            this.btn_add_foto.FillColor = System.Drawing.Color.DarkOrange;
-            this.btn_add_foto.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_add_foto.ForeColor = System.Drawing.Color.White;
-            this.btn_add_foto.HoverState.Parent = this.btn_add_foto;
-            this.btn_add_foto.Image = global::Inscricao_e_Matricula.Properties.Resources.Vector;
-            this.btn_add_foto.ImageAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.btn_add_foto.ImageOffset = new System.Drawing.Point(5, 0);
-            this.btn_add_foto.ImageSize = new System.Drawing.Size(17, 15);
-            this.btn_add_foto.Location = new System.Drawing.Point(827, 338);
-            this.btn_add_foto.Name = "btn_add_foto";
-            this.btn_add_foto.ShadowDecoration.Parent = this.btn_add_foto;
-            this.btn_add_foto.Size = new System.Drawing.Size(125, 45);
-            this.btn_add_foto.TabIndex = 10;
-            this.btn_add_foto.Text = "Selecionar";
-            this.btn_add_foto.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.btn_add_foto.TextOffset = new System.Drawing.Point(10, 0);
-            this.btn_add_foto.Click += new System.EventHandler(this.btn_add_foto_Click);
-            // 
-            // pic_perfil
-            // 
-            this.pic_perfil.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.pic_perfil.BackColor = System.Drawing.Color.Transparent;
-            this.pic_perfil.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pic_perfil.FillColor = System.Drawing.Color.WhiteSmoke;
-            this.pic_perfil.Image = global::Inscricao_e_Matricula.Properties.Resources._6522516;
-            this.pic_perfil.Location = new System.Drawing.Point(807, 165);
-            this.pic_perfil.Name = "pic_perfil";
-            this.pic_perfil.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
-            this.pic_perfil.ShadowDecoration.Parent = this.pic_perfil;
-            this.pic_perfil.Size = new System.Drawing.Size(168, 167);
-            this.pic_perfil.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pic_perfil.TabIndex = 9;
-            this.pic_perfil.TabStop = false;
-            // 
-            // txtemail
-            // 
-            this.txtemail.Animated = true;
-            this.txtemail.BorderColor = System.Drawing.Color.Transparent;
-            this.txtemail.BorderRadius = 15;
-            this.txtemail.BorderThickness = 0;
-            this.txtemail.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtemail.DefaultText = "";
-            this.txtemail.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txtemail.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txtemail.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtemail.DisabledState.Parent = this.txtemail;
-            this.txtemail.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtemail.FillColor = System.Drawing.Color.WhiteSmoke;
-            this.txtemail.FocusedState.BorderColor = System.Drawing.Color.Gray;
-            this.txtemail.FocusedState.Parent = this.txtemail;
-            this.txtemail.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtemail.HoverState.Parent = this.txtemail;
-            this.txtemail.IconRight = ((System.Drawing.Image)(resources.GetObject("txtemail.IconRight")));
-            this.txtemail.IconRightOffset = new System.Drawing.Point(15, 0);
-            this.txtemail.IconRightSize = new System.Drawing.Size(15, 15);
-            this.txtemail.Location = new System.Drawing.Point(84, 276);
-            this.txtemail.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.txtemail.Name = "txtemail";
-            this.txtemail.PasswordChar = '\0';
-            this.txtemail.PlaceholderForeColor = System.Drawing.Color.DimGray;
-            this.txtemail.PlaceholderText = "E-mail";
-            this.txtemail.SelectedText = "";
-            this.txtemail.ShadowDecoration.Parent = this.txtemail;
-            this.txtemail.Size = new System.Drawing.Size(293, 51);
-            this.txtemail.TabIndex = 7;
-            this.txtemail.TextOffset = new System.Drawing.Point(10, 0);
-            // 
-            // txttelefone
-            // 
-            this.txttelefone.Animated = true;
-            this.txttelefone.BorderColor = System.Drawing.Color.Transparent;
-            this.txttelefone.BorderRadius = 15;
-            this.txttelefone.BorderThickness = 0;
-            this.txttelefone.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txttelefone.DefaultText = "";
-            this.txttelefone.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txttelefone.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txttelefone.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txttelefone.DisabledState.Parent = this.txttelefone;
-            this.txttelefone.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txttelefone.FillColor = System.Drawing.Color.WhiteSmoke;
-            this.txttelefone.FocusedState.BorderColor = System.Drawing.Color.Gray;
-            this.txttelefone.FocusedState.Parent = this.txttelefone;
-            this.txttelefone.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txttelefone.HoverState.Parent = this.txttelefone;
-            this.txttelefone.IconRight = ((System.Drawing.Image)(resources.GetObject("txttelefone.IconRight")));
-            this.txttelefone.IconRightOffset = new System.Drawing.Point(15, 0);
-            this.txttelefone.IconRightSize = new System.Drawing.Size(15, 15);
-            this.txttelefone.Location = new System.Drawing.Point(453, 198);
-            this.txttelefone.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.txttelefone.Name = "txttelefone";
-            this.txttelefone.PasswordChar = '\0';
-            this.txttelefone.PlaceholderForeColor = System.Drawing.Color.DimGray;
-            this.txttelefone.PlaceholderText = "Telefone";
-            this.txttelefone.SelectedText = "";
-            this.txttelefone.ShadowDecoration.Parent = this.txttelefone;
-            this.txttelefone.Size = new System.Drawing.Size(293, 51);
-            this.txttelefone.TabIndex = 6;
-            this.txttelefone.TextOffset = new System.Drawing.Point(10, 0);
-            // 
-            // txtpalapass
-            // 
-            this.txtpalapass.Animated = true;
-            this.txtpalapass.BorderColor = System.Drawing.Color.Transparent;
-            this.txtpalapass.BorderRadius = 15;
-            this.txtpalapass.BorderThickness = 0;
-            this.txtpalapass.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtpalapass.DefaultText = "";
-            this.txtpalapass.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txtpalapass.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txtpalapass.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtpalapass.DisabledState.Parent = this.txtpalapass;
-            this.txtpalapass.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtpalapass.FillColor = System.Drawing.Color.WhiteSmoke;
-            this.txtpalapass.FocusedState.BorderColor = System.Drawing.Color.Gray;
-            this.txtpalapass.FocusedState.Parent = this.txtpalapass;
-            this.txtpalapass.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtpalapass.HoverState.Parent = this.txtpalapass;
-            this.txtpalapass.IconRight = ((System.Drawing.Image)(resources.GetObject("txtpalapass.IconRight")));
-            this.txtpalapass.IconRightOffset = new System.Drawing.Point(15, 0);
-            this.txtpalapass.IconRightSize = new System.Drawing.Size(15, 15);
-            this.txtpalapass.Location = new System.Drawing.Point(453, 276);
-            this.txtpalapass.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.txtpalapass.Name = "txtpalapass";
-            this.txtpalapass.PasswordChar = '\0';
-            this.txtpalapass.PlaceholderForeColor = System.Drawing.Color.DimGray;
-            this.txtpalapass.PlaceholderText = "Palavra-passe";
-            this.txtpalapass.SelectedText = "";
-            this.txtpalapass.ShadowDecoration.Parent = this.txtpalapass;
-            this.txtpalapass.Size = new System.Drawing.Size(293, 51);
-            this.txtpalapass.TabIndex = 5;
-            this.txtpalapass.TextOffset = new System.Drawing.Point(10, 0);
-            // 
-            // txtnome
-            // 
-            this.txtnome.Animated = true;
-            this.txtnome.BorderColor = System.Drawing.Color.Transparent;
-            this.txtnome.BorderRadius = 15;
-            this.txtnome.BorderThickness = 0;
-            this.txtnome.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtnome.DefaultText = "";
-            this.txtnome.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txtnome.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txtnome.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtnome.DisabledState.Parent = this.txtnome;
-            this.txtnome.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtnome.FillColor = System.Drawing.Color.WhiteSmoke;
-            this.txtnome.FocusedState.BorderColor = System.Drawing.Color.Gray;
-            this.txtnome.FocusedState.Parent = this.txtnome;
-            this.txtnome.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtnome.HoverState.Parent = this.txtnome;
-            this.txtnome.IconRight = ((System.Drawing.Image)(resources.GetObject("txtnome.IconRight")));
-            this.txtnome.IconRightOffset = new System.Drawing.Point(15, 0);
-            this.txtnome.IconRightSize = new System.Drawing.Size(15, 15);
-            this.txtnome.Location = new System.Drawing.Point(84, 198);
-            this.txtnome.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.txtnome.Name = "txtnome";
-            this.txtnome.PasswordChar = '\0';
-            this.txtnome.PlaceholderForeColor = System.Drawing.Color.DimGray;
-            this.txtnome.PlaceholderText = "Nome";
-            this.txtnome.SelectedText = "";
-            this.txtnome.ShadowDecoration.Parent = this.txtnome;
-            this.txtnome.Size = new System.Drawing.Size(293, 51);
-            this.txtnome.TabIndex = 4;
-            this.txtnome.TextOffset = new System.Drawing.Point(10, 0);
-            // 
             // openFileDialog1
             // 
             this.openFileDialog1.FileName = "Foto de perfil";
@@ -326,7 +153,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.ForeColor = System.Drawing.SystemColors.ControlLight;
-            this.label3.Location = new System.Drawing.Point(81, 391);
+            this.label3.Location = new System.Drawing.Point(85, 391);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(901, 13);
             this.label3.TabIndex = 11;
@@ -409,6 +236,180 @@
             this.notswitch.UncheckedState.InnerBorderColor = System.Drawing.Color.White;
             this.notswitch.UncheckedState.InnerColor = System.Drawing.Color.White;
             this.notswitch.UncheckedState.Parent = this.notswitch;
+            // 
+            // btn_add_foto
+            // 
+            this.btn_add_foto.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btn_add_foto.Animated = true;
+            this.btn_add_foto.BorderRadius = 15;
+            this.btn_add_foto.CheckedState.Parent = this.btn_add_foto;
+            this.btn_add_foto.CustomImages.Parent = this.btn_add_foto;
+            this.btn_add_foto.FillColor = System.Drawing.Color.DarkOrange;
+            this.btn_add_foto.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_add_foto.ForeColor = System.Drawing.Color.White;
+            this.btn_add_foto.HoverState.Parent = this.btn_add_foto;
+            this.btn_add_foto.Image = global::Inscricao_e_Matricula.Properties.Resources.Vector;
+            this.btn_add_foto.ImageAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.btn_add_foto.ImageOffset = new System.Drawing.Point(5, 0);
+            this.btn_add_foto.ImageSize = new System.Drawing.Size(17, 15);
+            this.btn_add_foto.Location = new System.Drawing.Point(860, 338);
+            this.btn_add_foto.Name = "btn_add_foto";
+            this.btn_add_foto.ShadowDecoration.Parent = this.btn_add_foto;
+            this.btn_add_foto.Size = new System.Drawing.Size(125, 45);
+            this.btn_add_foto.TabIndex = 10;
+            this.btn_add_foto.Text = "Selecionar";
+            this.btn_add_foto.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btn_add_foto.TextOffset = new System.Drawing.Point(10, 0);
+            this.btn_add_foto.Click += new System.EventHandler(this.btn_add_foto_Click);
+            // 
+            // pic_perfil
+            // 
+            this.pic_perfil.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.pic_perfil.BackColor = System.Drawing.Color.Transparent;
+            this.pic_perfil.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pic_perfil.FillColor = System.Drawing.Color.WhiteSmoke;
+            this.pic_perfil.Image = global::Inscricao_e_Matricula.Properties.Resources._6522516;
+            this.pic_perfil.Location = new System.Drawing.Point(840, 165);
+            this.pic_perfil.Name = "pic_perfil";
+            this.pic_perfil.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
+            this.pic_perfil.ShadowDecoration.Parent = this.pic_perfil;
+            this.pic_perfil.Size = new System.Drawing.Size(168, 167);
+            this.pic_perfil.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pic_perfil.TabIndex = 9;
+            this.pic_perfil.TabStop = false;
+            // 
+            // txtemail
+            // 
+            this.txtemail.Animated = true;
+            this.txtemail.BorderColor = System.Drawing.Color.Transparent;
+            this.txtemail.BorderRadius = 15;
+            this.txtemail.BorderThickness = 0;
+            this.txtemail.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtemail.DefaultText = "";
+            this.txtemail.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtemail.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtemail.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtemail.DisabledState.Parent = this.txtemail;
+            this.txtemail.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtemail.FillColor = System.Drawing.Color.WhiteSmoke;
+            this.txtemail.FocusedState.BorderColor = System.Drawing.Color.Gray;
+            this.txtemail.FocusedState.Parent = this.txtemail;
+            this.txtemail.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtemail.HoverState.Parent = this.txtemail;
+            this.txtemail.IconRight = ((System.Drawing.Image)(resources.GetObject("txtemail.IconRight")));
+            this.txtemail.IconRightOffset = new System.Drawing.Point(15, 0);
+            this.txtemail.IconRightSize = new System.Drawing.Size(15, 15);
+            this.txtemail.Location = new System.Drawing.Point(84, 276);
+            this.txtemail.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.txtemail.Name = "txtemail";
+            this.txtemail.PasswordChar = '\0';
+            this.txtemail.PlaceholderForeColor = System.Drawing.Color.DimGray;
+            this.txtemail.PlaceholderText = "E-mail";
+            this.txtemail.SelectedText = "";
+            this.txtemail.ShadowDecoration.Parent = this.txtemail;
+            this.txtemail.Size = new System.Drawing.Size(341, 51);
+            this.txtemail.TabIndex = 7;
+            this.txtemail.TextOffset = new System.Drawing.Point(10, 0);
+            this.txtemail.TextChanged += new System.EventHandler(this.txtemail_TextChanged);
+            // 
+            // txttelefone
+            // 
+            this.txttelefone.Animated = true;
+            this.txttelefone.BorderColor = System.Drawing.Color.Transparent;
+            this.txttelefone.BorderRadius = 15;
+            this.txttelefone.BorderThickness = 0;
+            this.txttelefone.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txttelefone.DefaultText = "";
+            this.txttelefone.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txttelefone.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txttelefone.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txttelefone.DisabledState.Parent = this.txttelefone;
+            this.txttelefone.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txttelefone.FillColor = System.Drawing.Color.WhiteSmoke;
+            this.txttelefone.FocusedState.BorderColor = System.Drawing.Color.Gray;
+            this.txttelefone.FocusedState.Parent = this.txttelefone;
+            this.txttelefone.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txttelefone.HoverState.Parent = this.txttelefone;
+            this.txttelefone.IconRight = ((System.Drawing.Image)(resources.GetObject("txttelefone.IconRight")));
+            this.txttelefone.IconRightOffset = new System.Drawing.Point(15, 0);
+            this.txttelefone.IconRightSize = new System.Drawing.Size(15, 15);
+            this.txttelefone.Location = new System.Drawing.Point(454, 198);
+            this.txttelefone.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.txttelefone.Name = "txttelefone";
+            this.txttelefone.PasswordChar = '\0';
+            this.txttelefone.PlaceholderForeColor = System.Drawing.Color.DimGray;
+            this.txttelefone.PlaceholderText = "Telefone";
+            this.txttelefone.SelectedText = "";
+            this.txttelefone.ShadowDecoration.Parent = this.txttelefone;
+            this.txttelefone.Size = new System.Drawing.Size(341, 51);
+            this.txttelefone.TabIndex = 6;
+            this.txttelefone.TextOffset = new System.Drawing.Point(10, 0);
+            // 
+            // txtpalapass
+            // 
+            this.txtpalapass.Animated = true;
+            this.txtpalapass.BorderColor = System.Drawing.Color.Transparent;
+            this.txtpalapass.BorderRadius = 15;
+            this.txtpalapass.BorderThickness = 0;
+            this.txtpalapass.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtpalapass.DefaultText = "";
+            this.txtpalapass.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtpalapass.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtpalapass.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtpalapass.DisabledState.Parent = this.txtpalapass;
+            this.txtpalapass.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtpalapass.FillColor = System.Drawing.Color.WhiteSmoke;
+            this.txtpalapass.FocusedState.BorderColor = System.Drawing.Color.Gray;
+            this.txtpalapass.FocusedState.Parent = this.txtpalapass;
+            this.txtpalapass.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtpalapass.HoverState.Parent = this.txtpalapass;
+            this.txtpalapass.IconRight = ((System.Drawing.Image)(resources.GetObject("txtpalapass.IconRight")));
+            this.txtpalapass.IconRightOffset = new System.Drawing.Point(15, 0);
+            this.txtpalapass.IconRightSize = new System.Drawing.Size(15, 15);
+            this.txtpalapass.Location = new System.Drawing.Point(454, 276);
+            this.txtpalapass.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.txtpalapass.Name = "txtpalapass";
+            this.txtpalapass.PasswordChar = '\0';
+            this.txtpalapass.PlaceholderForeColor = System.Drawing.Color.DimGray;
+            this.txtpalapass.PlaceholderText = "Palavra-passe";
+            this.txtpalapass.SelectedText = "";
+            this.txtpalapass.ShadowDecoration.Parent = this.txtpalapass;
+            this.txtpalapass.Size = new System.Drawing.Size(341, 51);
+            this.txtpalapass.TabIndex = 5;
+            this.txtpalapass.TextOffset = new System.Drawing.Point(10, 0);
+            // 
+            // txtnome
+            // 
+            this.txtnome.Animated = true;
+            this.txtnome.BorderColor = System.Drawing.Color.Transparent;
+            this.txtnome.BorderRadius = 15;
+            this.txtnome.BorderThickness = 0;
+            this.txtnome.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtnome.DefaultText = "";
+            this.txtnome.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtnome.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtnome.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtnome.DisabledState.Parent = this.txtnome;
+            this.txtnome.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtnome.FillColor = System.Drawing.Color.WhiteSmoke;
+            this.txtnome.FocusedState.BorderColor = System.Drawing.Color.Gray;
+            this.txtnome.FocusedState.Parent = this.txtnome;
+            this.txtnome.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtnome.HoverState.Parent = this.txtnome;
+            this.txtnome.IconRight = ((System.Drawing.Image)(resources.GetObject("txtnome.IconRight")));
+            this.txtnome.IconRightOffset = new System.Drawing.Point(15, 0);
+            this.txtnome.IconRightSize = new System.Drawing.Size(15, 15);
+            this.txtnome.Location = new System.Drawing.Point(84, 198);
+            this.txtnome.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.txtnome.Name = "txtnome";
+            this.txtnome.PasswordChar = '\0';
+            this.txtnome.PlaceholderForeColor = System.Drawing.Color.DimGray;
+            this.txtnome.PlaceholderText = "Nome";
+            this.txtnome.SelectedText = "";
+            this.txtnome.ShadowDecoration.Parent = this.txtnome;
+            this.txtnome.Size = new System.Drawing.Size(341, 51);
+            this.txtnome.TabIndex = 4;
+            this.txtnome.TextOffset = new System.Drawing.Point(10, 0);
             // 
             // Configuracoes
             // 

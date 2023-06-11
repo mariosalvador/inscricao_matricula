@@ -17,7 +17,6 @@ namespace Inscricao_e_Matricula.Telas
         {
             InitializeComponent();
             this.txtcodigo.MaxLength = 8;
-            aberto = true;
         }
 
         private void Telaconfirmar_Load(object sender, EventArgs e)
@@ -30,6 +29,28 @@ namespace Inscricao_e_Matricula.Telas
             aberto = false;
             this.TopMost = false;
             this.Close();       
+        }
+
+        private void btn_confirmar_Click(object sender, EventArgs e)
+        {
+            Telas.Configuracoes telaconfig = new Telas.Configuracoes();
+            
+            if (txtcodigo.Text == Email.codigo.ToString())
+            {
+                Telas.confirmado tela = new Telas.confirmado();
+                this.TopMost = false;
+                tela.TopMost = true;
+                tela.ShowDialog();
+                this.Close();
+            }
+            else if (txtcodigo.Text == "")
+            {
+                MessageBox.Show("Preecha o campo em branco com o código enviado ao seu e-mail", "Atenção", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+            }
+            else if (txtcodigo.Text != Email.codigo.ToString())
+            {
+                MessageBox.Show("O número inserido não corresponde ao código enviado", "Atenção", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+            }
         }
     }
 }
