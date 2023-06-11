@@ -39,6 +39,7 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
+            this.checkpass = new Guna.UI.WinForms.GunaCheckBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -232,12 +233,28 @@
             this.label5.TabIndex = 14;
             this.label5.Text = "Confirmar senha";
             // 
+            // checkpass
+            // 
+            this.checkpass.BaseColor = System.Drawing.Color.Gainsboro;
+            this.checkpass.CheckedOffColor = System.Drawing.Color.Transparent;
+            this.checkpass.CheckedOnColor = System.Drawing.Color.White;
+            this.checkpass.FillColor = System.Drawing.Color.DarkOrange;
+            this.checkpass.ForeColor = System.Drawing.Color.Black;
+            this.checkpass.Location = new System.Drawing.Point(656, 346);
+            this.checkpass.Name = "checkpass";
+            this.checkpass.Radius = 3;
+            this.checkpass.Size = new System.Drawing.Size(127, 20);
+            this.checkpass.TabIndex = 15;
+            this.checkpass.Text = "Ver palavras-passe";
+            this.checkpass.CheckedChanged += new System.EventHandler(this.checkpass_CheckedChanged);
+            // 
             // Primeira_conta
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DarkOrange;
             this.ClientSize = new System.Drawing.Size(838, 544);
+            this.Controls.Add(this.checkpass);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
@@ -271,5 +288,6 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
+        private Guna.UI.WinForms.GunaCheckBox checkpass;
     }
 }

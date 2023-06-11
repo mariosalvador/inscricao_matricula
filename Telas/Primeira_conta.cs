@@ -28,5 +28,14 @@ namespace Inscricao_e_Matricula.Telas
 
             }
         }
+
+        private void checkpass_CheckedChanged(object sender, EventArgs e)
+        {
+            if (checkpass.Checked == true)
+            {
+                txtsenha_1.PasswordChar  = '*';
+                txtsenha_2.PasswordChar = '*';
+            }
+        }
     }
 }

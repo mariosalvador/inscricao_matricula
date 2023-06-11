@@ -336,5 +336,11 @@
   <ItemGroup>
     <None Include="Resources\window_maximize_icon_137012.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ellipse 9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\!.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
