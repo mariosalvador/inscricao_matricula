@@ -16,7 +16,7 @@ namespace Inscricao_e_Matricula
     public partial class Tela_CadastraEntidade : Form
     {
         MySqlConnection Conexao;
-       // string data_source = "datasource=localhost; username=root; password=mariopaulos06; database=insc_mat";
+      
         public Tela_CadastraEntidade()
         {
             InitializeComponent();
@@ -45,6 +45,10 @@ namespace Inscricao_e_Matricula
         private void btncancelar_Click(object sender, EventArgs e)
         {
             TelaOperacao telaOperacao = new TelaOperacao();
+            txtnome_cadastra.Clear();
+             txtsenha_cadastra.Clear();
+            cb_funcao_cadastra.Text = "";
+
             this.Hide();
             telaOperacao.Show();
         }
@@ -56,37 +60,25 @@ namespace Inscricao_e_Matricula
 
         private void guna2Button1_Click(object sender, EventArgs e)
         {
-            try
-            {
+            Entidade entidade = new Entidade();
+            entidade.nome_entidade = txtnome_cadastra.Text;
+            entidade.senha_entidade = txtsenha_cadastra.Text;
+            entidade.tipo_entidade = cb_funcao_cadastra.Text;
 
-                string data_source = "datasource=localhost;username=root;password=mariopaulos06;database=insc_mat";
-                // conexao com o MYsql
-                Conexao = new MySqlConnection(data_source);
-
-
-                string sql = "INSERT INTO entidade(nome_entidade,tipo_entidade,senha_entidade) VALUES('" + txtnome_cadastra.Text + "','" + cb_funcao_cadastra.Text + "','" + txtsenha_cadastra.Text + "')";
-
-                // comando insert
-                MySqlCommand comando = new MySqlCommand(sql, Conexao);
-
-                Conexao.Open();
-
-                comando.ExecuteReader();
-
-                MessageBox.Show("Entidade Criada");
-
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show("ERRO: " + ex.Message);
-            }
-            finally
-            {
-                Conexao.Close();
-            }
+            Data_Base.Nova_Entidade(entidade);
         }
 
         private void Tela_CadastraEntidade_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void cb_funcao_cadastra_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtnome_cadastra_TextChanged(object sender, EventArgs e)
         {
 
         }

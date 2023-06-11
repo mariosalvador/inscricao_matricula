@@ -14,8 +14,8 @@ namespace Inscricao_e_Matricula
     public partial class TelaLogin : Form
     {
         public DataTable dataTable = new DataTable();
-        public static string nome;
-        public static string senha;
+        public  string nome;
+        public  string senha;
         DialogResult btr = new DialogResult();
         public TelaLogin()
         {
@@ -107,7 +107,12 @@ namespace Inscricao_e_Matricula
                   this.Hide();
                   telaPrincipal.ShowDialog();
               }
-              else if (txtnome.Text == "")
+            if (txtnome.Text == "" && txtsenha.Text == "")
+            {
+                txtnome.Focus();
+                return;
+            }*/
+             if (txtnome.Text == "")
               {
                   btr= MessageBox.Show("Preencha o campo do nome...", "Atenção", MessageBoxButtons.OKCancel, MessageBoxIcon.Information);
                   reposta(1);
@@ -131,16 +136,13 @@ namespace Inscricao_e_Matricula
               {
                   btr = MessageBox.Show("O nome de Usuário e a senha estão incorretos", "Atenção", MessageBoxButtons.OKCancel, MessageBoxIcon.Information);
                   reposta(1);
-              }*/
+              }
+
+
                 nome = txtnome.Text;
                 senha=txtsenha.Text;
-                if (txtnome.Text == "" && txtsenha.Text == "")
-                {
-                    txtnome.Focus();
-                    return;
-                }
 
-                string mySql = "SELECT * FROM entidade WHERE nome_entidade='" + nome  + "' AND senha_entidade='" + senha  + "'";
+                string mySql = "SELECT * FROM usuario WHERE nome_entidade='" + nome  + "' AND senha_entidade='" + senha  + "'";
                 dataTable = Data_Base.Consulta(mySql);
 
                 if (dataTable.Rows.Count == 1)

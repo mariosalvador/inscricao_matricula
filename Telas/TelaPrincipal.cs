@@ -186,10 +186,9 @@ namespace Inscricao_e_Matricula
             tela.Dock = DockStyle.Fill;
         }
 
-       
+        private void lb_Entidade_Click(object sender, EventArgs e)
+        {
 
-       
-
-       
+        }
     }
 }
