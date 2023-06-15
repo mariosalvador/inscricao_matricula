@@ -54,7 +54,7 @@ namespace Inscricao_e_Matricula
             this.guna2Button2 = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
             this.btnclose = new Guna.UI2.WinForms.Guna2Button();
-            this.Pic_perfil = new Guna.UI.WinForms.GunaCirclePictureBox();
+            this.Pic_perfil = new Guna.UI2.WinForms.Guna2CirclePictureBox();
             this.btnspanel.SuspendLayout();
             this.panel8.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Pic_perfil)).BeginInit();
@@ -440,7 +440,7 @@ namespace Inscricao_e_Matricula
             // Pic_perfil
             // 
             this.Pic_perfil.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.Pic_perfil.BaseColor = System.Drawing.Color.White;
+            this.Pic_perfil.BackColor = System.Drawing.Color.White;
             this.guna2Transition1.SetDecoration(this.Pic_perfil, Guna.UI2.AnimatorNS.DecorationType.None);
             this.Pic_perfil.Image = global::Inscricao_e_Matricula.Properties.Resources._6522516;
             this.Pic_perfil.Location = new System.Drawing.Point(1014, 36);
@@ -449,7 +449,7 @@ namespace Inscricao_e_Matricula
             this.Pic_perfil.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.Pic_perfil.TabIndex = 0;
             this.Pic_perfil.TabStop = false;
-            this.Pic_perfil.UseTransfarantBackground = false;
+            
             // 
             // TelaPrincipal
             // 
@@ -504,6 +504,6 @@ namespace Inscricao_e_Matricula
         private System.Windows.Forms.Timer timer1;
         private System.Windows.Forms.Label label14;
         private Guna.UI2.WinForms.Guna2Transition guna2Transition1;
-        private Guna.UI.WinForms.GunaCirclePictureBox Pic_perfil;
+        private Guna.UI2.WinForms.Guna2CirclePictureBox Pic_perfil;
     }
 }

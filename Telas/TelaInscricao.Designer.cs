@@ -36,7 +36,7 @@ namespace Inscricao_e_Matricula
             this.panel2 = new System.Windows.Forms.Panel();
             this.label16 = new System.Windows.Forms.Label();
             this.guna2DateTimePicker1 = new Guna.UI2.WinForms.Guna2DateTimePicker();
-            this.btn_Validar = new Guna.UI.WinForms.GunaButton();
+            this.btn_Validar = new Guna.UI2.WinForms.Guna2Button();
             this.txt_AreaFormacao = new Guna.UI2.WinForms.Guna2ComboBox();
             this.txt_Curso = new Guna.UI2.WinForms.Guna2ComboBox();
             this.txt_Genero = new Guna.UI2.WinForms.Guna2ComboBox();
@@ -77,7 +77,7 @@ namespace Inscricao_e_Matricula
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.gunaButton1 = new Guna.UI.WinForms.GunaButton();
+            this.gunaButton1 = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.txtnome = new Guna.UI2.WinForms.Guna2TextBox();
             this.txt_Bi = new Guna.UI2.WinForms.Guna2TextBox();
@@ -192,25 +192,13 @@ namespace Inscricao_e_Matricula
             // 
             // btn_Validar
             // 
-            this.btn_Validar.AnimationHoverSpeed = 0.07F;
-            this.btn_Validar.AnimationSpeed = 0.03F;
-            this.btn_Validar.BackColor = System.Drawing.Color.Transparent;
-            this.btn_Validar.BaseColor = System.Drawing.Color.White;
-            this.btn_Validar.BorderColor = System.Drawing.Color.Black;
-            this.btn_Validar.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.btn_Validar.FocusedColor = System.Drawing.Color.Empty;
+            
             this.btn_Validar.Font = new System.Drawing.Font("Segoe UI", 16F, System.Drawing.FontStyle.Bold);
             this.btn_Validar.ForeColor = System.Drawing.Color.DarkOrange;
             this.btn_Validar.Image = null;
             this.btn_Validar.ImageSize = new System.Drawing.Size(20, 20);
             this.btn_Validar.Location = new System.Drawing.Point(84, 596);
             this.btn_Validar.Name = "btn_Validar";
-            this.btn_Validar.OnHoverBaseColor = System.Drawing.Color.WhiteSmoke;
-            this.btn_Validar.OnHoverBorderColor = System.Drawing.Color.Black;
-            this.btn_Validar.OnHoverForeColor = System.Drawing.Color.DarkOrange;
-            this.btn_Validar.OnHoverImage = null;
-            this.btn_Validar.OnPressedColor = System.Drawing.Color.White;
-            this.btn_Validar.Radius = 15;
             this.btn_Validar.Size = new System.Drawing.Size(208, 51);
             this.btn_Validar.TabIndex = 62;
             this.btn_Validar.Text = "Validar";
@@ -746,25 +734,15 @@ namespace Inscricao_e_Matricula
             // 
             // gunaButton1
             // 
-            this.gunaButton1.AnimationHoverSpeed = 0.07F;
-            this.gunaButton1.AnimationSpeed = 0.03F;
             this.gunaButton1.BackColor = System.Drawing.Color.Transparent;
-            this.gunaButton1.BaseColor = System.Drawing.Color.White;
             this.gunaButton1.BorderColor = System.Drawing.Color.Black;
             this.gunaButton1.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.gunaButton1.FocusedColor = System.Drawing.Color.Empty;
             this.gunaButton1.Font = new System.Drawing.Font("Segoe UI", 16F, System.Drawing.FontStyle.Bold);
             this.gunaButton1.ForeColor = System.Drawing.Color.DarkOrange;
             this.gunaButton1.Image = null;
             this.gunaButton1.ImageSize = new System.Drawing.Size(20, 20);
             this.gunaButton1.Location = new System.Drawing.Point(347, 596);
             this.gunaButton1.Name = "gunaButton1";
-            this.gunaButton1.OnHoverBaseColor = System.Drawing.Color.WhiteSmoke;
-            this.gunaButton1.OnHoverBorderColor = System.Drawing.Color.Black;
-            this.gunaButton1.OnHoverForeColor = System.Drawing.Color.DarkOrange;
-            this.gunaButton1.OnHoverImage = null;
-            this.gunaButton1.OnPressedColor = System.Drawing.Color.White;
-            this.gunaButton1.Radius = 15;
             this.gunaButton1.Size = new System.Drawing.Size(209, 51);
             this.gunaButton1.TabIndex = 65;
             this.gunaButton1.Text = "Cancelar";
@@ -991,10 +969,10 @@ namespace Inscricao_e_Matricula
         private System.Windows.Forms.TextBox txt_Matmedia;
         private System.Windows.Forms.TextBox txt_Fismedia;
         private System.Windows.Forms.Label label8;
-        private Guna.UI.WinForms.GunaButton btn_Validar;
+        private Guna.UI2.WinForms.Guna2Button btn_Validar;
         private System.Windows.Forms.Label label16;
         private Guna.UI2.WinForms.Guna2DateTimePicker guna2DateTimePicker1;
-        private Guna.UI.WinForms.GunaButton gunaButton1;
+        private Guna.UI2.WinForms.Guna2Button gunaButton1;
         private Guna.UI2.WinForms.Guna2Elipse guna2Elipse1;
         private System.Windows.Forms.Label label19;
         private System.Windows.Forms.Label label17;

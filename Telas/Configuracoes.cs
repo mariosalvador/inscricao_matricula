@@ -55,7 +55,8 @@ namespace Inscricao_e_Matricula.Telas
             //System.IO.File.Copy(caminho_imagem, destino_imagem, true);
             //if (File.Exists(destino_imagem))
             //{
-            pic_perfil.Image = Image.FromFile(@caminho_imagem);
+            pic_perfil.ImageLocation = caminho_imagem;
+            pic_perfil.Load();
             //}
             //else
             //{

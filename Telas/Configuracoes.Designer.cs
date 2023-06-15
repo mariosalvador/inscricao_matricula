@@ -49,7 +49,9 @@
             this.txttelefone = new Guna.UI2.WinForms.Guna2TextBox();
             this.txtpalapass = new Guna.UI2.WinForms.Guna2TextBox();
             this.txtnome = new Guna.UI2.WinForms.Guna2TextBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pic_perfil)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // btn_cancelar
@@ -411,12 +413,21 @@
             this.txtnome.TabIndex = 4;
             this.txtnome.TextOffset = new System.Drawing.Point(10, 0);
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Location = new System.Drawing.Point(525, 50);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(100, 50);
+            this.pictureBox1.TabIndex = 17;
+            this.pictureBox1.TabStop = false;
+            // 
             // Configuracoes
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1069, 614);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.notswitch);
             this.Controls.Add(this.altswitch);
             this.Controls.Add(this.label6);
@@ -440,6 +451,7 @@
             this.Text = "Configuracões";
             this.Load += new System.EventHandler(this.Configuracões_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pic_perfil)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -466,5 +478,6 @@
         private System.Windows.Forms.Label label6;
         private Guna.UI2.WinForms.Guna2ToggleSwitch altswitch;
         private Guna.UI2.WinForms.Guna2ToggleSwitch notswitch;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

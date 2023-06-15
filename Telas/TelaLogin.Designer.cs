@@ -42,7 +42,7 @@ namespace Inscricao_e_Matricula
             this.txtnome = new Guna.UI2.WinForms.Guna2TextBox();
             this.txtsenha = new Guna.UI2.WinForms.Guna2TextBox();
             this.btnclose = new Guna.UI2.WinForms.Guna2Button();
-            this.checkpass = new Guna.UI.WinForms.GunaCheckBox();
+            this.checkpass = new Guna.UI2.WinForms.Guna2CheckBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -248,14 +248,9 @@ namespace Inscricao_e_Matricula
             // 
             // checkpass
             // 
-            this.checkpass.BaseColor = System.Drawing.Color.Gainsboro;
-            this.checkpass.CheckedOffColor = System.Drawing.Color.Transparent;
-            this.checkpass.CheckedOnColor = System.Drawing.Color.White;
-            this.checkpass.FillColor = System.Drawing.Color.DarkOrange;
             this.checkpass.ForeColor = System.Drawing.Color.Black;
             this.checkpass.Location = new System.Drawing.Point(657, 296);
             this.checkpass.Name = "checkpass";
-            this.checkpass.Radius = 3;
             this.checkpass.Size = new System.Drawing.Size(122, 20);
             this.checkpass.TabIndex = 3;
             this.checkpass.Text = "Ver palavra-passe";
@@ -305,7 +300,7 @@ namespace Inscricao_e_Matricula
         private Guna.UI2.WinForms.Guna2TextBox txtsenha;
         private Guna.UI2.WinForms.Guna2Button btnentrar;
         private Guna.UI2.WinForms.Guna2TextBox txtnome;
-        private Guna.UI.WinForms.GunaCheckBox checkpass;
+        private Guna.UI2.WinForms.Guna2CheckBox checkpass;
     }
 }
 
